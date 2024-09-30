@@ -21,6 +21,7 @@ function App() {
             <Route element={<HomeLayout />} >
             <Route path="/" element={<HomePage />} />
           </Route>
+          <Route path="*" element={<NotFound />} />
             </Routes>
             </UserContextProvider>
         </ErrorBoundary>
