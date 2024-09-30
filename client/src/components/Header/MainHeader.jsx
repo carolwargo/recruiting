@@ -1,5 +1,4 @@
 import React from 'react';
-import ContactForm from '../forms/ContactForm';
 import ButtonBG from '../../assets/images/ButtonBG.png';
 
 const DigitalMarketingHeader = () => {
@@ -38,7 +37,7 @@ const DigitalMarketingHeader = () => {
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
           width: '100%',
-          minHeight: '300px',
+          minHeight: '280px',
           height: '100vh',
           display: 'flex',
           flexDirection: 'column',
@@ -47,21 +46,21 @@ const DigitalMarketingHeader = () => {
         }}
       >
         <div className="container-fluid justify-content-center align-items-center">
-          <div className="row w3-padding-small w3-padding-32 ">
-            <div className="col-sm-12 col-md-8 px-5 py-2 text-center text-md-start">
+          <div className="row w3-padding-small">
+            <div className="col-sm-12 col-md-8 px-5 text-center text-lg-start">
               <div className="container">
                 <h1
-                  className="w3-text-pink py-2"
+                  className="w3-text-pink mb-3"
                   style={{ fontSize: '3rem', lineHeight: '1.2' }}
                 >
                   THE FOREFRONT OF DIGITAL MARKETING <span></span>
                 </h1>
                 <h5 className="mb-2">
-                  "Boost your traffic and elevate your brand with marketing
+                'Boost your traffic and elevate your brand with marketing
                   strategies tailored to your unique goals. Our customized
                   approach ensures that every tactic is aligned with your
                   business objectives, driving sustainable growth and amplifying
-                  your online presence."
+                  your online presence.'
                 </h5>
 
                 <p className="py-3">
@@ -80,9 +79,7 @@ const DigitalMarketingHeader = () => {
               </div>
             </div>
 
-            <div className="col-sm-12 col-md-4 px-5 py-3">
-              <ContactForm />
-            </div>
+      
           </div>
         </div>
       </div>

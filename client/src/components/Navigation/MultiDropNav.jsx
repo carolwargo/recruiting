@@ -12,7 +12,7 @@ import "@fontsource/dancing-script"; //
 
 import { useMediaQuery } from "react-responsive";
 
-const CustomNavbar = () => {
+const MultiDrop = () => {
   const [dropdownOpen, setDropdownOpen] = useState(null);
   const isSmallScreen = useMediaQuery({ maxWidth: 991.98 }); // Adjust breakpoint as needed
 
@@ -176,4 +176,4 @@ const CustomNavbar = () => {
   );
 };
 
-export default CustomNavbar;
+export default MultiDrop;

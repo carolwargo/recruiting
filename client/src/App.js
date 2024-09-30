@@ -4,10 +4,10 @@ import { UserContextProvider } from "./UserContext.jsx";
 
 import HomePage from "./pages/HomePage";
 
-import HomeLayout from "./components/Layout/MainLayout.jsx";
-import MultiDropNav from "./components/Navigation/MultiDropNav";
+import MainLayout from "./components/Layouts/MainLayout.jsx";
+import MultiDropNav from "./components/Navigation/MultiDropNav.jsx";
 
-import ErrorBoundary from "./components/ErrorBoundary";
+import ErrorBoundary from "./ErrorBoundary.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
           <MultiDropNav />
           <UserContextProvider>
             <Routes>
-            <Route element={<HomeLayout />} >
+            <Route element={<MainLayout />} >
             <Route path="/" element={<HomePage />} />
           </Route>
           <Route path="*" element={<NotFound />} />
