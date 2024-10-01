@@ -1,7 +1,7 @@
 import React from 'react';
 import ButtonBG from '../../assets/images/ButtonBG.png';
 
-const DigitalMarketingHeader = () => {
+const MainHeader= () => {
   return (
     <div>
       <style>
@@ -88,4 +88,4 @@ const DigitalMarketingHeader = () => {
   );
 };
 
-export default DigitalMarketingHeader;
+export default MainHeader;

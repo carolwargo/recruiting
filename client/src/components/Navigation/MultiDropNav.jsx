@@ -1,18 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useNavigate } from 'react-router-dom';
 import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
 import { CgOverflow } from "react-icons/cg";
 import { Link } from "react-router-dom";
-import { RiLoginCircleLine } from "react-icons/ri";
-import { IoPaperPlaneOutline } from "react-icons/io5";
-//import { RxCaretRight } from "react-icons/rx";
-//import { IoLockClosed } from "react-icons/io5";
-//import { PiUserCircleDuotone } from "react-icons/pi";
+import axios from 'axios';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fontsource/dancing-script"; //
 
 import { useMediaQuery } from "react-responsive";
 
 const MultiDrop = () => {
+  const navigate = useNavigate();
   const [dropdownOpen, setDropdownOpen] = useState(null);
   const isSmallScreen = useMediaQuery({ maxWidth: 991.98 }); // Adjust breakpoint as needed
 
@@ -25,6 +23,23 @@ const MultiDrop = () => {
       setDropdownOpen(dropdownOpen === dropdown ? null : dropdown);
     }
   };
+
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [userInfo, setUserInfo] = useState(null);
+
+  // Check login status when the component mounts
+  useEffect(() => {
+    axios.get('http://localhost:4000/profile', { withCredentials: true })
+      .then(response => {
+        setIsLoggedIn(true);
+        setUserInfo(response.data);  // Store user information (like username)
+      })
+      .catch(() => {
+        setIsLoggedIn(false);
+      });
+  }, []);
+
+
 
   return (
     <Navbar  expand="lg" className="bg-body-tertiary">
@@ -156,20 +171,41 @@ const MultiDrop = () => {
         </NavDropdown>
       </Nav>
     </Container>
-          <Nav className="ms-auto">
-  
-<Nav.Link as={Link} to="/contact" className="px-0 mx-1">
-<IoPaperPlaneOutline
-        className="w3-hover-green w3-text-blue w3-pale-blue border border-1 rounded rounded-circle p-1 shadow"
-        style={{ fontSize: '1.75rem'}} />
-</Nav.Link>
-            <Nav.Link as={Link} to="/login" className="mx-0 px-1">
-    <RiLoginCircleLine
-        className="w3-hover-blue w3-text-green border w3-pale-green border-1 rounded rounded-circle p-1 shadow"
-        style={{ fontSize: '1.75rem'}} />
-</Nav.Link>
-          </Nav>
-          
+    <Nav className="ms-auto">
+  <Container className="d-flex align-items-center">  {/* Ensure items align horizontally */}
+    {/* Conditionally render login/signup or logout */}
+    {isLoggedIn ? (
+      <>
+        <Nav.Link as={Link} to="/profile"
+        >  {/* Adjust margin */}
+          <span className="rounded rounded-circle p-1 shadow">
+            Profile
+            {userInfo?.username || 'Profile'}
+          </span>
+        </Nav.Link>
+      </>
+    ) : (
+      <>
+      <Link to="/login">
+  <button
+    className="rounded bg-danger-subtle border border-1 px-2 py-1 shadow"
+    style={{ fontSize:'14px', cursor: 'pointer'}}
+    onClick={() => navigate('/login')}
+  >
+ <span style={{fontSize:'14px'}}>LOGIN</span>
+  </button>
+</Link>
+    
+        <Nav.Link as={Link} to="/signup" className="mx-1 px-1">  {/* Adjust margin */}
+          <span className=""
+          style={{fontSize:'14px'}}>
+           SIGNUP 
+          </span>
+        </Nav.Link>
+      </>
+    )}
+  </Container>
+</Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
