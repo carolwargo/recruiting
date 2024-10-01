@@ -4,8 +4,8 @@ import { UserContextProvider } from "./UserContext.jsx";
 
 import HomePage from "./pages/HomePage";
 import SignupPage from "./pages/LoginPage.jsx";
-import LoginPage from "./pages/LoginPage.jsx";  
 
+import FormsLayout from "./components/Layouts/FormsLayout.jsx";
 import MainLayout from "./components/Layouts/MainLayout.jsx";
 import MultiDropNav from "./components/Navigation/MultiDropNav.jsx";
 
@@ -23,9 +23,11 @@ function App() {
             <Route element={<MainLayout />} >
             <Route path="/" element={<HomePage />} />
           </Route>
+          <Route element={<FormsLayout />} >
+          <Route path="/login" element={<SignupPage />} />
        <Route path="/signup" element={<SignupPage />} />
-       <Route path="/login" element={<LoginPage />} />
-           
+        </Route>
+        
           <Route path="*" element={<NotFound />} />
             </Routes>
             </UserContextProvider>
