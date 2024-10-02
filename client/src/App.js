@@ -4,6 +4,7 @@ import { UserContextProvider } from "./UserContext.jsx";
 
 import HomePage from "./pages/HomePage";
 import SignupPage from "./pages/LoginPage.jsx";
+import LoginPage from "./pages/SignupPage.jsx";
 
 import FormsLayout from "./components/Layouts/FormsLayout.jsx";
 import MainLayout from "./components/Layouts/MainLayout.jsx";
@@ -24,10 +25,10 @@ function App() {
             <Route path="/" element={<HomePage />} />
           </Route>
           <Route element={<FormsLayout />} >
-          <Route path="/login" element={<SignupPage />} />
-       <Route path="/signup" element={<SignupPage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/signup" element={<SignupPage />} />
         </Route>
-        
+      
           <Route path="*" element={<NotFound />} />
             </Routes>
             </UserContextProvider>
