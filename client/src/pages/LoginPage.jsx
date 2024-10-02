@@ -1,5 +1,5 @@
 import React from 'react';
-import ContactBG from '../assets/images/ContactBG.png';
+import ShoeBG from '../assets/images/ShoeBG.png';
 import {
   MDBBtn,
   MDBContainer,
@@ -19,7 +19,7 @@ function LoginPage() {
     <MDBContainer style={{paddingTop:'3rem'}}>
 
       <div className="p-5 bg-image" 
-      style={{backgroundImage: `url(${ContactBG})`, height: '300px'}}></div>
+      style={{backgroundImage: `url(${ShoeBG})`, height: '300px'}}></div>
 <MDBContainer className='d-flex justify-content-center'>
       <MDBCard className='mx-5 mb-5 p-3 shadow-5 ' style={{width:'50rem', marginTop: '-100px', background: 'hsla(0, 0%, 100%, 0.8)', backdropFilter: 'blur(30px)'}}>
         <MDBCardBody className='p-5 text-center'>
