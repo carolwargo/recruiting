@@ -1,91 +1,71 @@
 import React from 'react';
-import ButtonBG from '../../assets/images/ButtonBG.png';
+import PinkBlackBG from '../../assets/images/PinkBlackBG.png';
+import { Link as ScrollLink } from 'react-scroll';
 
-const MainHeader= () => {
+const MainHeader = () => {
+
   return (
-    <div>
-      <style>
-        {`
-        @media (max-width: 768px) {
-  .header-container {
-    min-height: 400px; /* Adjust to ensure enough space for content */
-  }
-
-  .form-container {
-    padding: 15px;
-    background: rgba(255, 255, 255, 0.8); /* Adds a background to the form for better readability */
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  .col-12.col-md-8 {
-    padding: 20px;
-  }
-
-  .col-12.col-md-4 {
-    padding: 20px;
-  }
-}
-        `}
-      </style>
-      {/* Start Header Introduction */}
+    <header  style={{fontFamily:'Raleway'}}>
+   
       <div
-        className="header-container"
+        id="intro-example"
+        className="w3-padding-large w3-padding-48 bg-image position-relative"
         style={{
-          backgroundImage: `url(${ButtonBG})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-          width: '100%',
-          minHeight: '280px',
-          height: '100vh',
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center',
+          backgroundImage: `url(${PinkBlackBG})`,
+          backgroundSize: "cover", 
+          backgroundRepeat: "no-repeat",
+          backgroundAttachment: "fixed",
+          
         }}
       >
-        <div className="container-fluid justify-content-center align-items-center">
-          <div className="row w3-padding-small">
-            <div className="col-sm-12 col-md-8 px-5 text-center text-lg-start">
-              <div className="container">
-                <h1
-                  className="w3-text-pink mb-3"
-                  style={{ fontSize: '3rem', lineHeight: '1.2' }}
-                >
-                  THE FOREFRONT OF DIGITAL MARKETING <span></span>
-                </h1>
-                <h5 className="mb-2">
-                'Boost your traffic and elevate your brand with marketing
-                  strategies tailored to your unique goals. Our customized
-                  approach ensures that every tactic is aligned with your
-                  business objectives, driving sustainable growth and amplifying
-                  your online presence.'
-                </h5>
-
-                <p className="py-3">
-                  Take steps to grow your online presence - digital marketing
-                  offers the cost-effectiveness you need with the impact of an
-                  in-house team.
-                </p>
-                <div className="d-flex justify-content-center justify-content-md-start">
-                  <button className="btn btn-dark shadow px-5 w3-margin-right w3-hover-blue-gray">
-                    Contact
-                  </button>
-                  <button className="btn btn-dark shadow w3-hover-blue-gray px-5">
-                    Contact
-                  </button>
-                </div>
-              </div>
-            </div>
-
-      
-          </div>
-        </div>
+        {/* Overlay div for masking */}
+        <div
+          className="position-absolute top-0 start-0 w-100 h-100"
+          style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
+        ></div>
+        <div className="row d-flex h-100 px-3 text-center position-relative">
+       <div className="col-sm-12 col-md-1 col-lg-1"></div>   
+          <div className="col-sm-12 col-md-10 col-lg-10 text-white p-3 position-relative z-index-1">
+           
+             <div className='text-center'>
+             <h1 className="glowing-brand text-pink fw-bold"
+             style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)", fontFamily:'Raleway'}}>
+              <i>Con</i>
+            <span className="w3-text-pink fw-bold" 
+            style={{fontSize:'4rem', fontFamily:'Dancing Script'}}>Scribe</span>.</h1>
+         <h1 className="align-items-center mb-3 text-white fw-bold w3-hide-small w3-hide-medium" 
+         style={{ textShadow: "2px 2px 4px black"}}>PROVIDING CONTROLLED<span className="glowing-text text-pink fw-bold"> RECRUITING STRATEGIES & PLATFORMS</span> FOR STUDENT-ATHELETES. 
+        </h1>
+        <h4 className="align-items-center mb-3 text-white w3-hide-large"
+        style={{ textShadow: "2px 2px 4px black"}}>PROVIDING CONTROLLED <span className="glowing-text text-pink fw-bold"> RECRUITING STRATEGIES & PLATFORMS </span> FOR STUDENT-ATHELETES. 
+        </h4>
+             <h5 style={{ textShadow: "2px 2px 4px black"}}><i> DIGITAL MARKETING <span className='w3-text-pink fw-bold'>|</span> DATA ANALYSIS <span className='w3-text-pink fw-bold'>|</span> CONTENT MANAGEMENT</i></h5>
+             
+  
+<div className="p-2">
+                 
+<ScrollLink to="email-graphics" smooth={true} duration={500}>
+    <button type="button" className="btn btn-light mx-2 w3-round-xlarge shadow">
+        <b style={{ textShadow: "2px 2px 4px #991d44",}}>Get Started</b>
+    </button>
+</ScrollLink>
+               
+               </div>
+              
+<br />
+ <p className='text-white' style={{fontSize:'12px'}}><i>    'The Graphic Elements page is currently under development and will be completed shortly. Thank you in advance for your patience.'</i></p>
+   
+        </  div>
+          
+         
+          </div>      
+          <div className="col-sm-12 col-md-1 col-lg-1"></div> 
       </div>
-      {/* End Header Introduction */}
-    </div>
+   </div>
+    </header>
   );
 };
 
 export default MainHeader;
+
+

@@ -1,102 +1,116 @@
-import React from 'react';
-import ShoeBG from '../assets/images/ShoeBG.png';
+import React, {useContext, useState} from 'react';
+import {Navigate} from "react-router-dom";
+import {UserContext} from "../UserContext";
+
 import {
   MDBBtn,
   MDBContainer,
-  MDBCard,
-  MDBCardBody,
-  MDBCol,
   MDBRow,
+  MDBCol,
   MDBInput,
-  MDBCheckbox,
-  MDBIcon
 }
 from 'mdb-react-ui-kit';
 
 function LoginPage() {
+  const [email,setEmail] = useState('');
+  const [password,setPassword] = useState('');
+  const [redirect,setRedirect] = useState(false);
+  const {setUserInfo} = useContext(UserContext);
+  async function login(ev) {
+    ev.preventDefault();
+    const response = await fetch('http://localhost:4000/login', {
+      method: 'POST',
+      body: JSON.stringify({email, password}),
+      headers: {'Content-Type':'application/json'},
+      credentials: 'include',
+    });
+    if (response.ok) {
+      response.json().then(userInfo => {
+        setUserInfo(userInfo);
+        setRedirect(true);
+      });
+    } else {
+      alert('wrong credentials');
+    }
+  }
+
+  if (redirect) {
+    return <Navigate to={'/'} />
+  }
   return (
-    <div className='w3-light-gray'>
-    <MDBContainer style={{paddingTop:'3rem'}}>
+    <div className='w3-padding-large' style={{}}>
+   
+    <MDBContainer className="my-5 gradient-form">
 
-      <div className="p-5 bg-image" 
-      style={{backgroundImage: `url(${ShoeBG})`, height: '300px'}}></div>
-<MDBContainer className='d-flex justify-content-center'>
-      <MDBCard className='mx-5 mb-5 p-3 shadow-5 ' style={{width:'50rem', marginTop: '-100px', background: 'hsla(0, 0%, 100%, 0.8)', backdropFilter: 'blur(30px)'}}>
-        <MDBCardBody className='p-5 text-center'>
+      <MDBRow>
 
-          <h2 className="fw-bold mb-5">Sign up now</h2>
+        <MDBCol col='6' className="mb-5">
+          <div className="d-flex flex-column ms-5">
 
-          <MDBRow>
-            <MDBCol col='6'>
-              <MDBInput 
-              wrapperClass='mb-4' 
-              placeholder='First name'
-              type='text'/>
+            <div className="text-center">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
+                style={{width: '185px'}} alt="logo" />
+              <h4 className="mt-1 mb-5 pb-1">We are The Lotus Team</h4>
+            </div>
 
-            </MDBCol>
+            <p>Please login to your account</p>
 
-            <MDBCol col='6'>
-              <MDBInput 
-              wrapperClass='mb-4' 
-            placeholder='Last name' 
-              type='text'/>
-            </MDBCol>
-          </MDBRow>
+            <form className="login" onSubmit={login}>
+            <MDBInput 
+            wrapperClass='mb-4' 
+            placeholder="Email@mail.com"
+            value={email}
+            onChange={ev => setEmail(ev.target.value)}
+            type='email'
+            />
+       
+            <MDBInput 
+            wrapperClass='mb-4' 
+            id='form2' 
+            type='password'
+            placeholder="Password"
+            value={password}
+            onChange={ev => setPassword(ev.target.value)}
+            />
 
-          <MDBInput wrapperClass='mb-4'  
-          id='form1' 
-          type='email'
-          placeholder='Email'
-          />
-          <MDBInput wrapperClass='mb-4' 
-          id='form1' 
-          type='password'
-          placeholder='Password'
-          />
+            <div className="text-center pt-1 mb-5 pb-1">
+              <MDBBtn className="mb-4 w-100 gradient-custom-2">Sign in</MDBBtn>
+              <a className="text-muted" href="#!">Forgot password?</a>
+            </div>
+            </form>
 
-          <div className='d-flex justify-content-center mb-4'>
-            <MDBCheckbox name='flexCheck' value='' 
-            id='flexCheckDefault' 
-            label='Subscribe to our newsletter' />
-          </div>
-
-          <MDBBtn className='w-100 mb-4 bg-black' size='md'>sign up</MDBBtn>
-
-          <div className="text-center">
-
-            <p>or sign up with:</p>
-
-            <MDBBtn tag='a' color='none' className='mx-3' 
-            style={{ color: 'black' }}>
-              <MDBIcon fab icon='facebook-f' size="sm"/>
-            </MDBBtn>
-
-            <MDBBtn tag='a' 
-            
-            color='none' 
-            className='mx-3' style={{ color: 'black' }}>
-              <MDBIcon fab icon='twitter' size="sm"/>
-            </MDBBtn>
-
-            <MDBBtn tag='a' color='none' className='mx-3' style={{ color: 'black' }}>
-              <MDBIcon fab icon='google' size="sm"/>
-            </MDBBtn>
-
-            <MDBBtn tag='a' color='none' className='mx-3' style={{ color: 'black' }}>
-              <MDBIcon fab icon='github' size="sm"/>
-            </MDBBtn>
+            <div className="d-flex flex-row align-items-center justify-content-center pb-4 mb-4">
+              <p className="mb-0">Don't have an account?</p>
+              <MDBBtn outline className='mx-2' 
+              color='danger'>
+                Danger
+              </MDBBtn>
+            </div>
 
           </div>
 
-        </MDBCardBody>
-      </MDBCard>
-      </MDBContainer>
+        </MDBCol>
+
+        <MDBCol col='6' className="mb-5">
+          <div className="d-flex flex-column  justify-content-center gradient-custom-2 h-100 mb-4">
+
+            <div className="text-black px-3 py-4 p-md-5 mx-md-4">
+              <h4 class="mb-4">We are more than just a company</h4>
+              <p class="small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+
+          </div>
+
+        </MDBCol>
+
+      </MDBRow>
+
     </MDBContainer>
     </div>
   );
 }
 
 export default LoginPage;
-
-
-

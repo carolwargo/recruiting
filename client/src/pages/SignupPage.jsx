@@ -1,6 +1,3 @@
-
-
-
 import React, {useContext, useState} from 'react';
 import {Navigate} from "react-router-dom";
 import {UserContext} from "../UserContext";
@@ -19,9 +16,9 @@ function SignupPage() {
   const [password,setPassword] = useState('');
   const [redirect,setRedirect] = useState(false);
   const {setUserInfo} = useContext(UserContext);
-  async function login(ev) {
+  async function signup(ev) {
     ev.preventDefault();
-    const response = await fetch('http://localhost:4000/login', {
+    const response = await fetch('http://localhost:4000/signup', {
       method: 'POST',
       body: JSON.stringify({email, password}),
       headers: {'Content-Type':'application/json'},
@@ -51,14 +48,14 @@ function SignupPage() {
           <div className="d-flex flex-column ms-5">
 
             <div className="text-center">
-              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-signup-form/lotus.webp"
                 style={{width: '185px'}} alt="logo" />
               <h4 className="mt-1 mb-5 pb-1">We are The Lotus Team</h4>
             </div>
 
-            <p>Please login to your account</p>
+            <p>Please signup to your account</p>
 
-            <form className="login" onSubmit={login}>
+            <form className="signup" onSubmit={signup}>
             <MDBInput 
             wrapperClass='mb-4' 
             placeholder="Email@mail.com"
@@ -84,7 +81,8 @@ function SignupPage() {
 
             <div className="d-flex flex-row align-items-center justify-content-center pb-4 mb-4">
               <p className="mb-0">Don't have an account?</p>
-              <MDBBtn outline className='mx-2' color='danger'>
+              <MDBBtn outline className='mx-2' 
+              color='danger'>
                 Danger
               </MDBBtn>
             </div>
