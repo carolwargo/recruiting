@@ -6,7 +6,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FaQuestionCircle } from "react-icons/fa";
 import { AiTwotoneMail } from "react-icons/ai";
 import { TbScreenShare } from "react-icons/tb";
-import { MDBBtn } from 'mdb-react-ui-kit';
+//import { MDBBtn } from 'mdb-react-ui-kit';
 
 const TopNavbar = () => {
   const [expanded, setExpanded] = useState(false);
@@ -72,8 +72,7 @@ const TopNavbar = () => {
           </Nav>
           <Nav className='ml-auto'>
           <Link to="/demo" className="nav-link" onClick={handleNavLinkClick} style={{fontSize:'14px'}}>DEMO SITE<TbScreenShare className='mx-2' style={{fontSize:'16px'}}/></Link>
-          <Link to="/contact" className="nav-link" onClick={handleNavLinkClick}> <MDBBtn className='btn w3-pink' tag='a'><b>Subscribe</b></MDBBtn></Link>
-            
+       
             <Link to="/contact" className="nav-link" onClick={handleNavLinkClick}><AiTwotoneMail /></Link>
             <Link to="/help" className="nav-link" onClick={handleNavLinkClick}><FaQuestionCircle/></Link>
           </Nav>

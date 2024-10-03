@@ -1,10 +1,8 @@
 import React from "react";
-//import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-//import { ListGroup } from 'react-bootstrap';
-//import Clay2 from "../../assets/images/Clay2.png";
-import about from '../../assets/images/about.png';   
+
+import about from '../../assets/images/HomeImages/about.png';   
 
 const Stats = () => {
   const { ref, inView } = useInView({

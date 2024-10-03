@@ -1,9 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import Catch from '../../assets/images/Catch.png';
-import Hit from '../../assets/images/Hit.png';
-import Website2 from '../../assets/images/Website2.png';
+import Catch from '../../assets/images/HomeImages/Catch.png';
+import Hit from '../../assets/images/HomeImages/Hit.png';
+import Website2 from '../../assets/images/HomeImages/Website2.png';
 
 
 

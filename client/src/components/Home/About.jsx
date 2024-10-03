@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import Website2 from "../../assets/images/Home/Website2.png";
+import Website2 from "../../assets/images/HomeImages/Website2.png";
 
 
 const About = () => {

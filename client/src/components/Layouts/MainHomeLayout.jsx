@@ -1,7 +1,7 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import TopNav from '../Nav/TopNav';
-import Header2 from '../Header/Header2';
+import TopNav from '../Navigation/TopNav';
+import Header from '../Header/Header';
 
 
 const HomeLayout = () => {
@@ -9,7 +9,7 @@ const HomeLayout = () => {
     <div className="service-layout">
       <main>
         <TopNav />
-        <Header2 />
+        <Header />
         <Outlet />
       </main>
     </div>

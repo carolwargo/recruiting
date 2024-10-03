@@ -1,10 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import '../../styles/features.css';
-import unsplash1 from '../../assets/images/unsplash1.jpg';
-import unsplash2 from '../../assets/images/unsplash2.jpg';
-import unsplash3 from '../../assets/images/unsplash3.jpg';
+
+import unsplash1 from '../../assets/images/HomeImages/unsplash1.jpg';
+import unsplash2 from '../../assets/images/HomeImages/unsplash2.jpg';
+import unsplash3 from '../../assets/images/HomeImages/unsplash3.jpg';
 
 const CustomCards = () => {
   const { ref, inView } = useInView({
@@ -14,6 +14,36 @@ const CustomCards = () => {
 
     return (
 <div className="container-fluid">
+  <style>
+    {`
+    .feature-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: .75rem;
+  }
+  
+  .icon-square {
+    width: 3rem;
+    height: 3rem;
+    border-radius: .75rem;
+  }
+  
+  .text-shadow-1 { text-shadow: 0 .125rem .25rem rgba(0, 0, 0, .25); }
+  .text-shadow-2 { text-shadow: 0 .25rem .5rem rgba(0, 0, 0, .25); }
+  .text-shadow-3 { text-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .25); }
+  
+  .card-cover {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  
+  .feature-icon-small {
+    width: 3rem;
+    height: 3rem;
+  }
+  `}
+  </style>
       <motion.div
       ref={ref}
       initial={{ y: -20, opacity: 0.5 }}

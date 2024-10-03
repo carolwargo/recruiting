@@ -1,6 +1,6 @@
 import React, {useRef} from 'react';
 import emailjs from '@emailjs/browser';
-import LocationView from '../../assets/images/LocationView.png';
+import LocationView from '../../assets/images/HomeImages/LocationView.png';
 
 const ContactComponent = () => {
     const form = useRef();
