@@ -37,9 +37,9 @@ const TopNavbar = () => {
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Link to="/" className="nav-link w3-text-pink fw-bold" 
-            onClick={handleNavLinkClick}>Con
-           <b style={{fontFamily:"Dancing Script"}}>Scribe</b></Link>
+            <Link to="/" className="nav-link w3-text-black fw-bold" 
+            onClick={handleNavLinkClick}> <b> <span><i style={{fontFamily:'Raleway', textShadow:'.5px .5px 1px black', fontSize:'13px'}}>Con</i></span>
+     <span className='w3-text-pink fw-bold' style={{ fontFamily:"Dancing Script", marginLeft:'-2px', textShadow:'.5px .5px 1px black', fontSize:'17px'}}>Scribe</span></b></Link>
 
           <Link to="/about" className="nav-link" style={{ color: "black" }}  onClick={handleNavLinkClick}>About</Link>
            <Link to="/resources" className="nav-link" style={{ color: "black" }}  onClick={handleNavLinkClick}>Resources</Link>

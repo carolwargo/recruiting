@@ -8,14 +8,12 @@ import {
   MDBBtn,
   MDBRipple
 } from 'mdb-react-ui-kit';
+import AboutComponent from "../components/AboutComponent";
 
 const HomePage = () => {
   return (
     <div>
-      <div className="container py-5">
-        <h1>Welcome to the Home Page</h1>
-        <p>This is the home page of our application.</p>
-        </div>
+     
         <div className="container py-5">
         <div className="py-2">
         <h1>Welcome to the Home Page</h1>
@@ -133,6 +131,12 @@ const HomePage = () => {
         </div>
       </div>
     
+      <div className="container py-5">
+        <h1>Welcome to the Home Page</h1>
+        <p>This is the home page of our application.</p>
+        
+        </div>
+        <AboutComponent />
     </div>
   );
 };

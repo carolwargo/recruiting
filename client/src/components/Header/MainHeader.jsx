@@ -25,19 +25,19 @@ const MainHeader = () => {
           style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
         ></div>
         <div className="row d-flex h-100 px-3 w3-margin-top text-center position-relative">
- 
-          <div className="col-sm-12 col-md-12 col-lg-12 text-white p-3 position-relative z-index-1">
+ <div className="col-sm-12 col-md-1 col-lg-1 "></div>
+          <div className="col-sm-12 col-md-10 col-lg-10 text-white p-3 position-relative z-index-1">
            
              <div className='text-center'>
              <AnimatedHeading />
         
-        <h1 className="align-items-center w3-padding-large text-white fw-bold w3-hide-small w3-hide-medium" 
+        <h2 className="align-items-center w3-padding-large text-white fw-bold w3-hide-small w3-hide-medium" 
          style={{ textShadow: "2px 2px 4px black"}}>PROVIDING <span 
          className="glowing-text w3-text-pink fw-bold"> GRAPHICS, EDITING, RECRUITING STRATEGIES & PLATFORMS</span> FOR STUDENT-ATHELETES, TEAMS & ORGANIZATIONS. 
-        </h1>
+        </h2>
         
-        <h4 className="align-items-center mb-4 text-white fw-bold w3-hide-large" 
-         style={{ textShadow: "2px 2px 4px black"}}>PROVIDING GRAPHICS, EDITING, RECRUITING STRATEGIES & PLATFORMS FOR STUDENT-ATHELETES, TEAMS & ORGANIZATIONS. 
+        <h4 className="align-items-center mb-4 text-white  w3-hide-large" 
+         style={{ textShadow: "2px 2px 4px black"}}>PROVIDING MEDIA, MARKETING STRATEGIES & WEB DESIGN FOR ATHLETES, TEAMS & ORGANIZATIONS. 
         </h4>
     
 
@@ -79,7 +79,8 @@ const MainHeader = () => {
         </  div>
           
          
-          </div>      
+          </div>   
+          <div className="col-sm-12 col-md-1 col-lg-1 "></div>   
       </div>
    </div>
     </header>

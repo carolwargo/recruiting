@@ -15,8 +15,8 @@ export default function Header2() {
             <div className='container text-white w3-padding-large'>
           <AnimatedHeading />
           <h2 className='mb-4 mx-5'>
-  SPORTS <span className='w3-text-pink' style={{ fontWeight: 'bold' }}>MEDIA, MARKETING & WEB DESIGN </span> 
-   ATHLETES, COACHES, TEAMS & ORGANIZATIONS.
+  PROVIDING SPORTS <span className='w3-text-pink' style={{ fontWeight: 'bold' }}>MEDIA, MARKETING & WEB DESIGN </span> 
+  FOR ATHLETES, TEAMS & ORGANIZATIONS.
 </h2>
  <p className='px-4 w3-hide-small'>Click <span className='w3-text-pink'><i>LEARN MORE</i></span> to explore.</p>
               <button tag="a" className='btn w3-pink mt-4' size="lg">
