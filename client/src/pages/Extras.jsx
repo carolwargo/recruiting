@@ -1,8 +1,24 @@
-import React from "react";
+import React from 'react';
+import CoverComponent from '../components/WebComponents/Cover/CoverComponent';
+import Features from '../components/WebComponents/Features/Features';
+
+const Extras = () => {
+
+    return (
+        <div className='w3-padding-top-48'>
+            <CoverComponent/>
+            <Features/>
+     </div>
+    )
+}
+
+export default Extras;
+
+
+/*import React from "react";
 import About from "../components/Home/About";
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-//import {Navbar, Container} from 'react-bootstrap';
+import { useInView } from "react-intersection-observer";import {Navbar, Container} from 'react-bootstrap';
 import Services from "../components/Home/CustomCards";
 import Cards from "../components/Home/Cards";
 import Stats from "../components/Home/Stats";
@@ -40,7 +56,7 @@ const WebDesign = () => {
   </Navbar.Collapse>
 </Container>
 </Navbar>
- */}
+
 <div className="container-fluid">
 <WebPricing/>
 </div>
@@ -65,3 +81,4 @@ const WebDesign = () => {
 };
 
 export default WebDesign;
+*/
