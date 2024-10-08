@@ -6,7 +6,7 @@
   "dependencies": {
     "@docsearch/css": "^3.0.0",
     "@emailjs/browser": "^4.4.1",
-    "@emotion/react": "^11.13.0",
+    "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
     "@floating-ui/react": "^0.26.20",
     "@fontsource/dancing-script": "^5.1.0",
@@ -17,10 +17,10 @@
     "@fortawesome/free-regular-svg-icons": "^6.6.0",
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
+    "@mui/icons-material": "^5.16.7",
     "@mui/joy": "^5.0.0-beta.48",
     "@mui/lab": "^5.0.0-alpha.119",
-    "@mui/material": "^5.15.18",
-    "@mui/icons-material": "^5.15.18",
+    "@mui/material": "^5.16.7",
     "@mui/styled-engine-sc": "^6.0.0-alpha.18",
     "@mui/x-data-grid": "^7.5.0",
     "@testing-library/jest-dom": "^5.17.0",
@@ -55,7 +55,7 @@
     "three": "^0.167.1",
     "web-vitals": "^2.1.4"
   },
-"scripts": {
+  "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
@@ -63,7 +63,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  
   "eslintConfig": {
     "extends": [
       "react-app",
