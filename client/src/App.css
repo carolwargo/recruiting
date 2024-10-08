@@ -3,3 +3,6 @@
 * {
     font-family:sans-serif;
 }
+
+@import "src/VerticalTimeline.css";
+@import "src/VerticalTimelineElement.css";

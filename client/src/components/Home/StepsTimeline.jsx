@@ -5,6 +5,8 @@ import WorkIcon from '@material-ui/icons/Work';
 import SchoolIcon from '@material-ui/icons/School';
 import StarIcon from '@material-ui/icons/Star';
 import DefOnly from "../../assets/images/DefOnly.png";
+import '../../App.css';
+
 
 const StepsTimeline = () => {
     return (
