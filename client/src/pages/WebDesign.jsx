@@ -1,12 +1,6 @@
 import React from "react";
-//import About from "../components/Home/About";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-//import {Navbar, Container} from 'react-bootstrap';
-//import Services from "../components/Home/CustomCards";
-//import Cards from "../components/Home/Cards";
-//import Stats from "../components/Home/Stats";
-//import ContactComponent from '../components/Home/ContactComponent'
 import WebPricing from '../components/WebDesign/WebPricing'
 
 

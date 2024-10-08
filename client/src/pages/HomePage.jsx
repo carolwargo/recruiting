@@ -1,142 +1,22 @@
 import React from "react";
-import {
-  MDBCard,
-  MDBCardBody,
-  MDBCardTitle,
-  MDBCardText,
-  MDBCardImage,
-  MDBBtn,
-  MDBRipple
-} from 'mdb-react-ui-kit';
-import AboutComponent from "../components/AboutComponent";
+import ServiceCards from "../components/Home/ServiceCards";
+import Intro from "../components/Home/Intro";
+import AboutComponent from "../components/AboutMe";
+import AboutUs from "../components/Home/AboutUs";
+import StepsTimeline from "../components/Home/StepsTimeline";
 
 const HomePage = () => {
   return (
     <div>
-     
-        <div className="container py-5">
-        <div className="py-2">
-        <h1>Welcome to the Home Page</h1>
-        <p>This is the home page of our application.</p>
-        </div>
-        <div className="row">
-          <div className="col">
-          <MDBCard>
-      <MDBRipple 
-      rippleColor='light' 
-      rippleTag='div' 
-      className='bg-image hover-overlay'>
-        <MDBCardImage src='https://mdbootstrap.com/img/new/standard/nature/111.webp' 
-        fluid alt='...' 
-        style={{width:'100%'}}/>
-        <div>
-        <div>
-          <div className='mask' 
-          style={{ 
-            backgroundColor: 'rgba(251, 251, 251, 0.15)' 
-            }}></div>
-        </div>
-        </div>
-      </MDBRipple>
-      <MDBCardBody>
-        <MDBCardTitle>Graphics</MDBCardTitle>
-        <MDBCardText>
-          Some quick example text to build on the card title and make up the bulk of the card's content.
-        </MDBCardText>
-        <MDBBtn href='#'>Button</MDBBtn>
-      </MDBCardBody>
-    </MDBCard>
-          </div>
-          <div className="col">
-          <MDBCard>
-      <MDBRipple 
-      rippleColor='light' 
-      rippleTag='div' 
-      className='bg-image hover-overlay'>
-        <MDBCardImage src='https://mdbootstrap.com/img/new/standard/nature/111.webp' 
-        fluid alt='...' 
-        style={{width:'100%'}}/>
-        <div>
-        <div>
-          <div className='mask' 
-          style={{ 
-            backgroundColor: 'rgba(251, 251, 251, 0.15)' 
-            }}></div>
-        </div>
-        </div>
-      </MDBRipple>
-      <MDBCardBody>
-        <MDBCardTitle>Video Editing</MDBCardTitle>
-        <MDBCardText>
-          Some quick example text to build on the card title and make up the bulk of the card's content.
-        </MDBCardText>
-        <MDBBtn href='#'>Button</MDBBtn>
-      </MDBCardBody>
-    </MDBCard>
-          </div>
-          <div className="col">
-          <MDBCard>
-      <MDBRipple 
-      rippleColor='light' 
-      rippleTag='div' 
-      className='bg-image hover-overlay'>
-        <MDBCardImage src='https://mdbootstrap.com/img/new/standard/nature/111.webp' 
-        fluid alt='...' 
-        style={{width:'100%'}}/>
-        <div>
-        <div>
-          <div className='mask' 
-          style={{ 
-            backgroundColor: 'rgba(251, 251, 251, 0.15)' 
-            }}></div>
-        </div>
-        </div>
-      </MDBRipple>
-      <MDBCardBody>
-        <MDBCardTitle>Custom Website</MDBCardTitle>
-        <MDBCardText>
-          Some quick example text to build on the card title and make up the bulk of the card's content.
-        </MDBCardText>
-        <MDBBtn href='#'>Button</MDBBtn>
-      </MDBCardBody>
-    </MDBCard>
-          </div>
-          <div className="col">
-          <MDBCard>
-      <MDBRipple 
-      rippleColor='light' 
-      rippleTag='div' 
-      className='bg-image hover-overlay'>
-        <MDBCardImage src='https://mdbootstrap.com/img/new/standard/nature/111.webp' 
-        fluid alt='...' 
-        style={{width:'100%'}}/>
-        <div>
-        <div>
-          <div className='mask' 
-          style={{ 
-            backgroundColor: 'rgba(251, 251, 251, 0.15)' 
-            }}></div>
-        </div>
-        </div>
-      </MDBRipple>
-      <MDBCardBody>
-        <MDBCardTitle>Recruiting Strategies</MDBCardTitle>
-        <MDBCardText>
-          Some quick example text to build on the card title and make up the bulk of the card's content.
-        </MDBCardText>
-        <MDBBtn href='#'>Button</MDBBtn>
-      </MDBCardBody>
-    </MDBCard>
-          </div>
-        </div>
-      </div>
-    
-      <div className="container py-5">
-        <h1>Welcome to the Home Page</h1>
-        <p>This is the home page of our application.</p>
-        
+  <ServiceCards/>
+    <Intro/>
+      <div className="container py-3 mt-2">
+        <AboutUs/>
         </div>
         <AboutComponent />
+        <div className="container py-3 mt-2">
+        <StepsTimeline/>
+        </div>
     </div>
   );
 };
