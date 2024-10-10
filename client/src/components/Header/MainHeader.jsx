@@ -33,7 +33,7 @@ const MainHeader = () => {
         
         <h2 className="align-items-center w3-padding-large text-white fw-bold w3-hide-small w3-hide-medium" 
          style={{ textShadow: "2px 2px 4px black"}}>PROVIDING <span 
-         className="glowing-text w3-text-pink fw-bold"> GRAPHICS, EDITING, RECRUITING STRATEGIES & PLATFORMS</span> FOR STUDENT-ATHELETES, TEAMS & ORGANIZATIONS. 
+         className="glowing-text fw-bold" style={{color:'#d32c9a'}}> GRAPHICS, EDITING, RECRUITING STRATEGIES & PLATFORMS</span> FOR STUDENT-ATHELETES, TEAMS & ORGANIZATIONS. 
         </h2>
         
         <h4 className="align-items-center mb-4 text-white  w3-hide-large" 
@@ -49,27 +49,13 @@ const MainHeader = () => {
 <div className="py-3">
                  
 <ScrollLink to="/contact" smooth={true} duration={500}>
-  <button
-    type="button"
-    className="btn mx-2 mb-2 w3-margin-bottom w3-round-xlarge"
-    style={{
-      boxShadow: "0px 0px 2px 1px black",
-      cursor: 'pointer',
-      color: 'white',
-      backgroundImage: 'linear-gradient(to right, #f64b65, #d8155b)',
-      transition: 'all 0.4s ease-in-out'
-    }}
-    onMouseEnter={(e) => {
-      e.target.style.backgroundImage = 'linear-gradient(to right, #d8155b, #f64b65)';
-      e.target.style.boxShadow = '0px 0px 8px 3px black';
-    }}
-    onMouseLeave={(e) => {
-      e.target.style.backgroundImage = 'linear-gradient(to right, #f64b65, #d8155b)';
-      e.target.style.boxShadow = '0px 0px 2px 1px black';
-    }}
-  >
-    <b style={{ textShadow: "2px 2px 4px black" }}>Get Started</b>
-  </button>
+<button
+  type="button"
+  className="btn mx-2 mb-2 custom-btn-purple"
+>
+  <b style={{textShadow:'2px 2px 4px black '}}>Get Started</b>
+</button>
+
 </ScrollLink>
 
                </div>

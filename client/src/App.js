@@ -3,14 +3,18 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { UserContextProvider } from "./UserContext.jsx";
 
 import HomePage from "./pages/HomePage";
+import HomeTimeline from "./pages/HomeTimeline";  
 import SignupPage from "./pages/LoginPage.jsx";
 import LoginPage from "./pages/SignupPage.jsx";
 import WebDesign from "./pages/WebDesign.jsx";
+import GraphicsPage from "./pages/GraphicsPage.jsx";
 
 import MainHomeLayout from "./components/Layouts/MainHomeLayout.jsx";
 import FormsLayout from "./components/Layouts/FormsLayout.jsx";
 import MainLayout from "./components/Layouts/MainLayout.jsx";
 import TopNav from "./components/Navigation/TopNav.jsx";
+
+
 
 import ErrorBoundary from "./ErrorBoundary.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -25,9 +29,11 @@ function App() {
             <Routes>
             <Route element={<MainLayout />} >
             <Route path="/" element={<HomePage />} />
+            <Route path="/home-time" element={<HomeTimeline />} />
           </Route>
           <Route element={<MainHomeLayout />} >
-            <Route path="/web-design" element={<WebDesign />} />
+            <Route path="/web" element={<WebDesign />} />
+            <Route path="/graphics" element={<GraphicsPage />} />
           </Route>
           <Route element={<FormsLayout />} >
           <Route path="/login" element={<LoginPage />} />

@@ -30,7 +30,7 @@ const TopNavbar = () => {
   };
 
   return (
-    <Navbar expand="lg" className="bg-body-tertiary shadow-sm fixed-top" expanded={expanded}>
+    <Navbar expand="lg" className="bg-body-tertiary shadow fixed-top" expanded={expanded}>
       <Container fluid>
         <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleToggle} className='w3-margin-right'>
           <FontAwesomeIcon icon={faBars} style={{ color: "black" }} />

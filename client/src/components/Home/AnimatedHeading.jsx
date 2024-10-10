@@ -19,7 +19,7 @@ const AnimatedHeading = () => {
       }}
       className='mb-3'>
      <span><i style={{fontFamily:'Raleway',fontSize:'4.5rem', textShadow:'1px 1px 4px black'}}>Con</i></span>
-     <span className='w3-text-pink fw-bold' style={{ fontFamily:"Dancing Script", marginLeft:'-10px', textShadow:'1px 1px 4px black'}}>Scribe</span>
+     <span className=' fw-bold' style={{ fontFamily:"Dancing Script", marginLeft:'-10px', color:'#d32c9a', textShadow:'1px 1px 4px black'}}>Scribe</span>
    
   </h1>
 

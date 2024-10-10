@@ -218,7 +218,7 @@ By not utilizing digital marketing, the loss far outweighs the gains. Combine th
 
 <p>At <span className="w3-text-pink fw-bold">Con
 <span style={{fontFamily:"Dancing Script"}}>Scribe </span></span> we believe in delivering tailored digital marketing strategies that drive success. Our comprehensive approach ensures that every campaign is backed by data, customized to your needs, and executed by a team of experts. Discover how our proven methods can help you achieve your marketing goals and propel your business forward.</p>
-   <a href="/" className="btn w3-pink btn-lg">Get Started</a>
+   <a href="/" className="pink-button btn btn-lg">Get Started</a>
       </div>
       <div className="col-sm-12 col-md-6 col-lg-6">
         <img src={MarketingMetrics} alt="digital marketing" className="shadow w-100"/>
@@ -238,7 +238,7 @@ By not utilizing digital marketing, the loss far outweighs the gains. Combine th
             <p className="text-body-secondary" style={{fontSize:'13px'}}>We use data and analytics to inform our strategies, ensuring that every campaign is optimized for success.</p>
           </div>
           <div className="col d-flex flex-column gap-2">
-            <div className="feature-icon-small d-inline-flex align-items-center justify-content-center w3-pink bg-gradient fs-4 rounded-3">
+            <div className="pink-icon feature-icon-small d-inline-flex align-items-center justify-content-center bg-gradient fs-4 rounded-3">
               <svg className="bi" width="1em" height="1em"><use xlinkHref="#gear-fill" /></svg>
             </div>
             <h4 className="fw-semibold mb-0 text-body-emphasis">Custom Solutions</h4>
