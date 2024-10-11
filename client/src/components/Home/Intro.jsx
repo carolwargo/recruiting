@@ -13,6 +13,18 @@ const Intro = () => {
       >
        <div className="container w3-padding-48">
        <div className="text-center w3-padding-large">
+       <h1>
+                <i
+                  style={{
+                    fontFamily: "Raleway",
+                    fontSize: "2.5rem",
+                    textShadow: "1px 1px 4px black",
+                  }}
+                >
+                 BUILD YOUR BRAND
+                </i>
+          </h1>
+    
               <h2 className="text-white mb-3"
               >
                 Successful recruiting goes beyond the traditional metrics — it’s

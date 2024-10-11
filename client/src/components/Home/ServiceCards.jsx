@@ -1,10 +1,11 @@
 import React from "react";
-
 import { Link } from "react-router-dom";
 import Web from "../../assets/images/ServiceCards/Web.png";
 import Graphics from "../../assets/images/ServiceCards/Graphics.png";
 import Video from "../../assets/images/ServiceCards/Video.png";
 import Market from "../../assets/images/ServiceCards/Market.png";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const ServiceCards = () => {
   return (
@@ -37,7 +38,8 @@ const ServiceCards = () => {
 }`}
       </style>
       <div className="container py-4">
-        <div className="container py-2 mt-2 text-center">
+          {/*Start Service Header & intro container */}
+        <div className="container mt-4 text-center">
           <h1>
             WELCOME TO{" "}
             <span
@@ -71,22 +73,129 @@ const ServiceCards = () => {
             </span>
           </h1>
           <h3 className="mb-4 px-4 w3-hide-small w3-hide-medium">
-            EXPLORE OUR SERVICES- DISCOVER HOW WE CAN HELP CREATE OR ELEVATE
+            EXPLORE OUR ESSETIAL KEY OFFERINGS- DISCOVER HOW WE CAN HELP CREATE OR ELEVATE
             YOUR PERSONAL BRAND & STREAMLINE YOUR MARKETING STRATEGIES.
           </h3>
           <h5 className="mb-4 px-4 w3-hide-large">
-            EXPLORE OUR SERVICES- DISCOVER HOW WE CAN HELP CREATE OR ELEVATE
+            EXPLORE OUR ESSENTIAL KEY OFFERINGS- DISCOVER HOW WE CAN HELP CREATE OR ELEVATE
             YOUR PERSONAL BRAND & STREAMLINE YOUR MARKETING STRATEGIES.
           </h5>
-          <p>
+          <p className="w3-hide-large">
             {" "}
             Pick a service below to get started, or simply{" "}
             <Link to="contact">contact us</Link> with questions.{" "}
           </p>
+             <h5 className="w3-hide-small w3-hide-medium">
+            {" "}
+            Pick a service below to get started, or simply{" "}
+            <Link to="contact">contact us</Link> with questions.{" "}
+          </h5>
         </div>
-        <div>
-        </div>
+ {/*Start Service Header & intro container */}
 
+        {/*Start Small service cards */}
+        <div className="container mt-3 w3-hide-large">
+<div className="row d-flex justify-content-center align-items-center w3-padding-large w3-padding-24">
+          <div className=" col-sm-12 col-md-4 col-lg-4 flex-column position-relative p-0">
+              {/* Image Container */}
+              <div className="position-relative">
+                <img
+                  src={Video}
+                  alt="video editing card link"
+                  style={{ width: "100%" }}
+                  className=" shadow shadow-5-strong hover-shadow"
+                />
+                {/* Dark Overlay */}
+                <div className="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-70  shadow shadow-5-strong w3-hover-purple"></div>
+              </div>
+              {/* Text */}
+              <div className="position-absolute top-50 start-50 translate-middle text-white text-center">
+                <h2>Video Editing</h2>
+                <p>This is the text overlaid on the image.</p>
+                <Link
+                    to="/video"
+                    className="button text-white"
+                    style={{ textDecoration: "none" }}
+                  >
+                <button className="w3-button border border-light w3-text-light-grey  w3-round-large mt-2"
+                style={{
+                    color:'black',
+                     boxShadow: "6px 6px 17px rgba(0, 0, 0, 8)"
+                }}>
+                    Learn More
+                </button>
+                </Link>
+              </div>
+            </div>
+            <div className=" col-sm-12 col-md-4 col-lg-4 flex-column position-relative p-0">
+              {/* Image Container */}
+              <div className="position-relative">
+                <img
+                  src={Graphics}
+                  alt="graphics card link"
+                  style={{ width: "100%" }}
+                  className=" shadow shadow-5-strong hover-shadow"
+                />
+                {/* Dark Overlay */}
+                <div className="position-absolute top-0 start-0 w-100 h-100 bg-secondary opacity-70  shadow shadow-5-strong w3-hover-purple"></div>
+              </div>
+              {/* Text */}
+              <div className="position-absolute top-50 start-50 translate-middle text-white text-center">
+                <h2>Graphic Design</h2>
+                <p>Eye-catching visual content designed to...
+                </p>
+                <Link
+                    to="/graphics"
+                    className="button text-white"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <button className="w3-button border border-light w3-text-light-grey  w3-round-large mt-2"
+                style={{
+                    color:'black',
+                     boxShadow: "6px 6px 17px rgba(0, 0, 0, 8)"
+                }}>
+                    Learn More
+                </button>
+                </Link>
+              </div>
+            </div>
+            <div className=" col-sm-12 col-md-4 col-lg-4 flex-column position-relative p-0">
+              {/* Image Container */}
+              <div className="position-relative">
+                <img
+                  src={Web}
+                  alt="webdesign card link" 
+                  style={{ width: "100%" }}
+                  className=" shadow shadow-5-strong hover-shadow"
+                />
+                {/* Dark Overlay */}
+                <div className="position-absolute top-0 start-0 w-100 h-100 bg-white opacity-70 shadow shadow-5-strong w3-hover-purple"></div>
+              </div>
+              {/* Text */}
+              <div className="position-absolute top-50 start-50 translate-middle text-black text-center">
+                <h2>Recruiting Websites</h2>
+                <p>This is the text overlaid on the image.</p>
+              <Link
+                    to="/web"
+                    className="button text-white"
+                    style={{ textDecoration: "none" }}
+                  >
+                       <button className="w3-button border border-black w3-text-black  w3-round-large mt-2"
+                style={{
+                    color:'black',
+                     boxShadow: "6px 6px 17px rgba(0, 0, 0, 8)"
+                }}>
+                    Learn More
+                </button>
+                  </Link>
+              
+              </div>
+            </div>
+          </div>
+</div>
+  {/*End Small service cards */}
+
+    {/*Start Large service cards */}
         <div
           style={{
             paddingLeft: "100px",
@@ -95,6 +204,7 @@ const ServiceCards = () => {
             paddingBottom: "40px",
           }}
         >
+
           <div className="row w3-hide-small w3-hide-medium">
             <div
               className="col-sm-12 col-md-6 border border-opacity-50 flex-column position-relative p-0"
@@ -284,6 +394,7 @@ const ServiceCards = () => {
             </div>
           </div>
         </div>
+           {/*End Large service cards */}
       </div>
     </div>
   );

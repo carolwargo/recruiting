@@ -10,11 +10,11 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 const SmServiceCards = () => {
   
   return (
-    <div className="cards" id="cards">
+    <div className="sm-service-cards" id="sm-service-cards">
  
-        {/**Start INTRO Web Components */}
+        {/*Small Service Cards*/}
         <div className="container mb-2 w3-padding-top-64">
-
+{/*
           <div className="container w3-padding-top-48 text-center">
             <h2 className="text-center w3-text-pink">
               <b>THINK OF THE POSSIBILITIES!</b>
@@ -23,7 +23,7 @@ const SmServiceCards = () => {
             "Explore key offerings that elevate branding and online presence through impactful visual and digital strategies. From graphic design elements tailored for social media and marketing, to expertly crafted sports recruit videos, and dedicated websites for student-athletes, these services ensure a professional edge in both personal and athletic promotion."
             </h3>
           </div>
-
+*/}
           <div className="row d-flex justify-content-center align-items-center w3-padding-large w3-padding-24">
           <div className=" col-sm-12 col-md-4 col-lg-4 flex-column position-relative p-0">
               {/* Image Container */}
