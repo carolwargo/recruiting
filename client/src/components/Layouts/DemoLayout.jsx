@@ -1,18 +1,17 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 import TopNav from '../Navigation/TopNav';
-import Footer from '../Footer';
 
-const FormsLayout = () => {
+
+const DemoLayout = () => {
   return (
     <div className="forms-layout">
       <main>
-        <TopNav />
+        <TopNav/>
         <Outlet />
-        <Footer/>
       </main>
     </div>
   );
 };
 
-export default FormsLayout;
+export default DemoLayout;

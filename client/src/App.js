@@ -8,11 +8,14 @@ import SignupPage from "./pages/LoginPage.jsx";
 import LoginPage from "./pages/SignupPage.jsx";
 import WebDesign from "./pages/WebDesign.jsx";
 import GraphicsPage from "./pages/GraphicsPage.jsx";
+import DemoPage from "./pages/DemoPage.jsx";  
+
+import Extras from "./pages/Extras.jsx";  
 
 import MainHomeLayout from "./components/Layouts/MainHomeLayout.jsx";
 import FormsLayout from "./components/Layouts/FormsLayout.jsx";
 import MainLayout from "./components/Layouts/MainLayout.jsx";
-import TopNav from "./components/Navigation/TopNav.jsx";
+import DemoLayout from "./components/Layouts/DemoLayout.jsx";
 
 
 
@@ -24,22 +27,29 @@ function App() {
     <div>
       <BrowserRouter>
         <ErrorBoundary>
-          <TopNav />
           <UserContextProvider>
             <Routes>
             <Route element={<MainLayout />} >
             <Route path="/" element={<HomePage />} />
             <Route path="/home-time" element={<HomeTimeline />} />
           </Route>
+          
           <Route element={<MainHomeLayout />} >
             <Route path="/web" element={<WebDesign />} />
             <Route path="/graphics" element={<GraphicsPage />} />
+        
           </Route>
           <Route element={<FormsLayout />} >
           <Route path="/login" element={<LoginPage />} />
           <Route path="/signup" element={<SignupPage />} />
         </Route>
       
+        <Route element={<DemoLayout />} >
+          <Route path="/demo" element={<DemoPage />} />
+          <Route path="/extras" element={<Extras />} />
+        </Route>
+
+
           <Route path="*" element={<NotFound />} />
             </Routes>
             </UserContextProvider>

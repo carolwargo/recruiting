@@ -1,11 +1,13 @@
 import React from 'react';
 import PinkBlackBG from '../../assets/images/PinkBlackBG.png';
 import AnimatedHeading from '../Home/AnimatedHeading';
+import TopNav from '../Navigation/TopNav';
 
 export default function Header2() {
             
   return (
     <header>
+      <TopNav />
       <div
         className='p-5 text-center bg-image'
         style={{ backgroundImage: `url(${PinkBlackBG})`, height: '500px' }}

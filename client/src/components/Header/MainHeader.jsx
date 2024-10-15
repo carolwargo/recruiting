@@ -2,12 +2,12 @@ import React from 'react';
 import PinkBlackBG from '../../assets/images/PinkBlackBG.png';
 import { Link as ScrollLink } from 'react-scroll';
 import AnimatedHeading from '../Home/AnimatedHeading';
-
+import TopNav from '../Navigation/TopNav';
 const MainHeader = () => {
 
   return (
     <header  style={{fontFamily:'Raleway'}}>
-   
+   <TopNav />
       <div
         id="intro-example"
         className="w3-padding-large w3-padding-48 bg-image position-relative"

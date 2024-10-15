@@ -10,7 +10,11 @@ import {
 import { Link } from "react-router-dom";
 //import ResumeDownload from "../assets/ResumeDownload.pdf";
 
-export default function App() {
+export default function Footer () {
+  const handleNavLinkClick = () => {
+    window.scrollTo(0, 0);
+  };
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -204,21 +208,17 @@ export default function App() {
 
 
 
-          <section className="text-center d-flex justify-content-center w3-padding-large border-bottom">
+          <section className="text-center d-flex justify-content-center w3-padding-large">
           <MDBContainer className="text-center">
           
             <div className="">
               <p style={{ fontSize: "12px", fontWeight: "light" }}>
                 {" "}
                 © 2023 Copyright:{" "}
-                <a
-                  className="text-white"
-                  href="https:carolwargo.github.io/react-portfolio"
-                  style={{ fontSize: "12px" }}
-                >
-                  {" "}
-                  <b> C</b>WARGO
-                </a>
+                <Link to="/" className="w3-content w3-padding-64 w3-text-white w3-xlarge w3-hover-opacity text-decoration-none" 
+            onClick={handleNavLinkClick}><b><span><i style={{fontFamily:'Raleway', textShadow:'.5px .5px 1px black', fontSize:'13px'}}>Con</i></span>
+     <span className='w3-text-pink fw-bold' style={{ fontFamily:"Dancing Script", marginLeft:'-2px', textShadow:'.5px .5px 1px black', fontSize:'17px'}}>Scribe</span></b></Link>
+         
               </p>
             </div>
             </MDBContainer>
