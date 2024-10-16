@@ -4,7 +4,28 @@
     font-family:sans-serif;
 }
 
+/*start ANIMATIONS*/
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
 
+@keyframes slideLeft {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.animate-slide-left {
+  animation: slideLeft 1s ease-in-out;
+}
+
+/*end ANIMATIONS*/
+
+/*start Header glow shadows*/
 .pink-button {
     boxShadow: 0px 0px 2px 1px #fa52ce;
     cursor: pointer;
@@ -21,9 +42,9 @@
 .pink-text {
     color:  #d32c9a;
 }
+/*End Header glow shadows*/
 
-
-/* Global Variables */
+/* Start Global Button Variables */
 :root {
     /* Purple Button Gradients */
     --btn-purple-gradient-start: #d32c9a;
@@ -84,4 +105,4 @@
   .custom-btn b {
     text-shadow: 2px 2px 4px black;
   }
-  
+  /* Start Global Button Variables */
