@@ -29,12 +29,12 @@ const Extras = () => {
         style={{
           backgroundImage:'linear-gradient(to right, black , #737373, #737373, )',
         }}>
-        {/* Page Container */}
+        {/*Start Page Container */}
         <div
           className="w3-container w3-content"
           style={{ maxWidth: "1400px", marginTop: "40px" }}
         >
-          {/* The Grid */}
+          {/* Start main row*/}
           <div className="w3-row">
             {/* Left Column */}
             <div className="w3-col m3">
@@ -201,7 +201,7 @@ const Extras = () => {
                 </div>
               </div>
               <br />
-
+PG
               <div className="w3-card w3-round w3-white">
                 <div className="w3-container ">
                 <img
@@ -475,6 +475,11 @@ const Extras = () => {
                           </div>
 
 </div>
+
+
+
+
+
 <div className="w3-col m8">
 
 <div className="w3-container w3-padding">
@@ -493,7 +498,7 @@ const Extras = () => {
                   </div>
 
 
-
+{/**
 
               <div className="w3-row-padding">
                 <div className="w3-col m12">
@@ -529,7 +534,7 @@ const Extras = () => {
                   </div>
                 </div>
               </div>
-
+ */}
 
 
 
@@ -682,24 +687,17 @@ const Extras = () => {
 
               {/* End Middle Column */}
             </div>
-
-
-
-
-
-
-
-
-
-
             {/* End Grid */}
           </div>
-
+            {/* End main row*/}
           {/* End Page Container */}
         </div>
         <br />
 
-        {/* Footer */}
+
+
+
+        {/* Footer 
         <footer className="w3-container w3-theme-d3 w3-padding-16">
           <h5>Footer</h5>
         </footer>
@@ -715,7 +713,7 @@ const Extras = () => {
             </Link>
           </p>
         </footer>
-
+*/}
         <script>
           {`
 function myFunction(id) {

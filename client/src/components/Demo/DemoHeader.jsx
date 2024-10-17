@@ -34,23 +34,54 @@ const DemoCard = () => {
                       <hr className="w3-clear" />
                       <div className="row w3-margin-bottom">
                         <div className="w3-col m6">
-                          <div className="w3-container w3-border w3-border-black w3-padding">
+                        <div className="w3-card w3-round w3-white">
+                <div className="w3-container">
                   <div className="w3-margin-top">
                     <p className="w3-center">
                       <img
-                        src={ClaySmall}
+                        src={Graphics}
                         style={{ width: "100%" }}
                         alt="Avatar"
                       />
                     </p>
-                    <h4 className="">CLAY WARGO</h4>
-                  </div>        
+                  </div>
+                  <hr />
+                  <p className="my-1">
+                <span className="fa-fw w3-text-theme" style={{ fontSize: "1.2rem" }}>
+                  Height:
+                </span>{" "}
+                6'0
+                <span className="fa-fw w3-text-theme w3-margin-left" style={{ fontSize: "1.2rem" }}>
+                  Weight:
+                </span>{" "}
+                225
+              </p>
+              <p className="my-1">
+                <span className="fa-fw w3-text-theme" style={{ fontSize: "1.2rem" }}>
+                  Primary:
+                </span>{" "}
+                C
+                <span className="fa-fw w3-text-theme w3-margin-left" style={{ fontSize: "1.2rem" }}>
+                  Secondary:
+                </span>{" "}
+                1B
+              </p>
+              <p className="my-1">
+                <span className="fa-fw w3-text-theme" style={{ fontSize: "1.2rem" }}>
+                  Throws:
+                </span>{" "}
+                R
+                <span className="fa-fw w3-text-theme w3-margin-left" style={{ fontSize: "1.2rem" }}>
+                  Bats:
+                </span>{" "}
+                R/L
+              </p>
+              <button className="w3-button w3-black w3-padding mt-2 mb-3">
+                <i className="fa fa-download"></i> Download Stats
+              </button>
                 </div>
-
-
-                
-                    {/**Accordian */}
-                    <div className="w3-card w3-round">
+              </div>
+              <div className="w3-card w3-round">
                 <div className="w3-white">
                   <button
                     onClick={() => myFunction("Demo1")}
@@ -165,6 +196,8 @@ const DemoCard = () => {
                   </div>
                 </div>
               </div>
+
+
                         </div>
                     
                         <div className="w3-col m6">
@@ -292,7 +325,10 @@ const DemoCard = () => {
                   <i className="fa fa-comment"></i>  Comment
                 </button>
               </div>
-           <script>
+
+            {/* End Grid */}
+          
+            <script>
           {`
 function myFunction(id) {
   var x = document.getElementById(id);
@@ -317,10 +353,6 @@ function openNav() {
 }
   `}
         </script>
-
-            {/* End Grid */}
-          
-
           {/* End Page Container */}
         </div>
  
