@@ -9,6 +9,9 @@ import LoginPage from "./pages/SignupPage.jsx";
 import WebDesign from "./pages/WebDesign.jsx";
 import GraphicsPage from "./pages/GraphicsPage.jsx";
 import DemoPage from "./pages/DemoPage.jsx";  
+import Demo2 from "./pages/Demo2.jsx";
+
+import ScrollToTop from "./components/ScrolltoTop.jsx";
 
 import Extras from "./pages/Extras.jsx";  
 
@@ -27,6 +30,7 @@ function App() {
     <div>
       <BrowserRouter>
         <ErrorBoundary>
+          <ScrollToTop />
           <UserContextProvider>
             <Routes>
             <Route element={<MainLayout />} >
@@ -46,6 +50,7 @@ function App() {
       
         <Route element={<DemoLayout />} >
           <Route path="/demo" element={<DemoPage />} />
+          <Route path="/demo2" element={<Demo2 />} />
           <Route path="/extras" element={<Extras />} />
         </Route>
 

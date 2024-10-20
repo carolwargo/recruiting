@@ -3,7 +3,7 @@ import ServiceCards from "../components/Home/ServiceCards";
 import Intro from "../components/Home/Intro";
 import AboutComponent from "../components/AboutMe";
 import AboutUs from "../components/Home/AboutUs";
-import StepsTimeline from "../components/Samples/Timeline/StepsTimeline";
+import StepsTimeline from "../components/Timeline/StepsTimeline";
 
 const HomePage = () => {
   return (

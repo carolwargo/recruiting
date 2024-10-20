@@ -155,7 +155,9 @@ const AboutUs = () => {
     <div className="container">
     <div className="px-4 mb-2 text-center">
         <h1>Welcome to the ABOUT US</h1>
-        <p>This is the home page of our application.</p>
+        <h3>self-marketing has become an assumed and unavoidable part of the recruitment journey, essential for securing opportunities, even if it's not what they initially signed up for.</h3>
+        <p>For student-athletes, marketing themselves can feel like being conscripted into a recruitment battle. It's an involuntary, compulsory process—one that feels like a necessary evil in today’s sports landscape. </p>
+        <p>"Though the focus should be on performance, athletes are required to build their brand and market their talents, as if they've been conscribed into a promotional army. Yet, this."</p>
           </div>
     <div className="row g-4 py-3 w3-margin-top justify-content-around align-items-end">
     <div className="col-sm-12 col-md-5 col-lg-5">
