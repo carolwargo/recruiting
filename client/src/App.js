@@ -4,8 +4,8 @@ import { UserContextProvider } from "./UserContext.jsx";
 
 import HomePage from "./pages/HomePage";
 import HomeTimeline from "./pages/HomeTimeline";  
-import SignupPage from "./pages/LoginPage.jsx";
-import LoginPage from "./pages/SignupPage.jsx";
+import SignupPage from "./pages/SignupPage.jsx";
+import LoginPage from "./pages/LoginPage.jsx";
 import WebDesign from "./pages/WebDesign.jsx";
 import GraphicsPage from "./pages/GraphicsPage.jsx";
 import DemoPage from "./pages/DemoPage.jsx";  
