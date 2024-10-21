@@ -83,7 +83,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <Testimonials/>
 
            {/* Video Stat Section */}
-<PlayerMedia  />
+<PlayerMedia/>
+
+
 
     <PlayerContact/>
 

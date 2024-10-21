@@ -6,7 +6,7 @@ import MLB from "../../assets/images/Video/MLB.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
-const ServiceCards = () => {
+const VideoCards = () => {
   return (
     <div
       className="service-cards"
@@ -97,4 +97,4 @@ const ServiceCards = () => {
   );
 };
 
-export default ServiceCards;
+export default VideoCards;

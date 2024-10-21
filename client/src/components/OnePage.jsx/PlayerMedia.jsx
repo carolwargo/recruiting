@@ -1,8 +1,7 @@
 import React from "react";
 import { InView } from 'react-intersection-observer';
-import Hit from '../../assets/images/Hit.png';
-import Catch from '../../assets/images/Catch.png';
-import VideoCards from '../../components/Demo/VideoCards';
+import PlayerVideo from "./PlayerVideos";
+
 
 
 const PlayerMedia = () => {
@@ -46,98 +45,19 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <div className="page-container" >
       {/* Page Content */}
  
-     {/* Media Section */}
-
-     <InView triggerOnce={true}>
+          {/* Media Section */}
+          <InView triggerOnce={true}>
           {({ inView, ref }) => (
           <div ref={ref} className={`w3-content w3-justify w3-text-grey w3-padding-16 
             ${inView ? "animate-fade-in" : ""}`} 
-         id="videos">
+          id="media">
                <hr className="w3-opacity w3-padding-16" />
-               <h1 className="w3-text-light-grey w3-margin-bottom">Media</h1>
-<VideoCards/>
+                <h1 className="w3-text-light-grey w3-margin-bottom">Media</h1>             
+<PlayerVideo  />
 </div>
-    )}
-    </InView>
+          )}
+          </InView>
 
-        <InView triggerOnce={true}>
-          {({ inView, ref }) => (
-          <div ref={ref} className={`w3-content w3-justify w3-text-grey w3-padding-16 
-            ${inView ? "animate-fade-in" : ""}`} 
-         id="videos">
-               <hr className="w3-opacity w3-padding-16" />
-               <h1 className="w3-text-light-grey w3-margin-bottom">Video Library</h1>
-
-          {/* Grid for photos */}
-          <div className="w3-row-padding w3-padding-16" style={{ margin: "0 -16px" }}>
-            <div className="container">
-            <div className="col m5">
-              <img
-                src={Hit}
-                alt="pic"
-                style={{ width: "100%" }}
-                className="w3-padding"
-              />
-            </div>
-            <div className="col m7">
-             <p><i>Uploaded: 1-1-2023</i></p>
-             <h3>Title</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia laboriosam suscipit tenetur unde, ea at. Veritatis est iusto alias, architecto minima illum sed ducimus voluptatibus molestiae, autem doloribus error fuga!</p>
-           
-            </div>
-            </div>
-            {/* End photo grid */}
-          </div>
-          {/* End Portfolio Section */}
-          
-          <hr style={{ width: "100%" }} className="w3-opacity" />
-
-
-          <div className="w3-row-padding w3-padding-16" style={{ margin: "0 -16px" }}>
-            <div className="container w3-padding-large">
-            <div className="w3-quarter">
-              <img
-                src={Hit}
-                alt="pic"
-                style={{ width: "100%" }}
-              />
-               
-            </div>
-            <div className="w3-quarter">
-          
-                  <img
-                src={Catch}
-                alt="pic"
-                style={{ width: "100%" }}
-              />
-            </div>
-            <div className="w3-quarter">
-          
-          <img
-        src={Catch}
-        alt="pic"
-        style={{ width: "100%" }}
-      />
-    </div>
-    <div className="w3-quarter">
-          
-          <img
-        src={Catch}
-        alt="pic"
-        style={{ width: "100%" }}
-      />
-    </div>
-            </div>
-         
-            {/* End photo grid */}
-          </div>
-          {/* End Portfolio Section */}
-          
-          <hr style={{ width: "100%" }} className="w3-opacity" />
-        </div>
-    )}
-    </InView>
-  
         {/* END PAGE CONTENT */}
         
         <script>

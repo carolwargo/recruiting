@@ -1,5 +1,5 @@
 import React from "react";
-import ServiceCards from "../components/Home/ServiceCards";
+import Services from "../components/Home/Services";
 import Intro from "../components/Home/Intro";
 import AboutComponent from "../components/AboutMe";
 import AboutUs from "../components/Home/AboutUs";
@@ -8,7 +8,7 @@ import StepsTimeline from "../components/Timeline/StepsTimeline";
 const HomePage = () => {
   return (
     <div>
-  <ServiceCards/>
+  <Services/>
   <div className="container py-3 mt-2">
  
         </div>
