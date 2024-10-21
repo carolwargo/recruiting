@@ -44,18 +44,44 @@ function SignupPage() {
 
     <div className='w3-padding-large w3-padding-48' style={{}}>
     <MDBContainer className="my-5 gradient-form">
+
       <MDBRow>
         <MDBCol col='6' className="mb-5">
           <div className="d-flex flex-column ms-5">
             <div className="text-center">
-            <h1
-      style={{
-        fontSize: "4.5rem" }}
-      className='mb-3'>
-     <span><i style={{fontFamily:'Raleway',fontSize:'3.75rem', textShadow:'1px 1px 4px black'}}>Con</i></span>
-     <span className=' fw-bold' style={{ fontFamily:"Dancing Script", marginLeft:'-10px', color:'#d32c9a', textShadow:'1px 1px 4px black'}}>Scribe</span>
-   
-  </h1>
+            <div className="text-center">
+              <div className="container">
+              <h1
+          style={{
+            fontSize: "4.5rem",
+          }}
+          className="mb-3 text-center"
+        >
+          <span>
+            <i
+              style={{
+                fontFamily: "Raleway",
+                fontSize: "3.75rem",
+                textShadow: "1px 1px 4px black",
+              }}
+            >
+              Con
+            </i>
+          </span>
+          <span
+            className=" fw-bold"
+            style={{
+              fontFamily: "Dancing Script",
+              marginLeft: "-10px",
+              color: "#d32c9a",
+              textShadow: "1px 1px 4px black",
+            }}
+          >
+            Scribe
+          </span>
+        </h1>
+        </div>
+              </div>
             </div>
 
             <p>Create an account.</p>

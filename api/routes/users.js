@@ -3,7 +3,7 @@
 const express = require('express');
 const User = require('../models/User');
 const authenticateToken = require('../utils/auth');
-const adminOnly = require('../utils/admin');
+const adminOnly = require('../utils/adminOnly');
 const router = express.Router();
 
 

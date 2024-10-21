@@ -38,19 +38,24 @@ function LoginPage() {
     return <Navigate to={"/"} />;
   }
   return (
-    <div className="w3-padding-large" style={{}}>
+    <div className="w3-padding-large w3-padding-48" style={{}}>
       <MDBContainer className="my-5 gradient-form">
-        <h1
+        <MDBRow>
+          <MDBCol col="6" className="mb-5">
+            <div className="d-flex flex-column ms-5">
+            <div className="text-center">
+              <div className="container">
+              <h1
           style={{
-            fontSize: "5.5rem",
+            fontSize: "4.5rem",
           }}
-          className="mb-3"
+          className="mb-3 text-center"
         >
           <span>
             <i
               style={{
                 fontFamily: "Raleway",
-                fontSize: "4.5rem",
+                fontSize: "3.75rem",
                 textShadow: "1px 1px 4px black",
               }}
             >
@@ -69,10 +74,8 @@ function LoginPage() {
             Scribe
           </span>
         </h1>
-        <MDBRow>
-          <MDBCol col="6" className="mb-5">
-            <div className="d-flex flex-column ms-5">
-              <div className="text-center"></div>
+        </div>
+              </div>
 
               <p>Please login to your account</p>
 
