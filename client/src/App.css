@@ -106,3 +106,18 @@
     text-shadow: 2px 2px 4px black;
   }
   /* Start Global Button Variables */
+  .header-custom-btn {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    background-image: linear-gradient(to right, #f64b65, #fa52ce);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .custom-btn:hover {
+    opacity: 0.8;
+  }
+  

@@ -19,6 +19,7 @@ const HomePage = () => {
         <div className="w3-light-gray py-3 mt-2">
         <AboutComponent />
         </div>
+
         <div className="container py-3 mt-2">
           <StepsTimeline /> 
     </div>

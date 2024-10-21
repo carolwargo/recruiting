@@ -9,6 +9,7 @@ import MeWhite from "../assets/images/MeWhite.png";
 import LocationView from "../assets/images/LocationView.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../App.css";
+import ContactModal from "./Modals/ContactModal";
 
 export default function AboutPage() {
   return (
@@ -182,6 +183,10 @@ export default function AboutPage() {
             <h5 className="text-center">
               <em>Huntingtown, Maryland!</em>
             </h5>
+            <div className="text-center">
+            <ContactModal />
+            </div>
+     
           </div>
           <div className="col-lg-8 ">
             <img

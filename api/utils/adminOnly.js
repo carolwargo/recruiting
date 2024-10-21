@@ -1,4 +1,4 @@
-// middleware/admin.js
+// PATH: api/utils/admin.js
 
 const adminOnly = (req, res, next) => {
     if (req.user && req.user.isAdmin) {
