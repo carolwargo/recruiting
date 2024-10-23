@@ -56,8 +56,6 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
         id="footer">
 
 
-            <h1>-----NOTES</h1>
-            <p>*******Maybe combine contact and footer</p>
             <hr />
           <h2 className="w3-text-light-grey">Contact Me</h2>
           <h5>Get in touch direct or send me a message through the site:</h5>

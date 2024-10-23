@@ -3,48 +3,20 @@ import ClayCover3 from '../assets/images/ClayCover3.png';
 import { InView } from 'react-intersection-observer';
 import PlayerProfile from "../components/OnePage.jsx/PlayerProfile";
 import SideNav from "../components/OnePage.jsx/SideNav";
-import Testimonials from "../components/OnePage.jsx/Testimonials";
+import Testimonials from "../components/OnePage.jsx/PlayerTestimonials";
 import PlayerMedia from "../components/OnePage.jsx/PlayerMedia";
 import PlayerContact from "../components/OnePage.jsx/PlayerContact";
 import PlayerFooter from "../components/OnePage.jsx/PlayerFooter";
+import PlayerPerformance from "../components/OnePage.jsx/PlayerPerformance";
+import PlayerIntro from "../components/OnePage.jsx/PlayerIntro";
+import PlayerCarousel from "../components/OnePage.jsx/PlayerCarousel";
+import '../style/demo.css'; 
 
 const DemoPage = () => {
 
   return (
     <div className="body w3-black"
     style={{paddingTop:'3.6rem'}}>
-
-      <style>
-        {`
-  
-        /*start ANIMATIONS*/
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@keyframes slideLeft {
-  from { transform: translateX(-100%); }
-  to { transform: translateX(0); }
-}
-
-.animate-fade-in {
-  animation: fadeIn 2s ease-in-out;
-}
-
-.animate-slide-left {
-  animation: slideLeft 2s ease-in-out;
-}
-
-/*end ANIMATIONS*/
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-.w3-sidebar {width: 120px;background: #222;}
-#main {margin-left: 120px}
-@media only screen and (max-width: 600px) 
-{#main {margin-left: 0}}
- `}
-      </style>
 
   <SideNav/>
 <div className="page-container" >
@@ -74,18 +46,27 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
           )}
         </InView>
 
-        {/* About Section */}
+
+
+        {/* IntroSection */}
+        <PlayerIntro/>
+
+        {/* Profile Section */}
 <PlayerProfile/>
 
+        {/* Performance Section */}
+        <PlayerPerformance/>
 
 
           {/* Testimonial Section */}
 <Testimonials/>
 
-           {/* Video Stat Section */}
+           {/* Media Section */}
 <PlayerMedia/>
 
 
+    {/* Contact Section */}
+    <PlayerCarousel/>
 
     <PlayerContact/>
 
@@ -93,31 +74,6 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <PlayerFooter/>
   
         {/* END PAGE CONTENT */}
-        <script>
-          {`
-function myFunction(id) {
-  var x = document.getElementById(id);
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-    x.previousElementSibling.className += " w3-theme-d1";
-  } else { 
-    x.className = x.className.replace("w3-show", "");
-    x.previousElementSibling.className = 
-    x.previousElementSibling.className.replace(" w3-theme-d1", "");
-  }
-}
-
-// Used to toggle the menu on smaller screens when clicking on the menu button
-function openNav() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-  `}
-        </script>
       </main>
     </div>
     </div>

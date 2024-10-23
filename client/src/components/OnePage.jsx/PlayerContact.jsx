@@ -44,13 +44,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
     {/* Contact Section */}
 
-
-
-    <h1>-----NOTES</h1>
-            <p>*******Maybe combine contact and footer</p>
-            <p>*******Make a separate page & form</p>
             <hr />
-
 
     <InView triggerOnce={true}>
           {({ inView, ref }) => (
