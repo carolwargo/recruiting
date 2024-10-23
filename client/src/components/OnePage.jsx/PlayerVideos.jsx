@@ -6,209 +6,132 @@ import { Link } from "react-router-dom";
 
 const PlayerVideo = () => {
   return (
-    <div>
-      <style>
-        {`
-  
-        /*start ANIMATIONS*/
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
+    <div className="container"> {/* Added Bootstrap container class for proper alignment */}
+      <div className="w3-padding-16">
+        <h3>VIDEO SKILLS LIBRARY</h3>
+        <h4>
+          Video Library consists of Offense, Defense and MLB Bullpens.
+        </h4>
+        <h5>
+          Pick a service below to get started, or simply{" "}
+          <Link to="contact">contact us</Link> with questions.{" "}
+        </h5>
+      </div>
 
-@keyframes slideLeft {
-  from { transform: translateX(-100%); }
-  to { transform: translateX(0); }
-}
-
-.animate-fade-in {
-  animation: fadeIn 2s ease-in-out;
-}
-
-.animate-slide-left {
-  animation: slideLeft 2s ease-in-out;
-}
-
-/*end ANIMATIONS*/
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-.w3-sidebar {width: 120px;background: #222;}
-#main {margin-left: 120px}
-@media only screen and (max-width: 600px) 
-{#main {margin-left: 0}}
- `}
-      </style>
-
-      <div className="page-container">
-        {/* Page Content */}
-
-        <div className="container w3-padding-16">
-          <h3>VIDEO SKILLS LIBRARY</h3>
-          <h4 className="">
-            Video Library consists of a Offense, Defense and and MLB Bullpens.
-          </h4>
-          <h5>
-            {" "}
-            Pick a service below to get started, or simply{" "}
-            <Link to="contact">contact us</Link> with questions.{" "}
-          </h5>
-        </div>
-
-        <div
-          className="w3-row-padding w3-padding-16 d-flex justify-content-center align-items-end"
-          style={{ margin: "0 -16px" }}
-        >
-          <div className="w3-col m6 w3-margin-bottom">
-            <div className="container">
-              <img
-                src={Offense}
-                alt="principal"
-                className="w3-left  w3-margin-right rounded"
-                style={{ width: "100%" }}
-              />
-            </div>
-          </div>
-
-          <div className="w3-col m6 w3-margin-bottom">
-            <div className="container w3-padding-16">
-              <p>
-                <span className="w3-large">OFFENSE</span>
-                <br />
-                <i>Lorem- ipsum dolor sit</i>.
-              </p>
-              <p>
-                {" "}
-                <i>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Repellat fugiat neque, delectus Fugiat. Ipsum dolor sit amet
-                  consectetur adipisicing elit. Voluptate quibusdam totam
-                  pariatur accusamus, quam velit at ad enim animi aliquam, porro
-                  nulla molestias tempore fuga neque similique. Necessitatibus,
-                  iusto ex?
-                </i>
-                .
-              </p>
-              <footer className="">
-                <hr />
-                <p>last updated: 1-1-2025</p>
-              </footer>
-            </div>
+      {/* ROW 1 */}
+      <div className="row w3-padding-16">
+        <div className="col-12 col-md-6 w3-margin-bottom"> {/* Adjusted col-12 for stacking on small screens */}
+          <div className="container">
+            <img
+              src={Offense}
+              alt="Offense"
+              className="w3-left w3-margin-right rounded"
+              style={{ width: "100%" }}
+            />
           </div>
         </div>
 
-        <hr />
-        <div
-          className="w3-row-padding w3-padding-16 d-flex justify-content-center align-items-end"
-          style={{ margin: "0 -16px" }}
-        >
-          <div className="w3-col m6 w3-margin-bottom">
-            <div className="container">
-              <img
-                src={Defense}
-                alt="principal"
-                className="w3-left  w3-margin-right rounded"
-                style={{ width: "100%" }}
-              />
-            </div>
+        <div className="col-12 col-md-6 w3-margin-bottom"> {/* Adjusted col-12 for stacking on small screens */}
+          <div className="container w3-padding-16">
+            <p>
+              <span className="w3-large">OFFENSE</span>
+              <br />
+              <i>Lorem- ipsum dolor sit</i>.
+            </p>
+            <p>
+              <i>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellat fugiat neque, delectus Fugiat. Ipsum dolor sit amet
+                consectetur adipisicing elit. Voluptate quibusdam totam pariatur
+                accusamus, quam velit at ad enim animi aliquam, porro nulla
+                molestias tempore fuga neque similique. Necessitatibus, iusto
+                ex?
+              </i>
+            </p>
+            <footer>
+              <hr />
+              <p>last updated: 1-1-2025</p>
+            </footer>
           </div>
-          <div className="w3-col m6 w3-margin-bottom">
-            <div className="container w3-padding-16">
-              <p>
-                <span className="w3-large">DEFENSE</span>
-                <br />
-                <i>Lorem- ipsum dolor sit</i>.
-              </p>
-              <p>
-                {" "}
-                <i>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Repellat fugiat neque, delectus Fugiat. Ipsum dolor sit amet
-                  consectetur adipisicing elit. Voluptate quibusdam totam
-                  pariatur accusamus, quam velit at ad enim animi aliquam, porro
-                  nulla molestias tempore fuga neque similique. Necessitatibus,
-                  iusto ex?
-                </i>
-                .
-              </p>
-              <footer className="">
-                <hr />
-                <p>last updated: 1-1-2025</p>
-              </footer>
-            </div>
+        </div>
+      </div>
+
+      {/* ROW 2 */}
+      <hr />
+      <div className="row w3-padding-16">
+        <div className="col-12 col-md-6 w3-margin-bottom">
+          <div className="container">
+            <img
+              src={Defense}
+              alt="Defense"
+              className="w3-left w3-margin-right rounded"
+              style={{ width: "100%" }}
+            />
           </div>
         </div>
 
-        <hr />
-
-        <div
-          className="w3-row-padding w3-padding-16 d-flex justify-content-center align-items-end"
-          style={{ margin: "0 -16px" }}
-        >
-          <div className="w3-col m6 w3-margin-bottom">
-            <div className="container">
-              <img
-                src={MLB}
-                alt="principal"
-                className="w3-left  w3-margin-right rounded"
-                style={{ width: "100%" }}
-              />
-            </div>
+        <div className="col-12 col-md-6 w3-margin-bottom">
+          <div className="container w3-padding-16">
+            <p>
+              <span className="w3-large">DEFENSE</span>
+              <br />
+              <i>Lorem- ipsum dolor sit</i>.
+            </p>
+            <p>
+              <i>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellat fugiat neque, delectus Fugiat. Ipsum dolor sit amet
+                consectetur adipisicing elit. Voluptate quibusdam totam pariatur
+                accusamus, quam velit at ad enim animi aliquam, porro nulla
+                molestias tempore fuga neque similique. Necessitatibus, iusto
+                ex?
+              </i>
+            </p>
+            <footer>
+              <hr />
+              <p>last updated: 1-1-2025</p>
+            </footer>
           </div>
+        </div>
+      </div>
 
-          <div className="w3-col m6 w3-margin-bottom">
-            <div className="container w3-padding-16">
-              <p>
-                <span className="w3-large">MLB BULLPENS</span>
-                <br />
-                <i>Lorem- ipsum dolor sit</i>.
-              </p>
-              <p>
-                {" "}
-                <i>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Repellat fugiat neque, delectus Fugiat. Ipsum dolor sit amet
-                  consectetur adipisicing elit. Voluptate quibusdam totam
-                  pariatur accusamus, quam velit at ad enim animi aliquam, porro
-                  nulla molestias tempore fuga neque similique. Necessitatibus,
-                  iusto ex?
-                </i>
-                .
-              </p>
-              <footer className="">
-                <hr />
-                <p>last updated: 1-1-2025</p>
-              </footer>
-            </div>
+      {/* ROW 3 */}
+      <hr />
+      <div className="row w3-padding-16">
+        <div className="col-12 col-md-6 w3-margin-bottom">
+          <div className="container">
+            <img
+              src={MLB}
+              alt="MLB Bullpens"
+              className="w3-left w3-margin-right rounded"
+              style={{ width: "100%" }}
+            />
           </div>
         </div>
 
-        {/* END PAGE CONTENT */}
-
-        <script>
-          {`
-function myFunction(id) {
-  var x = document.getElementById(id);
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-    x.previousElementSibling.className += " w3-theme-d1";
-  } else { 
-    x.className = x.className.replace("w3-show", "");
-    x.previousElementSibling.className = 
-    x.previousElementSibling.className.replace(" w3-theme-d1", "");
-  }
-}
-
-// Used to toggle the menu on smaller screens when clicking on the menu button
-function openNav() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-  `}
-        </script>
+        <div className="col-12 col-md-6 w3-margin-bottom">
+          <div className="container w3-padding-16">
+            <p>
+              <span className="w3-large">MLB BULLPENS</span>
+              <br />
+              <i>Lorem- ipsum dolor sit</i>.
+            </p>
+            <p>
+              <i>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellat fugiat neque, delectus Fugiat. Ipsum dolor sit amet
+                consectetur adipisicing elit. Voluptate quibusdam totam pariatur
+                accusamus, quam velit at ad enim animi aliquam, porro nulla
+                molestias tempore fuga neque similique. Necessitatibus, iusto
+                ex?
+              </i>
+            </p>
+            <footer>
+              <hr />
+              <p>last updated: 1-1-2025</p>
+            </footer>
+          </div>
+        </div>
       </div>
     </div>
   );
