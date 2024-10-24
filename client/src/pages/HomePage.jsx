@@ -9,19 +9,19 @@ const HomePage = () => {
   return (
     <div>
 
-<div className="container py-3 mt-2">
+
+<div>
         <AboutUs/>
         </div>
+
+<div >
+  <Intro/>
+        </div>
+
 
 <div>
   <Services/>
   </div>
-
-
-  <div >
-  <Intro/>
-        </div>
-  
     
     <div>
         <AboutMe />

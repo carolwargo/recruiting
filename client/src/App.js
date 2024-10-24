@@ -24,6 +24,7 @@ import DemoLayout from "./components/Layouts/DemoLayout.jsx";
 
 import ErrorBoundary from "./ErrorBoundary.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 function App() {
   return (
