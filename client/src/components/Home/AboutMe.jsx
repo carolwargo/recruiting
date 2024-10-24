@@ -1,16 +1,18 @@
 import React from "react";
-import MeWhite from "../assets/images/MeWhite.png";
-import LocationView from "../assets/images/LocationView.png";
+import MeWhite from "../../assets/images/MeWhite.png";
+import LocationView from "../../assets/images/LocationView.png";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../App.css";
+import "../../App.css";
+import ContactModal from "../Modals/ContactModal";
 
-export default function IconCards() {
+export default function AboutMe() {
   return (
-    <div className="icon-cards w3-pink" id="icon-cards">
-      <div className="w3-content w3-container w3-padding-32">
+    <div className="about" id="about"> 
+      <div className="w3-light-gray">
+      <p style={{fontSize:'12px'}}>/components/Home/AboutMe</p>
+      <div className="w3-content w3-container w3-padding-32" style={{ padding: "40px" }}>
         <div className="row d-flex justify-content-center align-items-center">
           <div className="col-lg-5">
-            <div className="container" style={{ padding: "40px" }}>
               <img
                 src={MeWhite}
                 className="w3-round w3-image shadow border-gray-200 w3-hover-opacity-off mx-auto d-block"
@@ -19,11 +21,14 @@ export default function IconCards() {
               <p className=" fw-light text-center">
                 Carol Wargo- <i className="text-secondary">No special title</i>
               </p>
-              <div>
-                {" "}
+            </div>
+          <div className="col-lg-7">
+          <div>
+                <h1 className="text-center">WHY WE DO IT?</h1>
+
                 <p className=" fw-light">
                   <em>
-                    "My passion lies in utilizing creative design to drive
+                    <i> "My passion lies in utilizing creative design to drive
                     innovative solutions through technology. With a distinctive
                     blend of skills and experience, I am a full-stack software
                     developer & UX Designer that specializes in customer
@@ -32,17 +37,14 @@ export default function IconCards() {
                     effectively. With over 20 years of experience in business
                     management & strategic development, I bring a wealth of
                     knowledge and expertise to every project I undertake."
+                    </i>
+                   -Carol Wargo <i>Owner/founder/Director of operations.</i>
                   </em>
                 </p>
               </div>
-            </div>
           </div>
-          <div className="col-lg-7"></div>
         </div>
       </div>
-
-      <hr />
-
       <div
         className="w3-row w3-center w3-black w3-padding-32"
         style={{ backgroundColor: "#FF385C" }}
@@ -79,6 +81,10 @@ export default function IconCards() {
             <h5 className="text-center">
               <em>Huntingtown, Maryland!</em>
             </h5>
+            <div className="text-center">
+            <ContactModal />
+            </div>
+     
           </div>
           <div className="col-lg-8 ">
             <img
@@ -91,10 +97,9 @@ export default function IconCards() {
         </div>
       </div>
     </div>
+    </div>
   );
 }
-
-
 /**
              <div className="col-sm-12 col-md-6 col-lg-6">
 <p>Successful recruiting goes beyond the traditional metrics— it’s about crafting a compelling narrative that showcases both your talent and your academic achievements. 

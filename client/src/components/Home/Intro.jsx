@@ -5,10 +5,14 @@ import { GiBullseye } from "react-icons/gi";
 const Intro = () => {
 
   return (
-    <div className="intro" id="intro"
+
+  <div className="intro" id="intro">
+
+    <div
     style={{  backgroundImage: 'linear-gradient(to right,  #f64b65 , #d32c9a, #b42b81)',
     }}
     >
+        <p style={{fontSize:'12px'}}>/components/Home/Intro</p>
        <div 
       >
        <div className="container w3-padding-48">
@@ -37,8 +41,12 @@ const Intro = () => {
             </div>
         </div>
         </div>
-    <div className="w3-light-gray">
-        <div className="container">
+        </div> 
+
+
+
+        <div className="w3-light-gray">
+        <div className="container w3-padding-48 w3-padding-large">
           <div className="row py-4">
             <div className="col-sm-12 col-md-6 col-lg-6">
             <div className="text-center py-4">

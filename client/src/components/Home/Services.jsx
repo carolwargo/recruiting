@@ -1,102 +1,14 @@
+//components/Home/Services.jsx
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../../style/service-cards.css'
 
 
-const AboutUs = () => {
+const Services = () => {
     return (
-      <div className="icons4-card" id="icons4-card">
-        <style>
-          {`
-                .glow {
-  color: #fff;
-  text-align: center;
- text-shadow: 0 0 5px black, 0 0 15px black, 0 0 30px black;
-}
-  .glow-icon {
-  color: #fff;
-  text-size: 1.5rem;
-  text-align: center;
- text-shadow: 0 0 5px black, 0 0 10px black, 0 0 20px #4e4e50, 0 0 40px black;
-}
- .glow-icon-small {
-  color: #000;
-  text-size: 1.5rem;
-  text-align: center;
- text-shadow: 0 0 5px black, 0 0 10px black, 0 0 20px #4e4e50, 0 0 40px black;
-}
-}
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-
-      .icon-link {
-            
-            color: #000;
-            text-decoration: underline;
-            font-size: 1rem;
-            
-
-      .b-example-divider {
-        width: 100%;
-        height: 3rem;
-        background-color: rgba(0, 0, 0, .1);
-        border: solid rgba(0, 0, 0, .15);
-        border-width: 1px 0;
-        box-shadow: inset 0 .5em 2em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-      }
-
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
-
-      .bi {
-        vertical-align: -.125em;
-        fill: currentColor;
-      }
-
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
-
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
-
-      .btn-bd-primary {
-        --bd-violet-bg: #712cf9;
-        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
-
-        --bs-btn-font-weight: 600;
-        --bs-btn-color: var(--bs-white);
-        --bs-btn-bg: var(--bd-violet-bg);
-        --bs-btn-border-color: var(--bd-violet-bg);
-        --bs-btn-hover-color: var(--bs-white);
-        --bs-btn-hover-bg: #6528e0;
-        --bs-btn-hover-border-color: #6528e0;
-        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-        --bs-btn-active-color: var(--bs-btn-hover-color);
-        --bs-btn-active-bg: #5a23c8;
-        --bs-btn-active-border-color: #5a23c8;
-      }
-
-        `}
-        </style>
+      <div className="services" id="services">
 
         <svg xmlns="http://www.w3.org/2000/svg" className="d-none">
       <symbol id="check2" viewBox="0 0 16 16">
@@ -187,9 +99,10 @@ const AboutUs = () => {
 
 
    {/* Start 8 Column Icon Grid */}
-   <div className="services-component" id="services-component">
+   <div>
 
 <div className="w3-black">
+<p style={{fontSize:'12px'}}>/components/Home/Services</p>
 <div className="w3-container w3-padding-large w3-padding-32 ">
 <div className="row w3-margin-top w3-margin-bottom">
           {/*Start Service Header & intro container */}
@@ -300,6 +213,11 @@ const AboutUs = () => {
 </div>
 
 
+
+
+
+
+
  <div className="w3-container w3-content w3-padding-16">
  
   <div className=" w3-padding-16">
@@ -313,4 +231,4 @@ Not sure where to start? <Link to="contact">Contact us</Link> with questions or 
   );
 }
 
-export default AboutUs;
+export default Services;

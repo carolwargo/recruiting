@@ -6,6 +6,8 @@ import Video from "../../assets/images/ServiceCards/Video.png";
 import Market from "../../assets/images/ServiceCards/Market.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import '../../style/service-cards.css'
+
 
 const SmServiceCards = () => {
   

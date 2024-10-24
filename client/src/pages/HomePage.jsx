@@ -1,7 +1,7 @@
 import React from "react";
 import Services from "../components/Home/Services";
 import Intro from "../components/Home/Intro";
-import AboutComponent from "../components/AboutMe";
+import AboutMe from "../components/Home/AboutMe";
 import AboutUs from "../components/Home/AboutUs";
 import StepsTimeline from "../components/Timeline/StepsTimeline";
 
@@ -13,18 +13,21 @@ const HomePage = () => {
         <AboutUs/>
         </div>
 
-        
+<div>
   <Services/>
-  <div className="container py-3 mt-2">
- 
+  </div>
+
+
+  <div >
+  <Intro/>
         </div>
-    <Intro/>
+  
     
-        <div className="w3-light-gray py-3 mt-2">
-        <AboutComponent />
+    <div>
+        <AboutMe />
         </div>
 
-        <div className="container py-3 mt-2">
+        <div>
           <StepsTimeline /> 
     </div>
     </div>

@@ -5,7 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const AboutUs = () => {
     return (
-      <div className="icons4-card" id="icons4-card">
+      <div className="about-us" id="about-us">
+          <p style={{fontSize:'12px'}}>/components/Home/AboutUs</p>
         <style>
           {`
          
@@ -150,8 +151,8 @@ const AboutUs = () => {
 </svg>
 
 
-   {/* Start 8 Column Icon Grid */}
-   <div className="icon-eight" id="icon-eight">
+
+   <div>
    <div className="px-4  w3-margin-top w3-margin-bottom text-center">
 <h1> Welcome to 
             <span
