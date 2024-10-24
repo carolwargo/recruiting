@@ -1,44 +1,34 @@
 import React from "react";
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import { InView } from 'react-intersection-observer';
 import WebPricing from '../components/WebDesign/WebPricing'
-
+import WebIntro from '../components/WebDesign/WebIntro'
+import WebTimeline from "../components/WebDesign/WebTimeline";
 
 const WebDesign = () => {
-  const { ref, inView } = useInView({
-    triggerOnce: false, // Animation triggers only once
-    threshold: 0.1, // Percentage of the div that needs to be visible to trigger the animation
-  });
-
   return (
-    <div
-   className="text-white"
-    >
-      <motion.div
-        ref={ref}
-        initial={{ y: -20, opacity: 0.5 }}
-        animate={inView ? { y: 0, opacity: 1 } : {}}
-        exit={{ y: 20, opacity: 0.5 }}
-        transition={{ duration: 0.8 }}
-      >
-  
-      </motion.div>
-    {/**  <Navbar className="bg-body-tertiary">
-<Container>
-  <Navbar.Brand href="#home">Navbar with text</Navbar.Brand>
-  <Navbar.Toggle />
-  <Navbar.Collapse className="justify-content-end">
-    <Navbar.Text>
-      Signed in as: <a href="#login">Mark Otto</a>
-    </Navbar.Text>
-  </Navbar.Collapse>
-</Container>
-</Navbar>
- */}
+<div>
+  <InView triggerOnce={true}>
+  {({ inView, ref }) => (
+    <div ref={ref} className={`w3-content w3-justify w3-text-grey w3-padding-16 
+       ${inView ? "animate-fade-in" : ""}`}
+    id="overview"
+>
+
+ <div>
+<WebIntro/>
+</div>
+<div>
+<WebTimeline/>
+</div>
 <div>
 <WebPricing/>
 </div>
-    </div>
+
+</div>
+
+)}
+</InView>
+</div>
   );
 };
 

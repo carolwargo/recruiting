@@ -8,10 +8,12 @@ export default function App() {
       
          <h3>Getting started is said to be the hardest part but, it doesn't have to be- In face we have gone actually simplified things to a streamlined 3-step process. Step 1- Get started!</h3>
 <h4>OUR PHILOSOPHY-</h4>
-<p>Simplicity is key for OUR CLIENTS, as well as YOUR AUDIENCE. Coaches want exactly what you want; one-stop-shop to tell me everything i need to know. A SINGLE clear, concise, organized, and efficient platform, that is easy navigate.
+<p>Simplicity is key for <span style={{fontWeight:'bold', color:'#d32c9a'}}> OUR CLIENTS</span>, as well as <span style={{fontWeight:'bold', color:'#d32c9a'}}>YOUR AUDIENCE</span>. Coaches want exactly what you want; one-stop-shop to tell me everything i need to know. A SINGLE clear, concise, organized, and efficient platform, that is easy navigate.
   A final destination- 
 </p>
-<h1>Controlled Platforms vs. Platform Controls & Restrictions</h1>
+<h1>
+  LEARN MORE ABOUT PLATFORM TYPES: <br />
+  Controlled Platforms vs. Platform Controls & Restrictions</h1>
 <h3>FAQS</h3>
 <p>Q: Does a website eliminate the use of my Social Media Accounts?</p>
 <p>A: On the contrary! How it works.</p>
@@ -34,7 +36,7 @@ export default function App() {
             1
           </span>
 
-          <h5 className="fw-bold">Our company starts its operations</h5>
+          <h5 className="fw-bold">Schedule a </h5>
           <p className="text-muted mb-2 fw-bold">11 March 2020</p>
           <p className="text-muted">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
