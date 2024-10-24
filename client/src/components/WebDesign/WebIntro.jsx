@@ -2,16 +2,15 @@ import React from "react";
 import { GiBullseye } from "react-icons/gi";
 import { InView } from 'react-intersection-observer';       
 
-const Intro = () => {
+const WebIntro = () => {
 
   return (
 
-  <div className="intro" id="intro">
+  <div className="web-intro" id="web-intro">
       <InView triggerOnce={true}>
   {({ inView, ref }) => (
     <div ref={ref} className={`w3-content w3-justify w3-text-grey w3-padding-16 
        ${inView ? "animate-fade-in" : ""}`}
-    id="overview"
 >
 
     <div
@@ -146,4 +145,4 @@ Freedom to control your own narrative- showcase your skills, achievements, and p
   );
 };
 
-export default Intro;
+export default WebIntro;
