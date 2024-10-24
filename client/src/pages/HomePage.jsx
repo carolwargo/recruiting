@@ -8,14 +8,18 @@ import StepsTimeline from "../components/Timeline/StepsTimeline";
 const HomePage = () => {
   return (
     <div>
+
+<div className="container py-3 mt-2">
+        <AboutUs/>
+        </div>
+
+        
   <Services/>
   <div className="container py-3 mt-2">
  
         </div>
     <Intro/>
-      <div className="container py-3 mt-2">
-        <AboutUs/>
-        </div>
+    
         <div className="w3-light-gray py-3 mt-2">
         <AboutComponent />
         </div>

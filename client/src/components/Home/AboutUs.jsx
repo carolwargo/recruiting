@@ -152,55 +152,93 @@ const AboutUs = () => {
 
    {/* Start 8 Column Icon Grid */}
    <div className="icon-eight" id="icon-eight">
-    <div className="container">
-    <div className="px-4 mb-2 text-center">
-        <h1>Welcome to the ABOUT US</h1>
-        <h3>self-marketing has become an assumed and unavoidable part of the recruitment journey, essential for securing opportunities, even if it's not what they initially signed up for.</h3>
-        <p>For student-athletes, marketing themselves can feel like being conscripted into a recruitment battle. It's an involuntary, compulsory process—one that feels like a necessary evil in today’s sports landscape. </p>
-        <p>"Though the focus should be on performance, athletes are required to build their brand and market their talents, as if they've been conscribed into a promotional army. Yet, this."</p>
-          </div>
+   <div className="px-4  w3-margin-top w3-margin-bottom text-center">
+<h1> Welcome to 
+            <span
+              style={{
+                fontSize: "4.5rem",
+              }}
+              className="mb-3"
+            >
+              <span>
+                <i
+                  style={{
+                    fontFamily: "Raleway",
+                    fontSize: "4.5rem",
+                    textShadow: "1px 1px 4px black",
+                  }}
+                >
+                  Con
+                </i>
+              </span>
+              <span
+                className="fw-bold"
+                style={{
+                  fontFamily: "Dancing Script",
+                  marginLeft: "-10px",
+                  textShadow: "1px 1px 4px black",
+                  color: " #d32c9a",
+                }}
+              >
+                Scribe
+              </span>
+            </span> </h1>
+           
+        <h3>Self-promotion has become an assumed and unavoidable part of the recruitment journey, essential for securing opportunities, even if it's not what they initially signed up for.</h3>
+     </div>
+    <div className="w3-container w3-content">
+  
     <div className="row g-4 py-3 w3-margin-top justify-content-around align-items-end">
-    <div className="col-sm-12 col-md-5 col-lg-5">
+           <div className="col-sm-12 col-md-6 col-lg-6">
         <div className="px-4 mb-2">
           <img src={DefOnly} alt="default" style={{ width: '100%' }} className="w3-round-xlarge shadow shadow-5-strong hover-shadow w3-hover-pink" />
           </div>
           </div>
-         <div className=" col-sm-12 col-md-7 col-lg-7"> 
-   <div className="row px-4 mb-2">
-   <div className="col-sm-12 col-md-6 col-lg-6 d-flex align-items-start">
-       <svg className="bi text-body-secondary flex-shrink-0 me-3" width="1.5em" height="1.5em"><use xlinkHref="#cpu-fill"/></svg>
-       <div>
-         <h4 className="fw-bold mb-0 fs-4 text-body-emphasis">Influencer Marketing</h4>
-         <p style={{fontSize:'13px'}}>Leverage the power of influencers to promote your brand. We connect you with industry influencers who can help you reach a wider audience and build trust.</p>
-       </div>
+         
+         <div className=" col-sm-12 col-md-6 col-lg-6 d-flex align-items-start"> 
+ <div>
+        
+         <h1> 
+            <span
+              style={{
+                fontSize: "2.5rem",
+              }}
+              className="mb-3"
+            >
+              <span>
+                <i
+                  style={{
+                    fontFamily: "Raleway",
+                    fontSize: "2.5rem",
+                    textShadow: "1px 1px 4px black",
+                  }}
+                >
+                  Con
+                </i>
+              </span>
+              <span
+                className="fw-bold"
+                style={{
+                  fontFamily: "Dancing Script",
+                  marginLeft: "-8px",
+                  textShadow: "1px 1px 2.5px black",
+                  color: " #d32c9a",
+                }}
+              >
+                Scribe
+              </span>
+            </span> <span> </span></h1>
+            <h2 className="fw-bold mb-0 fs-3 text-body-emphasis">What's in the name?  </h2>
+         <p className=" w3-margin-top">Self-promotion has become an assumed and unavoidable part of the recruitment journey, essential for securing opportunities, even if it's not what they initially signed up for.</p>
+         <p className=" w3-margin-top">Though the focus should be on performance, athletes are required to build their brand and market their talents.</p>
      </div>
-     <div className="col-sm-12 col-md-6 col-lg-6 d-flex align-items-start">
-       <svg className="bi text-body-secondary flex-shrink-0 me-3" width="1.5em" height="1.5em"><use xlinkHref="#cpu-fill"/></svg>
-       <div>
-         <h4 className="fw-bold mb-0 fs-4 text-body-emphasis">Influencer Marketing</h4>
-         <p style={{fontSize:'13px'}}>Leverage the power of influencers to promote your brand. We connect you with industry influencers who can help you reach a wider audience and build trust.</p>
-       </div>
      </div>
-     <div className="col-sm-12 col-md-6 col-lg-6 d-flex align-items-start">
-       <svg className="bi text-body-secondary flex-shrink-0 me-3" width="1.5em" height="1.5em"><use xlinkHref="#calendar3"/></svg>
-       <div>
-         <h4 className="fw-bold mb-0 fs-4 text-body-emphasis">Marketing Automation</h4>
-         <p style={{fontSize:'13px'}}>Automate your marketing processes to save time and improve efficiency. Our services include CRM integration, lead nurturing, and automated email campaigns.</p>
-       </div>
-     </div>
-     <div className="col-sm-12 col-md-6 col-lg-6 d-flex align-items-start">
-       <svg className="bi text-body-secondary flex-shrink-0 me-3" width="1.5em" height="1.5em"><use xlinkHref="#toggles2"/></svg>
-       <div>
-         <h4 className="fw-bold mb-0 fs-4 text-body-emphasis">Reputation Management</h4>
-         <p style={{fontSize:'13px'}}>Protect and enhance your brand's online reputation. We monitor reviews, manage public relations, and implement strategies to maintain a positive image.</p>
-       </div>
-     </div>
+   
    </div>
    </div> 
    </div>  
  </div>
- </div>
-    </div>
+ 
   );
 }
 

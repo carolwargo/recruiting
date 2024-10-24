@@ -1,5 +1,4 @@
 import React from "react";
-import DefOnly from "../../assets/images/DefOnly.png";
 import { Link } from "react-router-dom";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -47,7 +46,7 @@ const AboutUs = () => {
         background-color: rgba(0, 0, 0, .1);
         border: solid rgba(0, 0, 0, .15);
         border-width: 1px 0;
-        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        box-shadow: inset 0 .5em 2em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
       }
 
       .b-example-vr {
@@ -189,13 +188,13 @@ const AboutUs = () => {
 
    {/* Start 8 Column Icon Grid */}
    <div className="services-component" id="services-component">
-    <div className="container">
- 
-      <div className="container py-4">
+
+<div className="w3-black">
+<div className="w3-container w3-padding-large w3-padding-32 ">
+<div className="row w3-margin-top w3-margin-bottom">
           {/*Start Service Header & intro container */}
-        <div className="container mt-4 text-center">
+        <div className="container text-center">
           <h1>
-            WELCOME TO{" "}
             <span
               style={{
                 fontSize: "4.5rem",
@@ -210,7 +209,7 @@ const AboutUs = () => {
                     textShadow: "1px 1px 4px black",
                   }}
                 >
-                  Con
+                Our
                 </i>
               </span>
               <span
@@ -222,85 +221,93 @@ const AboutUs = () => {
                   color: " #d32c9a",
                 }}
               >
-                Scribe
+                Services
               </span>
             </span>
           </h1>
-          <h3 className="mb-4 px-4 w3-hide-small w3-hide-medium">
-            EXPLORE OUR ESSETIAL KEY OFFERINGS- DISCOVER HOW WE CAN HELP CREATE OR ELEVATE
+   
+         
+          <div className="text-center fw-light w3-padding-large">
+          <h4 className="mb-4 px-4 w3-hide-small w3-hide-medium">
+            EXPLORE OUR KEY OFFERINGS- <br />DISCOVER HOW WE CAN HELP CREATE OR ELEVATE
             YOUR PERSONAL BRAND & STREAMLINE YOUR MARKETING STRATEGIES.
-          </h3>
+          </h4>
           <h5 className="mb-4 px-4 w3-hide-large">
-            EXPLORE OUR ESSENTIAL KEY OFFERINGS- DISCOVER HOW WE CAN HELP CREATE OR ELEVATE
+            EXPLORE OUR KEY OFFERINGS- DISCOVER HOW WE CAN HELP CREATE OR ELEVATE
             YOUR PERSONAL BRAND & STREAMLINE YOUR MARKETING STRATEGIES.
-          </h5>
-          <p className="w3-hide-large">
-            {" "}
-            Pick a service below to get started, or simply{" "}
-            <Link to="contact">contact us</Link> with questions.{" "}
-          </p>
-             <h5 className="w3-hide-small w3-hide-medium">
-            {" "}
-            Pick a service below to get started, or simply{" "}
-            <Link to="contact">contact us</Link> with questions.{" "}
-          </h5>
+          </h5>      
+          </div>
         </div>
+</div>
+</div>
 </div>
 
 
-
-    <div className="row g-4 py-3 w3-margin-top justify-content-around align-items-end">
-    <div className="col-sm-12 col-md-5 col-lg-5">
-        <div className="px-4 mb-2">
-          <img src={DefOnly} alt="default" style={{ width: '100%' }} className="w3-round-xlarge shadow shadow-5-strong hover-shadow w3-hover-pink" />
-          </div>
-          </div>
-         <div className=" col-sm-12 col-md-7 col-lg-7"> 
+    <div className="w3-container w3-content w3-padding-32">
    <div className="row px-4 mb-2">
-   <div className="col-sm-12 col-md-6 col-lg-6 d-flex mb-2 align-items-start">
-       <svg className="bi text-body-secondary flex-shrink-0 me-3" width="1.5em" height="1.5em"><use xlinkHref="#web"/></svg>
+   <div className="col-sm-12 col-md-6 col-lg-6 d-flex mb-2 align-items-start w3-padding-large">
+       <svg className="bi text-body-secondary flex-shrink-0 me-3" width="2em" height="2em"><use xlinkHref="#web"/></svg>
        <div>
-         <h4 className="fw-bold mb-0 fs-4 text-body-emphasis">RECRUIT WEBSITES</h4>
-         <p style={{fontSize:'13px', marginTop:'5px', marginBottom:'10px'}}>Leverage the power of influencers to promote your brand. We connect you with industry influencers who can help you reach a wider audience and build trust.
+         <h4 className="fw-bold mb-0 fs-3 text-body-emphasis">Custom Website Development</h4>
+         <p style={{fontSize:'16px', marginTop:'5px', marginBottom:'10px'}}>
+         Create your own dedicated website to showcase your achievements- A platform you control with no limits on how you highlight your brand.
          </p>
          <Link to='/web'>Get started <FaLongArrowAltRight/> 
             </Link>
        </div>
      </div>
-     <div className="col-sm-12 col-md-6 col-lg-6 d-flex mb-2 align-items-start">
-       <svg className="bi text-body-secondary flex-shrink-0 me-3" width="1.5em" height="1.5em"><use xlinkHref="#graphics"/></svg>
+     <div className="col-sm-12 col-md-6 col-lg-6 d-flex mb-2 align-items-start w3-padding-large">
+       <svg className="bi text-body-secondary flex-shrink-0 me-3" width="2em" height="2em"><use xlinkHref="#graphics"/></svg>
        <div>
-         <h4 className="fw-bold mb-0 fs-4 text-body-emphasis">GRAPHIC ELEMENTS</h4>
-         <p style={{fontSize:'13px', marginTop:'5px', marginBottom:'10px'}}>Leverage the power of influencers to promote your brand. We connect you with industry influencers who can help you reach a wider audience and build trust.
+         <h4 className="fw-bold mb-0 fs-3 text-body-emphasis">Graphic Design Elements</h4>
+         <p style={{fontSize:'16px', marginTop:'5px', marginBottom:'10px'}}> 
+          Graphics that enhance your brand, promote a buzz on social media, relay statistics & accolades and more that make a lasting impression.
          </p>
          <Link to='/graphics'>Get started <FaLongArrowAltRight/> 
             </Link>
        </div>
      </div>
      <div className="col-sm-12 col-md-6 col-lg-6 d-flex w3-margin-top align-items-start">
-     <svg className="bi text-body-secondary flex-shrink-0 me-3" width="1.5em" height="1.5em"><use xlinkHref="#market"/></svg>
+     <svg className="bi text-body-secondary flex-shrink-0 me-3" width="2em" height="2em"><use xlinkHref="#market"/></svg>
        <div>
-         <h4 className="fw-bold mb-0 fs-4 text-body-emphasis">PERSONAL BRANDING</h4>
-         <p style={{fontSize:'13px', marginTop:'5px', marginBottom:'10px'}}>Develop your profile with personalized branding and marketing services designed specifically for student-athletes seeking to make their mark in college sports. 
+         <h4 className="fw-bold mb-0 fs-3 text-body-emphasis">Personal Branding Strategies</h4>
+         <p style={{fontSize:'16px', marginTop:'5px', marginBottom:'10px'}}>
+         Boost your profile through visibility with one of a kind graphics 
+        that that  create a buzz, amplify your brand, efficieently communicate accomplishment through visuals.
            </p>
             <Link to='/marketing'>Get started <FaLongArrowAltRight/> 
             </Link>   
        </div>
      </div>
      <div className="col-sm-12 col-md-6 col-lg-6 d-flex w3-margin-top align-items-start">
-       <svg className="bi text-body-secondary flex-shrink-0 me-3" width="1.5em" height="1.5em"><use xlinkHref="#video"/></svg>
+       <svg className="bi text-body-secondary flex-shrink-0 me-3" width="2em" height="2em"><use xlinkHref="#video"/></svg>
        <div>
-         <h4 className="fw-bold mb-0 fs-4 text-body-emphasis">VIDEO EDITING</h4>
-         <p style={{fontSize:'13px', marginTop:'5px', marginBottom:'10px'}}>Protect and enhance your brand's online reputation. We monitor reviews, manage public relations, and implement strategies to maintain a positive image.
+         <h4 className="fw-bold mb-0 fs-3 text-body-emphasis">
+         Professional Video Production</h4>
+         <p style={{fontSize:'16px', marginTop:'5px', marginBottom:'10px'}}>
+         Showcase your skills through high-quality video content- Providing focused footage coaches want to see, and eliminating the excess.
          </p>
          <Link to='/video'>Get started <FaLongArrowAltRight/> 
             </Link>
        </div>
      </div>
    </div>
-   </div> 
-   </div>  
+
  </div>
+
+<div className="w3-container w3-content">
+<hr className="w3-padding-16"/>
+</div>
+
+
+ <div className="w3-container w3-content w3-padding-16">
+ 
+  <div className=" w3-padding-16">
+ <h3 className="text-center">
+Not sure where to start? <Link to="contact">Contact us</Link> with questions or schedule a 30-minute <Link to="contact">discovery call</Link> to learn more.
+          </h3>
+          </div>
+          </div>
  </div>
     </div>
   );
