@@ -7,14 +7,15 @@ import { InView } from "react-intersection-observer";
 export default function AboutMe() {
   return (
     <div className="about-me" id="about-me">
-      <InView triggerOnce={true}>
+            <div className="w3-light-gray">
+
+            <InView triggerOnce={true}>
         {({ inView, ref }) => (
           <div
             ref={ref}
-            className={`w3-content w3-justify w3-text-grey w3-padding-16 
+            className={`w3-justify w3-text-grey w3-padding-16 
             ${inView ? "animate-fade-in" : ""}`}
           >
-            <div className="w3-light-gray">
               <p style={{ fontSize: "12px" }}>/components/Home/AboutMe</p>
               <div
                 className="w3-content w3-container w3-padding-32"
@@ -92,7 +93,7 @@ export default function AboutMe() {
               <div className="w3-content w3-container w3-padding-32 ">
                 <div className="row justify-content-center align-items-center">
                   <div className="col-lg-4">
-                    <h1 className="text-center">WHERE I'M LOCATED</h1>
+                    <h2 className="text-center">WHERE WE ARE PHYSICALLY LOCATED</h2>
                     <h5 className="text-center">
                       <em>Huntingtown, Maryland!</em>
                     </h5>
@@ -111,9 +112,9 @@ export default function AboutMe() {
                 </div>
               </div>
             </div>
-          </div>
         )}
       </InView>
+      </div>
     </div>
   );
 }

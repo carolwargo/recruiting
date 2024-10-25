@@ -10,6 +10,7 @@ import "../../style/service-cards.css";
 const SmServiceCards = () => {
   return (
     <div className="sm-service-cards" id="sm-service-cards">
+      <div> 
       <InView triggerOnce={true}>
         {({ inView, ref }) => (
           <div
@@ -222,6 +223,7 @@ const SmServiceCards = () => {
           </div>
         )}
       </InView>
+      </div>
     </div>
   );
 };

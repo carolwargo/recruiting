@@ -4,6 +4,7 @@ import Intro from "../components/Home/Intro";
 import AboutMe from "../components/Home/AboutMe";
 import AboutUs from "../components/Home/AboutUs";
 import StepsTimeline from "../components/Timeline/StepsTimeline";
+import Odds from "../components/Home/Odds"; 
 
 const HomePage = () => {
   return (
@@ -17,6 +18,10 @@ const HomePage = () => {
 <div >
   <Intro/>
         </div>
+
+<div>
+  <Odds/>
+</div>
 
 
 <div>

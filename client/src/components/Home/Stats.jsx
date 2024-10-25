@@ -5,6 +5,7 @@ import about from "../../assets/images/HomeImages/about.png";
 const Stats = () => {
   return (
     <div className="container-fluid">
+      <div>
       <InView triggerOnce={true}>
         {({ inView, ref }) => (
           <div
@@ -89,6 +90,7 @@ const Stats = () => {
           </div>
         )}
       </InView>
+      </div>
     </div>
   );
 };

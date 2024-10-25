@@ -18,6 +18,8 @@ const ServiceCards = () => {
           "linear-gradient(to right, white,  #e6e6e6, light-gray, #d32c9a)",
       }}
     >
+
+      <div>
       <InView triggerOnce={true}>
         {({ inView, ref }) => (
           <div
@@ -399,6 +401,7 @@ const ServiceCards = () => {
           </div>
         )}
       </InView>
+    </div>
     </div>
   );
 };
