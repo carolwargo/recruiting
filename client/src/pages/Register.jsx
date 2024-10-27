@@ -11,7 +11,7 @@ import {
 }
 from 'mdb-react-ui-kit';
 
-function RegisterPage() {
+function SignupPage() {
   const [email,setEmail] = useState('');
   const [password,setPassword] = useState('');
   const [redirect,setRedirect] = useState(false);
@@ -19,7 +19,7 @@ function RegisterPage() {
 
   async function signup(ev) {
     ev.preventDefault();
-    const response = await fetch('http://localhost:4000/register', {
+    const response = await fetch('http://localhost:4000/signup', {
       method: 'POST',
       body: JSON.stringify({email, password}),
       headers: {'Content-Type':'application/json'},
@@ -135,4 +135,4 @@ function RegisterPage() {
   );
 }
 
-export default RegisterPage;
+export default SignupPage;
