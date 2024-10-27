@@ -5,7 +5,8 @@ import { UserContextProvider } from "./UserContext.jsx";
 import HomePage from "./pages/HomePage";
 import HomeTimeline from "./pages/HomeTimeline";  
 import SignupPage from "./pages/SignupPage.jsx";
-import LoginPage from "./pages/LoginPage.jsx";
+import Login from "./pages/Login.jsx";
+import Register from "./pages/Register.jsx";
 import WebDesign from "./pages/WebDesign.jsx";
 import GraphicsPage from "./pages/GraphicsPage.jsx";
 import DemoPage from "./pages/DemoPage.jsx";  
@@ -37,7 +38,8 @@ function App() {
         
           </Route>
           <Route element={<FormsLayout />} >
-          <Route path="/login" element={<LoginPage />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
           <Route path="/signup" element={<SignupPage />} />
         </Route>
       

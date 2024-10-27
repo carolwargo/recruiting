@@ -41,7 +41,7 @@ function SignupPage() {
   return (
 
 
-    <div className='w3-padding-large w3-padding-48' style={{}}>
+    <div className='container w3-padding-large w3-padding-48' style={{}}>
     <MDBContainer className="my-5 gradient-form">
 
       <MDBRow>
@@ -92,6 +92,7 @@ function SignupPage() {
             value={email}
             onChange={ev => setEmail(ev.target.value)}
             type='email'
+            autoComplete='email'
             />
        
             <MDBInput 
@@ -101,6 +102,7 @@ function SignupPage() {
             placeholder="Password"
             value={password}
             onChange={ev => setPassword(ev.target.value)}
+            autoComplete='current-password'
             />
 
             <div className="text-center pt-1 mb-3 pb-1">
@@ -125,8 +127,8 @@ function SignupPage() {
           <div className="d-flex flex-column  justify-content-center gradient-custom-2 h-100 mb-4">
 
             <div className="text-black px-3 py-4 p-md-5 mx-md-4">
-              <h4 class="mb-4">We are more than just a company</h4>
-              <p class="small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              <h4 className="mb-4">We are more than just a company</h4>
+              <p className="small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                 exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
               </p>
