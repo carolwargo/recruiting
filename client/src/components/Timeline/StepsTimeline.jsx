@@ -1,8 +1,20 @@
 import React from "react";
+import { InView } from "react-intersection-observer";
 import { MDBContainer, MDBRow, MDBCol} from "mdb-react-ui-kit";
 import './steps.css'
-export default function App() {
+
+export default function StepsTimeline() {
   return (
+
+    <div className="" id="">
+          <InView triggerOnce={true}>
+          {({ inView, ref }) => (
+            <div
+              ref={ref}
+              className={`w3-justify w3-text-black w3-padding-16 ${
+                inView ? "animate-fade-in" : ""
+              }`}
+            >
     <div className="steps-timeline" id="steps-timeline">
         <p style={{fontSize:'12px'}}>  /components/Timeline/StepsTimeline</p>
       
@@ -77,6 +89,10 @@ export default function App() {
       </MDBCol>
       </MDBRow>
     </MDBContainer>
+    </div>
+</div>
+)}
+</InView>
     </div>
   );
 }

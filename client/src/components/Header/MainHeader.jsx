@@ -53,7 +53,7 @@ const MainHeader = () => {
   type="button"
   className="btn mx-2 mb-2 custom-btn-purple"
 >
-  <b style={{textShadow:'2px 2px 4px black '}}>Get Started</b>
+  <b style={{textShadow:'2px 2px 4px black', color:'white'}}>Get Started</b>
 </button>
 
 </ScrollLink>

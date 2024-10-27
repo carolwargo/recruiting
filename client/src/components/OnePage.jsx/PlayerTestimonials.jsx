@@ -6,7 +6,7 @@ import Principal from '../../assets/images/Testiminals/Principal.png';
 import Virginia from '../../assets/images/Testiminals/Virginia.png';
 import Wake from '../../assets/images/Testiminals/Wake.png';
 
-import '../../style/demo.css';
+import '../../styles/demo.css';
 
 
 const PlayerTestimonials = () => {

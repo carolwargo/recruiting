@@ -42,69 +42,35 @@
 .pink-text {
     color:  #d32c9a;
 }
-/*End Header glow shadows*/
 
-/* Start Global Button Variables */
-:root {
-    /* Purple Button Gradients */
-    --btn-purple-gradient-start: #d32c9a;
-    --btn-purple-gradient-end: #e41277;
-    --btn-purple-hover-end: #f64b65;
-    --btn-purple-hover-leave-end: #d8155b;
-  
-    /* Light Button Gradients */
-    --btn-light-gradient-start: #eceaeb;
-    --btn-light-gradient-end: #c99db3;
-    --btn-light-hover-end: #d6a9b0;
-    --btn-light-hover-leave-end: #997783;
-  }
-  
-  /* Purple Button */
+
+  /*Color to add: #f64b65, , #d8155b */
   .custom-btn-purple {
-    box-shadow: 0px 0px 2px 1px black;
+    text-shadow: 0px 0px 2px black;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
     cursor: pointer;
     color: white;
-    background-image: linear-gradient(to right, var(--btn-purple-gradient-start), var(--btn-purple-gradient-end));
+    background-image: linear-gradient(to right, #fe03d4, #f64b65);
     transition: all 0.4s ease-in-out;
     margin-bottom: 10px;
     border-radius: 5px;
   }
   
   .custom-btn-purple:hover {
-    background-image: linear-gradient(to right, var(--btn-purple-gradient-start), var(--btn-purple-hover-end));
-    box-shadow: 0px 0px 8px 3px black;
+    background-image: linear-gradient(to right, #d8155b, #fe03d4);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5); /* Slightly deeper shadow */
+    opacity: 0.9; /* Slight transparency for depth */
   }
   
   .custom-btn-purple:active {
-    background-image: linear-gradient(to right, var(--btn-purple-gradient-start), var(--btn-purple-hover-leave-end));
-    box-shadow: 0px 0px 2px 1px black;
+    background-image: linear-gradient(to right, #fe03d4, #f64b65);
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5); /* Reduced shadow for pressed effect */
+    opacity: 1; /* Full opacity when pressed */
   }
   
-  /* Light Button */
-  .custom-btn-light {
-    box-shadow: 0px 0px 2px 1px black;
-    cursor: pointer;
-    color: white;
-    background-image: linear-gradient(to right, var(--btn-light-gradient-start), var(--btn-light-gradient-end));
-    transition: all 0.4s ease-in-out;
-    margin-bottom: 10px;
-    border-radius: 5px;
-  }
   
-  .custom-btn-light:hover {
-    background-image: linear-gradient(to right, var(--btn-light-gradient-start), var(--btn-light-hover-end));
-    box-shadow: 0px 0px 8px 3px black;
-  }
-  
-  .custom-btn-light:active {
-    background-image: linear-gradient(to right, var(--btn-light-gradient-start), var(--btn-light-hover-leave-end));
-    box-shadow: 0px 0px 2px 1px black;
-  }
-  
-  /* Common Text Shadow for all buttons */
-  .custom-btn b {
-    text-shadow: 2px 2px 4px black;
-  }
+
+
   /* Start Global Button Variables */
   .header-custom-btn {
     margin-top: 1rem;

@@ -2,52 +2,16 @@ import React from "react";
 import { GiBullseye } from "react-icons/gi";
 import { InView } from 'react-intersection-observer';       
 
-const WebIntro = () => {
+const WebBenefits = () => {
 
   return (
 
-  <div className="web-intro" id="web-intro">
+  <div className="web-benefits" id="web-benefits">
       <InView triggerOnce={true}>
   {({ inView, ref }) => (
-    <div ref={ref} className={`w3-content w3-justify w3-text-grey w3-padding-16 
+    <div ref={ref} className={`w3-justify w3-text-white w3-padding-16 
        ${inView ? "animate-fade-in" : ""}`}
 >
-
-    <div
-    style={{  backgroundImage: 'linear-gradient(to right,  #f64b65 , #d32c9a, #b42b81)',
-    }}
-    >
-        <p style={{fontSize:'12px'}}>/components/Home/Intro</p>
-       <div 
-      >
-       <div className="container w3-padding-48">
-       <div className="text-center w3-padding-large">
-       <h1>
-                <i
-                  style={{
-                    fontFamily: "Raleway",
-                    fontSize: "2.5rem",
-                    textShadow: "1px 1px 4px black",
-                  }}
-                >
-               CONTROL YOUR CONTENT
-                </i>
-                control your own narrative
-          </h1>
-    
-              <h2 className="text-white mb-3"
-              >
-Freedom to control your own narrative- showcase your skills, achievements, and personality without limits, that offers a competitive edge that social media alone can't provide.
-              </h2>
-              <div className="mt-4">
-              <button className="btn btn-dark border-dashed"><b>Get Started</b></button>
-              </div>
-            </div>
-        </div>
-        </div>
-        </div> 
-
-
 
         <div className="w3-light-gray">
         <div className="container w3-padding-48 w3-padding-large">
@@ -145,4 +109,4 @@ Freedom to control your own narrative- showcase your skills, achievements, and p
   );
 };
 
-export default WebIntro;
+export default WebBenefits;

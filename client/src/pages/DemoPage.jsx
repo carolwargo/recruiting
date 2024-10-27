@@ -10,7 +10,7 @@ import PlayerFooter from "../components/OnePage.jsx/PlayerFooter";
 import PlayerPerformance from "../components/OnePage.jsx/PlayerPerformance";
 import PlayerIntro from "../components/OnePage.jsx/PlayerIntro";
 import PlayerCarousel from "../components/OnePage.jsx/PlayerCarousel";
-import '../style/demo.css'; 
+import '../styles/demo.css'; 
 
 const DemoPage = () => {
 

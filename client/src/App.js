@@ -12,15 +12,10 @@ import DemoPage from "./pages/DemoPage.jsx";
 import Demo2 from "./pages/Demo2.jsx";
 
 import ScrollToTop from "./components/ScrolltoTop.jsx";
-
 import Extras from "./pages/Extras.jsx";  
-
-import MainHomeLayout from "./components/Layouts/MainHomeLayout.jsx";
 import FormsLayout from "./components/Layouts/FormsLayout.jsx";
 import MainLayout from "./components/Layouts/MainLayout.jsx";
 import DemoLayout from "./components/Layouts/DemoLayout.jsx";
-
-
 
 import ErrorBoundary from "./ErrorBoundary.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -37,9 +32,6 @@ function App() {
             <Route element={<MainLayout />} >
             <Route path="/" element={<HomePage />} />
             <Route path="/home-time" element={<HomeTimeline />} />
-          </Route>
-          
-          <Route element={<MainHomeLayout />} >
             <Route path="/web" element={<WebDesign />} />
             <Route path="/graphics" element={<GraphicsPage />} />
         

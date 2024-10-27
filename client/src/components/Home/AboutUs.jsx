@@ -1,7 +1,7 @@
 import React from "react";
 import DefOnly from "../../assets/images/DefOnly.png";
 import { InView } from "react-intersection-observer";
-import "../../style/service-cards.css";
+import "../../styles/service-cards.css";
 
 const AboutUs = () => {
   return (
