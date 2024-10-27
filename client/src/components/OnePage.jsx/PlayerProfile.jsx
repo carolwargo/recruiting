@@ -311,9 +311,6 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
                   </p>
                   
                <button className="w3-button w3-block w3-theme-l4">Message</button>
-                  
-
-          
           </div>
           </div>
           </div>
@@ -325,10 +322,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
                     </div>
               </div>
               </div>
-</div>
-
-         
-        
+</div>    
     )}
     </InView>
     </div>

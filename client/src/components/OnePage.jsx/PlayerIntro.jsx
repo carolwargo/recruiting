@@ -1,5 +1,4 @@
 import React from "react";
-import { InView } from 'react-intersection-observer';
 
 const PlayerProfile = () => {
 
@@ -7,12 +6,7 @@ const PlayerProfile = () => {
     <div>
 
    {/* Player Intro Section */}
-   <InView triggerOnce={true}>
-          {({ inView, ref }) => (
-            <div ref={ref} className={`w3-content w3-justify w3-text-grey w3-padding-16 
-               ${inView ? "animate-fade-in" : ""}`}
-            id="overview"
-        >
+
             <h1 className="w3-text-light-grey">Joe Baseball</h1>
           <hr style={{ width: "235px" }} className="w3-opacity" />
           <p className="">
@@ -28,9 +22,6 @@ const PlayerProfile = () => {
             veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
             ea commodo consequat.
           </p>
-            </div>
-         )}
-        </InView>
     {/* Overview PROFILE Section */}
     <div>
     </div>

@@ -35,7 +35,7 @@ const WebDesignPage = () => {
       }}
     >
         <header>
-        <div className="container">
+        <div className="container-fluid w3-padding-top-24 ">
             <nav
               className="d-inline-flex fw-bold mt-2 mt-md-0 ms-md-auto justify-content-center"
               style={{ fontSize: "15px" }}
@@ -83,7 +83,7 @@ const WebDesignPage = () => {
         </header>
 
         <div className="container">
-          <div className="row mb-3">
+          <div className="row">
             <div className="col-sm-12 col-md-4 col-lg-4">
               <div
                 className="card py-2 rounded-3 shadow-lg"
@@ -454,7 +454,7 @@ const WebDesignPage = () => {
 
 
 {/* Timeline */}
-<div className="web-timeline-component" id="web-timeline-component">
+<div className="web-timeline-component py-0 mt-0" id="web-timeline-component">
 <WebTimeline/>
 </div>
 </div>

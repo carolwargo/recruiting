@@ -15,18 +15,19 @@ const PlayerVideo = () => {
           practice videos, categorized into Offense, Defense, and MLB Bullpens.
         </h5>
 
-        <h6 className="w3-margin-top">
+        <h6 className="w3-margin-top w3-text-grey">
           Watch a video, share a video, request additional footage, or
           <span>
             {" "}
-            <Link to="contact">contact me</Link>
+            <Link className="link-light text-decoration-none" to="contact">contact me</Link>
           </span>{" "}
           with questions or feedback.
         </h6>
       </div>
       {/* ROW 1 */}
-      <div className="row w3-padding-top-16">
+      <div className="row w3-padding-top-16 justify-content-between align-items-center">
         <div className="col-12 col-md-6 my-2">
+        <div className="container">
           {" "}
           {/* Adjusted col-12 for stacking on small screens */}
           <img
@@ -35,91 +36,112 @@ const PlayerVideo = () => {
             className="w3-left rounded"
             style={{ width: "100%" }}
           />
+          </div>
         </div>
 
         <div className="col-12 col-md-6 my-2">
+          <div className="container">
           {" "}
           {/* Adjusted col-12 for stacking on small screens */}
           <p>
             <span className="w3-large">OFFENSE</span>
             <br />
-            <i>Lorem- ipsum dolor sit</i>.
+            <i>Sub-Heading</i>.
           </p>
           <p>
             <i>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+             Description of the video based on strategies set- Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
               fugiat neque, delectus Fugiat. Ipsum dolor sit amet consectetur
               adipisicing elit. Voluptate quibusdam totam pariatur accusamus,
-              quam velit at ad enim animi aliquam, porro nulla molestias tempore
+              porro nulla molestias tempore
               fuga neque similique. Necessitatibus, iusto ex?
             </i>
           </p>
           <div>
             <p>last updated: 1-1-2025</p>
           </div>
+          </div>
         </div>
       </div>
       {/* ROW 2 */}
       <hr />
-      <div className="row w3-padding-top-16">
+      <div className="row w3-padding-top-16 justify-content-between align-items-center">
         <div className="col-12 col-md-6 my-2">
+        <div className="container">
+          {" "}
+          {/* Adjusted col-12 for stacking on small screens */}
           <img
             src={Defense}
             alt="Defense"
             className="w3-left rounded"
             style={{ width: "100%" }}
           />
+          </div>
         </div>
 
         <div className="col-12 col-md-6 my-2">
+          <div className="container">
+          {" "}
+          {/* Adjusted col-12 for stacking on small screens */}
           <p>
             <span className="w3-large">DEFENSE</span>
             <br />
-            <i>Lorem- ipsum dolor sit</i>.
+            <i>Sub-Heading</i>.
           </p>
           <p>
             <i>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+             Description of the video based on strategies set- Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
               fugiat neque, delectus Fugiat. Ipsum dolor sit amet consectetur
               adipisicing elit. Voluptate quibusdam totam pariatur accusamus,
-              quam velit at ad enim animi aliquam, porro nulla molestias tempore
+              porro nulla molestias tempore
               fuga neque similique. Necessitatibus, iusto ex?
             </i>
           </p>
           <div>
             <p>last updated: 1-1-2025</p>
           </div>
+          </div>
         </div>
       </div>
+
       {/* ROW 3 */}
       <hr />
-      <div className="row w3-padding-top-16">
+      
+      <div className="row w3-padding-top-16 justify-content-between align-items-center">
         <div className="col-12 col-md-6 my-2">
+        <div className="container">
+          {" "}
+          {/* Adjusted col-12 for stacking on small screens */}
           <img
             src={MLB}
             alt="MLB Bullpens"
             className="w3-left rounded"
             style={{ width: "100%" }}
           />
+          </div>
         </div>
 
         <div className="col-12 col-md-6 my-2">
+          <div className="container">
+          {" "}
+          {/* Adjusted col-12 for stacking on small screens */}
           <p>
             <span className="w3-large">MLB BULLPENS</span>
             <br />
-            <i>Lorem- ipsum dolor sit</i>.
+            <i>Sub-Heading</i>.
           </p>
           <p>
             <i>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+             Description of the video based on strategies set- Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
               fugiat neque, delectus Fugiat. Ipsum dolor sit amet consectetur
               adipisicing elit. Voluptate quibusdam totam pariatur accusamus,
-              quam velit at ad enim animi aliquam, porro nulla molestias tempore
+              porro nulla molestias tempore
               fuga neque similique. Necessitatibus, iusto ex?
             </i>
           </p>
           <div>
             <p>last updated: 1-1-2025</p>
+          </div>
           </div>
         </div>
       </div>

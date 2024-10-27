@@ -9,9 +9,6 @@ const PlayerMedia = () => {
 
   return (
     <div>
-
-<div className="page-container" >
-      {/* Page Content */}
  
           {/* Media Section */}
           <InView triggerOnce={true}>
@@ -31,10 +28,6 @@ const PlayerMedia = () => {
 </div>
           )}
           </InView>
-
-        {/* END PAGE CONTENT */}
- 
-    </div>
     </div>
   );
 };

@@ -31,7 +31,7 @@ const PlayerPosts = () => {
       {/* ROW 1 */}
       <div className="row">
         <div className="col-12 col-md-6 my-2">
-
+<div className="container">
 <img
   src={MLB}
   alt="principal"
@@ -61,9 +61,10 @@ const PlayerPosts = () => {
 </div>
 </div>
 </div>
+</div>
 
 <div className="col-12 col-md-6 my-2">
-
+<div className="container">
 <img
   src={MLB}
   alt="principal"
@@ -93,43 +94,10 @@ const PlayerPosts = () => {
 </div>
 </div>
 </div>
-
+</div>
 
 <div className="col-12 col-md-6 my-2">
-
-<img
-  src={MLB}
-  alt="principal"
-  className="w3-left rounded mb-4"
-  style={{ width: "100%" }}
-/>
-<div className="w3-body">
-<p>
-  <span className="w3-large">MLB BULLPENS</span>
-<br />
-  <i>Lorem- ipsum dolor sit</i>.
-</p>
-<p>
-  {" "}
-  <i>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    Repellat fugiat neque, delectus Fugiat. Ipsum dolor sit amet
-    consectetur adipisicing elit. Voluptate quibusdam totam
-    pariatur accusamus, quam velit at ad enim animi aliquam, porro
-    nulla molestias tempore fuga neque similique. Necessitatibus,
-    iusto ex?
-  </i>
-  .
-</p>
-<div className="card-footer">
-  <p>last updated: 1-1-2025</p>
-</div>
-</div>
-</div>
-
-
-<div className="col-12 col-md-6 my-2">
-
+<div className="container">
 <img
   src={MLB}
   alt="principal"
@@ -137,7 +105,7 @@ const PlayerPosts = () => {
   style={{ width: "100%" }}
 />
 <div className=" w3-body">
-<p>
+<p className="posts-header">
   <span className="w3-large">MLB BULLPENS</span>
 <br />
   <i>Lorem- ipsum dolor sit</i>.
@@ -156,6 +124,40 @@ const PlayerPosts = () => {
 </p>
 <div className="card-footer">
   <p>last updated: 1-1-2025</p>
+</div>
+</div>
+</div>
+</div>
+
+<div className="col-12 col-md-6 my-2">
+<div className="container">
+<img
+  src={MLB}
+  alt="principal"
+  className="w3-left rounded mb-4"
+  style={{ width: "100%" }}
+/>
+<div className=" w3-body">
+<p className="posts-header">
+  <span className="w3-large">MLB BULLPENS</span>
+<br />
+  <i>Lorem- ipsum dolor sit</i>.
+</p>
+<p>
+  {" "}
+  <i>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Repellat fugiat neque, delectus Fugiat. Ipsum dolor sit amet
+    consectetur adipisicing elit. Voluptate quibusdam totam
+    pariatur accusamus, quam velit at ad enim animi aliquam, porro
+    nulla molestias tempore fuga neque similique. Necessitatibus,
+    iusto ex?
+  </i>
+  .
+</p>
+<div className="card-footer">
+  <p>last updated: 1-1-2025</p>
+</div>
 </div>
 </div>
 </div>

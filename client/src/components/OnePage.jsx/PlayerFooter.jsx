@@ -44,25 +44,21 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       </style>
 
  
-<div className="page-container" >
-      {/* Page Content */}
-
-    {/* Contact Section */}
+<div className="text-center">
 
     <InView triggerOnce={true}>
           {({ inView, ref }) => (
           <div ref={ref} className={`w3-content w3-justify w3-text-grey w3-padding-16 
             ${inView ? "animate-fade-in" : ""}`} 
-        id="footer">
+        id="player-footer">
 
 
             <hr />
-          <h2 className="w3-text-light-grey">Contact Me</h2>
-          <h5>Get in touch direct or send me a message through the site:</h5>
+          <h2 className="w3-text-light-grey text-center">CONNECT WITH ME:</h2>
+          <h5 className="text-center">Get in touch direct or send me a message on a social media platform.</h5>
 
-          <div className="w3-container  w3-center">
+          <div className="w3-container w3-center text-center">
                   <div className="w3-margin-bottom">
-                    <p className="mb-0 mt-3">MESSAGE ME ON:</p>
                     <Link
                       className="text-decoration-none link-body-emphasis w3-opacity text-white"
                       style={{ fontSize: "2.2rem" }}

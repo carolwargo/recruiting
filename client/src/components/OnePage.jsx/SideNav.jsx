@@ -6,9 +6,8 @@ import ClaySmall from '../../assets/images/ClaySmall.png';
 const SideNav = () => {
 
   return (
-    <div className="body w3-black"
-    style={{paddingTop:'3.6rem'}}>
-
+    <div className="body w3-black">
+<div>
       <style>
         {`
   
@@ -57,14 +56,14 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
           <p>HOME</p>
         </Link>
         <Link
-          to="#about"
+          to="#profile"
           className="w3-bar-item w3-button w3-padding-large w3-hover-black"
         >
           <i className="fa fa-user w3-xxlarge"></i>
-          <p>ABOUT</p>
+          <p>PROFILE</p>
         </Link>
         <Link
-          to="#photos"
+          to="#media"
           className="w3-bar-item w3-button w3-padding-large w3-hover-black"
         >
           <i className="fa fa-eye w3-xxlarge"></i>
@@ -90,18 +89,18 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
             HOME
           </Link>
           <Link
-            to="#about"
+            to="#profile"
             className="w3-bar-item w3-button"
             style={{ width: "25% !important" }}
           >
-            ABOUT
+            PROFILE
           </Link>
           <Link
-            to="#photos"
+            to="#media"
             className="w3-bar-item w3-button"
             style={{ width: "25% !important" }}
           >
-            PHOTOS
+           MEDIA
           </Link>
           <Link
             to="#contact"
@@ -114,13 +113,6 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
         </div>
     
       </div>
-      
-<div className="page-container" >
-      {/* Page Content */}
-      <main className="w3-padding-large main-content" id="main">    
-
-        {/* END PAGE CONTENT */}
-        
         <script>
           {`
 function myFunction(id) {
@@ -146,8 +138,8 @@ function openNav() {
 }
   `}
         </script>
-        </main>
-    </div>
+  </div>
+  
     </div>
   );
 };
