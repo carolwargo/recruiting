@@ -3,11 +3,20 @@ import Stats1 from '../../assets/images/Video/Stats1.png';
 import Stats2 from '../../assets/images/Video/Stats2.png';
 
 import { Link } from "react-router-dom";
+import { InView } from 'react-intersection-observer';
 import Carousel from 'react-bootstrap/Carousel';
 
 const PlayerCarousel = () => {
   return (
     <div>
+
+      
+          {/* Media Section */}
+          <InView triggerOnce={true}>
+          {({ inView, ref }) => (
+          <div ref={ref} className={`w3-content w3-justify w3-text-grey 
+            ${inView ? "animate-fade-in" : ""}`} 
+          id="media">
           <hr className="w3-opacity w3-padding-16" />
 
      <div className="row" style={{ margin: "0 -16px" }}>
@@ -52,9 +61,11 @@ const PlayerCarousel = () => {
     </Carousel>
     </div>
     </div>
-</div>
-      </div>
-   
+  </div>
+  </div>
+          )}
+          </InView>
+    </div>
   );
 };
 

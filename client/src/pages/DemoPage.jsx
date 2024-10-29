@@ -9,6 +9,7 @@ import PlayerFooter from "../components/OnePage.jsx/PlayerFooter";
 import PlayerPerformance from "../components/OnePage.jsx/PlayerPerformance";
 import PlayerIntro from "../components/OnePage.jsx/PlayerIntro";
 import PlayerCarousel from "../components/OnePage.jsx/PlayerCarousel";
+import TestComponent from '../components/OnePage.jsx/TestComponent';
 import ClaySmall from '../assets/images/ClaySmall.png';
 import ClayCover3 from '../assets/images/ClayCover3.png';
 import '../styles/demo.css'; 
@@ -129,6 +130,11 @@ const DemoPage = () => {
 
         {/* IntroSection */}
         <PlayerIntro/>
+
+    {/* Performance Section */}
+    <div className="demo1-player-test" id="demo1-player-test">
+<TestComponent/>
+        </div>
 
         {/* Profile Section */}
         <div className="demo1-player-profile" id="demo1-player-profile">
