@@ -29,65 +29,58 @@ const WebPricing = () => {
         zIndex: "-1",
       }}
     >
- 
+
  <InView triggerOnce={true}>
   {({ inView, ref }) => (
-    <div ref={ref} className={`w3-justify w3-text-black 
+    <div ref={ref} className={`w3-justify w3-content w3-text-black 
        ${inView ? "animate-fade-in" : ""}`}
 >
-        <header className="w3-margin-top">
-        <div className="container">
+
+  
             <nav
-              className="d-inline-flex fw-bold mt-2 mt-md-0 ms-md-auto justify-content-center"
+              className="d-inline-flex fw-bold justify-content-center"
               style={{ fontSize: "15px" }}
             >
               <a
-                className="me-3 py-1 link-dark text-decoration-underline"
+                className="me-3 link-dark text-decoration-underline"
                 href="/"
               >
                 Pricing
               </a>
               <a
-                className="me-3 py-1 link-dark text-decoration-underline"
+                className="me-3 link-dark text-decoration-underline"
                 href="/"
               >
                 Features
               </a>
 
               <a
-                className="me-3 py-1 link-dark text-decoration-underline"
+                className="me-3  link-dark text-decoration-underline"
                 href="/"
               >
                 Support
               </a>
             </nav>
-            <b>
-                <hr />
-              </b>
-          </div>
-          <div className="container">
-            <div className="pricing-header mb-4 pb-md-4 mx-auto text-center">
-              <h1 className="display-4 fw-normal text-black">
+         
+           
+           
+    
+          <div className="container w3-padding-large w3-padding-32 text-center">
+              <h1 className="fw-normal text-black">
                 Plans & Pricing
               </h1>
              
               <p className="fs-5 text-black">
-                Whether you're an individual developer, a growing startup, or a
-                large corporation, our flexible pricing plans ensure you get the
-                best value and performance. Explore our Free, Pro, and
-                Enterprise plans below to find the perfect fit for your
-                organization and take your operations to new heights with
-                CloudStream Solutions.
+              Simplicity is key for <span style={{fontWeight:'bold', color:'#d32c9a'}}> OUR CLIENTS</span>, as well as <span style={{fontWeight:'bold', color:'#d32c9a'}}>YOUR AUDIENCE</span>. Coaches want exactly what you want; one-stop-shop to tell me everything i need to know. A SINGLE clear, concise, organized, and efficient platform, that is easy navigate.
+              A final destination- 
               </p>
             </div>
-          </div>
-        </header>
-
       
+      <div className="container w3-padding-large w3-padding-16 justify-content-center align-items-center">
           <div className="row">
             <div className="col-sm-12 col-md-4 col-lg-4">
               <div
-                className="card py-2 rounded-3 shadow-lg"
+                className="card pb-2 rounded-3 shadow-lg"
                 style={{
                   backgroundImage: `url(${BBHoop})`,
                   backgroundSize: "cover",
@@ -97,8 +90,8 @@ const WebPricing = () => {
                 }}
               >
                 <div className="container justify-content-center">
-                <div className="card-body w3-padding-large py-4 mt-2"
-                  style={{ height:'32rem'}}>
+                <div className="card-body w3-padding-large pb-2 mt-2"
+                  style={{ height:'30rem'}}>
                     <h4 className="my-0 fw-normal text-light">Standard</h4>
                     <p className="w3-text-light-gray opacity-75" style={{ fontSize: "14px" }}>
                       CMA of choice
@@ -209,7 +202,7 @@ const WebPricing = () => {
               </div>
             </div>
             <div className="col-sm-12 col-md-4 col-lg-4">
-              <div className="card rounded-3 shadow-lg w3-light-grey"
+              <div className="card pb-2 rounded-3 shadow-lg w3-light-grey"
               style={{height:'30rem'}}>
                 <div className="container justify-content-center">
                 <div className="card-body w3-padding-large py-4 mt-2">
@@ -321,14 +314,14 @@ const WebPricing = () => {
 
             <div className="col-sm-12 col-md-4 col-lg-4">
               <div
-             className="card rounded-3 shadow-lg" 
+             className="card pb-2 rounded-3 shadow-lg" 
              style={{
                backgroundImage: "linear-gradient(#f6145c, #f6145c, #d32c9a, #d32c9a)",
                height: '30rem'
              }}
               >
                 <div className="container justify-content-center text-light">
-                  <div className="card-body w3-padding-large py-4 mt-2">
+                  <div className="card-body w3-padding-large pb-2 mt-2">
                     <h4 className="my-0 fw-normal text-light">Custom MultiPage</h4>
                     <p className="text-reset" style={{ fontSize: "14px" }}>
                      Customized Application
@@ -438,7 +431,7 @@ const WebPricing = () => {
             </div>
           </div>
         </div>
-    
+        </div>
       )}
     </InView>
     </div>

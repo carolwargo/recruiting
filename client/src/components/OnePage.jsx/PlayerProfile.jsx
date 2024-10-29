@@ -68,16 +68,16 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
                ${inView ? "animate-fade-in" : ""}`}
             id="overview"
         >
- 
-
-      
-      <div className="w3-white">
-          <div className="w3-row">
+      <div
+     style={{backgroundImage: 'linear-gradient(to right, gray, #2f4f4f)'}}>
+         
+          <div className="row d-flex w3-padding-16 justify-content-center align-items-center">
             {/* Left Column */}
-            <div className="w3-col m6 mt-2 mb-2 w3-padding-small">
+            <div className="col-sm-12 col-md-6 col-lg-6 justify-content-center align-items-center">
               {/* Profile */}
-              
-                <div className="image-container">
+              <div >
+              <div className="container">
+                <div>
                     <p className="w3-center">
                       <img
                         src={ClaySmall}
@@ -200,59 +200,55 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
                   </div>
                   </div>
               </div>
-           
-
+              </div>
+              </div>
  {/* Right Column */}
- <div className="w3-col m6 mt-2 mb-2 w3-padding-small">
-                <div className="w3-white">
-              <div className="container pb-3">
-              <div className="w3-card w3-white w3-padding">
-                
+ <div className="col-sm-12 col-md-6 col-lg-6 justify-content-center align-items-center">
+            
+        <div className="card-body w3-padding">
                 <div className="card-header">
-                  <h5 className="fw-bold mt-1">Player Profile</h5>
+                  <h5 className="fw-bold mt-2">Player Profile</h5>
                 <hr />
                 </div>
+             
               <div className="row">
          <div className="w3-padding pt-1 pb-3 d-flex justify-content-center align-items-center">
 
-    <div className="col-sm-6 col-md-6 col-lg-6 mt-1">
-    <p className="mt-0 py-0 text-dark-emphasis" style={{fontSize:'1.2rem', marginBottom:'3px'}}>
+    <div className="col-sm-12 col-md-6 col-lg-6 mt-1">
+    <p className="mt-0 py-0 text-dark-emphasis" style={{marginBottom:'5px'}}>
     <span className="fa-fw" style={{marginRight:'5px'}}>
-      <RiHome6Line/></span> <span className="text-dark-emphasis" style={{fontSize:'1rem'}}> CATCHER</span>
+     <b style={{fontSize:'1.2rem'}}><RiHome6Line/></b> </span> <span className="text-dark-emphasis"> CATCHER</span>
       <br />  
       </p>
 
-      <p className="mt-0 py-0 text-dark-emphasis" style={{fontSize:'1.2rem', marginBottom:'3px'}}>
+      <p className="mt-0 py-0 text-dark-emphasis" style={{marginBottom:'4px'}}>
                   <span className="fa-fw" style={{marginRight:'5px'}}>
-      <HiAcademicCap/></span> <span className="text-dark-emphasis" style={{fontSize:'1rem'}}> 2024</span>
+                  <b style={{fontSize:'1.2rem'}}> <HiAcademicCap/></b></span> <span className="text-dark-emphasis"> 2024</span>
       <br />  
       </p>
 
-      <p className="mt-0 py-0 text-dark-emphasis" style={{fontSize:'1.2rem', marginBottom:'3px'}}>
+      <p className="mt-0 py-0 text-dark-emphasis" style={{marginBottom:'4px'}}>
                   <span className="fa-fw" style={{marginRight:'5px'}}>
-      <GrScorecard/></span> <span className="text-dark-emphasis" style={{fontSize:'1rem'}}> SAT-9000 | GPA- 5.0</span>
+                  <b style={{fontSize:'1.2rem'}}>  <GrScorecard/></b></span> <span className="text-dark-emphasis"> SAT-9000 | GPA- 5.0</span>
       <br />  
       </p>
 
-      <p className="mt-0 py-0 text-dark-emphasis" style={{fontSize:'1.2rem', marginBottom:'3px'}}>
+      <p className="mt-0 py-0 text-dark-emphasis" style={{marginBottom:'4px'}}>
       <span className="fa-fw text-dark-emphasis" style={{marginRight:'5px'}}>
- < FaPhoneVolume/> </span> <Link className="text-dark-emphasis" style={{fontSize:'1rem'}}>(123) 456-7890</Link>
+      <b style={{fontSize:'1.2rem'}}>< FaPhoneVolume/></b> </span> <Link className="text-dark-emphasis">(123) 456-7890</Link>
    <br />
     </p>
 
-    <p className="mt-0 py-0 text-dark-emphasis" style={{fontSize:'1.2rem', marginBottom:'3px'}}>
+    <p className="mt-0 py-0 text-dark-emphasis" style={{marginBottom:'4px'}}>
     <span className="fa-fw text-dark-emphasis" style={{marginRight:'5px'}}>
- < MdOutlineEmail/> </span> <Link className="text-dark-emphasis" style={{fontSize:'1rem'}}>EMAIL@MAIL.COM</Link>
+    <b style={{fontSize:'1.2rem'}}>< MdOutlineEmail/> </b></span> <Link className="text-dark-emphasis">EMAIL@MAIL.COM</Link>
    <br />
     </p>
 
 
     </div>
-    <div className="col-sm-6 col-md-6 col-lg-6 mt-1">   
-
-
-<div > 
-<p className="text-dark-emphasis" style={{ fontSize: "1rem", display: 'flex', flexWrap: 'wrap' }}>
+    <div className="col-sm-12 col-md-6 col-lg-6 mt-1">   
+<p className="text-dark-emphasis" style={{display: 'flex', flexWrap: 'wrap'}}>
 <span className="pb-1"> <b>HT:</b> 6'0" <b className=" w3-margin-left"> WT:</b> 225LBS </span>
 <span className="py-1"><b>BATS:</b> R/L <b className=" w3-margin-left">THROWS:</b> R </span>
 <span className="py-1"><b>BORN:</b> 11/1/01, MD. </span>
@@ -264,14 +260,13 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
                   </div>
     </div>
     </div>
-</div>
-     </div>         
-              
-<div className="w3-card my-4 w3-white">
-              <div className="container">
-         <div className="w3-padding d-flex justify-content-center align-items-center">
-         <div className="text-center py-2">
- <br />
+    </div>
+
+
+    <div className="container">
+      <div className="row d-flex justify-content-center align-items-center">
+      <div className="container">
+         <div className="text-center py-4 mt-3">
        <h6 className="">FOLLOW ME ON SOCIAL MEDIA:</h6>
                  <Link
                    className=" text-decoration-none link-body-emphasis w3-opacity text-black"
@@ -300,10 +295,11 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
                  </div> 
           </div>
           </div>
-        
-              <div className="container">
-         <div className="w3-padding d-flex justify-content-center align-items-center">
-         <div className="text-center pb-5">
+          </div>
+          <div className="container">
+      <div className="row d-flex justify-content-center align-items-center">
+      <div className="container">
+        <div className="text-center pb-5">
          <hr className=" w3-padding-16"/>
        <h6 className="">MESSAGE ME</h6>
                   <p className="w3-opacity" style={{ fontSize: "15px" }}>
@@ -314,15 +310,11 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
           </div>
           </div>
           </div>
-          </div>
- 
-
+       </div>
               </div>
               </div>
                     </div>
               </div>
-              </div>
-</div>    
     )}
     </InView>
     </div>

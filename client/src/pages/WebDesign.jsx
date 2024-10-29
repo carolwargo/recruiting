@@ -13,6 +13,7 @@ import { PiProjectorScreenChartFill } from "react-icons/pi";
 import { PiSignatureLight } from "react-icons/pi";
 import WebStart from "../components/WebDesign/WebStart";
 import WebTimeline from "../components/WebDesign/WebTimeline";
+import HorizontalTimeline from '../components/Timeline/HorizontalTimeline'
 
 
 const WebDesignPage = () => {
@@ -35,58 +36,55 @@ const WebDesignPage = () => {
       }}
     >
         <header>
-        <div className="container-fluid w3-padding-top-24 ">
+          <div className="w3-black">
+        <div className="d-flex justify-content-center py-2 border-bottom">
             <nav
-              className="d-inline-flex fw-bold mt-2 mt-md-0 ms-md-auto justify-content-center"
+              className="d-inline-flex fw-bold mt-2"
               style={{ fontSize: "15px" }}
             >
               <a
-                className="me-3 py-2 link-dark text-decoration-underline"
+                className="me-3 py-2 link-light text-decoration-underline"
                  href="#web-pricing-component"
               >
-                Pricing
+               Pricing
               </a>
               <a
-                className="me-3 py-2 link-dark text-decoration-underline"
+                className="me-3 py-2 link-light text-decoration-underline"
                   href="#web-timeline-component"
               >
                 Process
               </a>
 
               <a
-                className="me-3 py-2 link-dark text-decoration-underline"
+                className="me-3 py-2 link-light text-decoration-underline"
                 href="#web-start-component"
               >
-                Get Started
+                Start Now
               </a>
             </nav>
-            <b>
-                <hr />
-              </b>
           </div>
-          <div className="container">
-            <div className="pricing-header mb-4 pb-md-4 mx-auto text-center">
-              <h1 className="display-4 fw-normal text-black">
-                Plans & Pricing
-              </h1>
+          </div>
+          <div className="container d-flex justify-content-center align-items-center">
+            <div className="pricing-header mx-auto text-center w3-padding-32">
+              <h3 className="display-3 fw-bold text-black text-emphasis-dark">
+               Pricing & Features
+              </h3>
              
-              <p className="fs-5 text-black">
-                Whether you're an individual developer, a growing startup, or a
-                large corporation, our flexible pricing plans ensure you get the
-                best value and performance. Explore our Free, Pro, and
-                Enterprise plans below to find the perfect fit for your
-                organization and take your operations to new heights with
-                CloudStream Solutions.
+              <p className="fs-4 text-black">
+              Simplicity is essential for both our clients and your audience. Coaches seek exactly what you do— A well-organized One-Stop platform that is efficient and easy to navigate.  Our goal is to provide the ultimate , and only destination a recruit needs for streamlined access-
               </p>
             </div>
           </div>
         </header>
+        
+
+
 
         <div className="container">
           <div className="row">
             <div className="col-sm-12 col-md-4 col-lg-4">
               <div
-                className="card py-2 rounded-3 shadow-lg"
+                className="card pb-2 rounded-3 shadow-lg"
                 style={{
                   backgroundImage: `url(${BBHoop})`,
                   backgroundSize: "cover",
@@ -457,6 +455,10 @@ const WebDesignPage = () => {
 <div className="web-timeline-component py-0 mt-0" id="web-timeline-component">
 <WebTimeline/>
 </div>
+
+
+<HorizontalTimeline/> 
+
 </div>
 )}  
 
