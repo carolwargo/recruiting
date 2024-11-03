@@ -40,10 +40,10 @@ const PlayerCarousel = () => {
     </div>
     <div className="col-12 col-md-8 my-2">
       <div className="w3-container w3-padding">
-      <Carousel data-bs-theme="light" className="rounded shadow-4-secondary">
+      <Carousel data-bs-theme="light">
       <Carousel.Item>
         <img
-          className="d-block w-100 rounded shadow-4-secondary"
+          className="d-block w-100 rounded shadow-4-secondary w3-grayscale-max"
           src={Stats1}
           alt="First slide"
         />
@@ -51,7 +51,7 @@ const PlayerCarousel = () => {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100 rounded shadow-4-secondary"
+          className="d-block w-100 rounded shadow-4-secondary w3-grayscale-max"
           src={Stats2}
           alt="Second slide"
         />

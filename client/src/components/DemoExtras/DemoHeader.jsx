@@ -203,7 +203,7 @@ const DemoCard = () => {
                         <div className="w3-col m6">
                           <div className="w3-container w3-border w3-border-black w3-padding">
                   <div className="w3-margin-top">
-                    <h4 className="">CLAY WARGO</h4>
+                    <h4 className="">JOE BASEBALL</h4>
                   </div>
                   <hr />
                   <p>
@@ -238,7 +238,7 @@ const DemoCard = () => {
 <br />
 <div className="w3-container w3-border w3-border-black w3-padding">
                   <div className="w3-margin-top">
-                    <h4 className="">CLAY WARGO</h4>
+                    <h4 className="">JOE BASEBALL</h4>
                   </div>
                   <hr />
                   <p>

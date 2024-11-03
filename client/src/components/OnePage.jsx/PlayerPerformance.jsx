@@ -103,7 +103,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
                 <h5 className="w3-margin-top w3-text-white">PERFORMANCE METRICS</h5>   
                 <hr style={{ width: "225px" }} className="w3-opacity" />
                     <img src={StatsBW} alt="stats" className="w-100 rounded shadow-sm" />
-                   <p className='text-reset text-center w3-margin-top' style={{fontSize:'14px'}}><i>*Stats were gathered using <Link>Trackman</Link> data and actionable insights.  <br/>**Stats recorded 1/1/2024 at PBR event- <Link>event link</Link>.</i></p>
+                   <p className='text-reset text-center w3-margin-top' style={{fontSize:'14px'}}><i>*Stats were gathered using <Link className=" link-light">Trackman</Link> data and actionable insights.  <br/>**Stats recorded 1/1/2024 at PBR event- 
+                   <Link className=" link-light">event link</Link>.</i></p>
 
                 </div>
             </div>
