@@ -8,11 +8,11 @@ import { GrScorecard } from "react-icons/gr";
 import { FaPhoneVolume } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import PlayerProfile2 from "./PlayerProfile2";
-
+import ProfileBG from "../../assets/images/ProfileBG.png";
 
 const PlayerProfile = () => {
   return (
-    <div>
+    <div >
 
       
       <style>
@@ -47,9 +47,16 @@ const PlayerProfile = () => {
             <div ref={ref} className={`w3-content w3-justify w3-text-grey w3-padding-16 
                ${inView ? "animate-fade-in" : ""}`}
             id="profile"
+            
         >
           
-
+       {/**   style={{backgroundImage: `url(${ProfileBG})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+         
+         }}
+          */} 
          <div className="row w3-padding-24 d-flex justify-content-center align-items-center g-3">
             
 
@@ -238,7 +245,7 @@ const PlayerProfile = () => {
                     </div>
                   </div>
                 </div>
-<PlayerProfile2 />
+{/**<PlayerProfile2 />*/}
 </div>
  )}
     </InView>

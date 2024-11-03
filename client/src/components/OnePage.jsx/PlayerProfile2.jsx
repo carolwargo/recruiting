@@ -5,7 +5,6 @@ import { HiAcademicCap } from "react-icons/hi";
 import { GrScorecard } from "react-icons/gr";
 import { FaPhoneVolume } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
-import ProfileBG from "../../assets/images/ProfileBG.png";
 
 
 const myFunction = (id) => {
@@ -51,7 +50,7 @@ const PlayerProfile2 = () => {
                 <div className="col-sm-12 col-md-4 col-lg-4">
                     <div className="w3-padding-large ">
                   <div className="w3-padding-16 rounded"
-               style={{backgroundImage: `url(${ProfileBG})`}}>
+               style={{backgroundImage: 'linear-gradient(to right, #000000,  #737373)'}}>
                     
                   <button
                       className="w3-button fw-bolder w3-block w3-text-white w3-left-align"

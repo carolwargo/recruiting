@@ -115,13 +115,24 @@ const DemoPage = () => {
               </h1>
               <p>NCAA STUDENT-ATHLETE | 2024 HIGH SCHOOL BASEBALL | CATCHER RECRUIT</p>
               <img
+                src={ClaySmall}
+                alt="boy"
+                className="w3-image w3-hide-large"
+                width="1500"
+                height="1108"
+              />
+
+<img
                 src={ClayCover3}
                 alt="boy"
-                className="w3-image"
+                className="w3-image w3-hide-small w3-hide-medium"
                 width="1500"
                 height="1108"
               />
             </header>
+
+
+
           )}
         </InView>
 
