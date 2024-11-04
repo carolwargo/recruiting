@@ -4,6 +4,18 @@
     font-family:sans-serif;
 }
 
+
+/*Hover Zoom Images*/
+/* Define zoom effect with smooth transition */
+.hover-zoom {
+  transition: transform 0.3s ease; /* Adjust transition duration */
+}
+
+.hover-zoom:hover {
+  transform: scale(.9); /* Scale up the image on hover */
+}
+
+
 /*start ANIMATIONS*/
 @keyframes fadeIn {
   from { opacity: 0; }

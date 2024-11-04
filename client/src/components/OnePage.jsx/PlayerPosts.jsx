@@ -1,13 +1,24 @@
 import React from "react";
-import MLB from "../../assets/images/Video/MLB.png";
 import { Link } from "react-router-dom";
-import { Tweet } from 'react-tweet'
+import AllState from "../../assets/images/PlayerPosts/AllState.png";
+import Signing from "../../assets/images/PlayerPosts/Signing.png";
+import MVP from "../../assets/images/PlayerPosts/MVP.png";
+import Big26 from "../../assets/images/PlayerPosts/Big26.png";
+import SBC from "../../assets/images/PlayerPosts/SBC.png";
+import NCAA from "../../assets/images/PlayerPosts/NCAA.png";
+import { BsTwitterX } from "react-icons/bs";
+import { FaSquareInstagram } from "react-icons/fa6";
+import { FaSnapchatSquare } from "react-icons/fa";
+
 
 const PlayerPosts = () => {
   return (
     <div className="posts" id="posts">
 <style>
     {`
+    .hover-zoom
+    --#{$prefix}image-hover-zoom-transition: #{$image-hover-zoom-transition};
+--#{$prefix}image-hover-zoom-transform: #{$image-hover-zoom-transform};
    .w3-body .posts-header .w3-large {
     color:'white';}`}
 </style>
@@ -21,157 +32,154 @@ const PlayerPosts = () => {
         </h5>
 
  <h6 className="w3-margin-top"> Watch a video, share a video, request additional footage, or
-          <span>  {" "} <Link to="contact" className=" link-light">contact us</Link>
+          <span>  {" "} <Link to="contact" className=" link-light">contact me</Link>
           </span>{" "}
           with questions or feedback.
         </h6>
       </div>
       {/* ROW 1 */}
       <div className="row">
-   <div className="col-12 col-md-6 my-2">
-   <div id="tweet-container">
-  <blockquote class="twitter-tweet">
-    <a href="https://x.com/elonmusk/status/1853437418092847306" className=" link-light">View this post on X</a>
+   <div className="col-12 col-md-4 my-2">
+<img
+  src={AllState}
+  alt="principal"
+  className="w3-left rounded mb-4 w3-greyscale-min"
+  style={{ width: "100%" }}
+/>
+<div id="tweet-container">
+  <blockquote class="twitter-tweet text-center">
+    <a href="https://x.com/elonmusk/status/1853437418092847306" 
+    className=" link-light" style={{fontSize:'1.2rem'}}>View this post</a>
   </blockquote>
 </div>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
 
+<div className="col-12 col-md-4 my-2">
 <img
-  src={MLB}
+  src={Signing}
   alt="principal"
-  className="w3-left rounded mb-4"
+  className="w3-left rounded mb-4 w3-greyscale-min"
   style={{ width: "100%" }}
 />
-<div className="container w3-padding-large">
-<Tweet id="1852982550035112039" /> 
-</div>
-<a href="https://x.com/elonmusk/status/1853437418092847306">View this post on X</a>
-<div className=" w3-body">
-<p>
-  <span className="w3-large">MLB BULLPENS</span>
-<br />
-  <i>Lorem- ipsum dolor sit</i>.
-</p>
-<p>
-  {" "}
-  <i>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    Repellat fugiat neque, delectus Fugiat. Ipsum dolor sit amet
-    consectetur adipisicing elit. Voluptate quibusdam totam
-    pariatur accusamus, quam velit at ad enim animi aliquam, porro
-    nulla molestias tempore fuga neque similique. Necessitatibus,
-    iusto ex?
-  </i>
-  .
-</p>
-<div className="card-footer">
-  <p>last updated: 1-1-2025</p>
+<div id="tweet-container">
+  <blockquote class="twitter-tweet text-center">
+    <a href="https://x.com/elonmusk/status/1853437418092847306" 
+    className=" link-light" style={{fontSize:'1.2rem'}}>View this post</a>
+  </blockquote>
 </div>
 </div>
-</div>
-
-
-<div className="col-12 col-md-6 my-2">
+<div className="col-12 col-md-4 my-2">
 <img
-  src={MLB}
+  src={MVP}
   alt="principal"
-  className="w3-left rounded mb-4"
+  className="w3-left rounded mb-4 w3-greyscale-min"
   style={{ width: "100%" }}
 />
-<div className=" w3-body">
-<p className="posts-header">
-  <span className="w3-large">MLB BULLPENS</span>
-<br />
-  <i>Lorem- ipsum dolor sit</i>.
-</p>
-<p>
-  {" "}
-  <i>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    Repellat fugiat neque, delectus Fugiat. Ipsum dolor sit amet
-    consectetur adipisicing elit. Voluptate quibusdam totam
-    pariatur accusamus, quam velit at ad enim animi aliquam, porro
-    nulla molestias tempore fuga neque similique. Necessitatibus,
-    iusto ex?
-  </i>
-  .
-</p>
-<div className="card-footer">
-  <p>last updated: 1-1-2025</p>
-</div>
-</div>
-</div>
-
-
-<div className="col-12 col-md-6 my-2">
-<div className="container">
-<img
-  src={MLB}
-  alt="principal"
-  className="w3-left rounded mb-4"
-  style={{ width: "100%" }}
-/>
-<div className=" w3-body">
-<p className="posts-header">
-  <span className="w3-large">MLB BULLPENS</span>
-<br />
-  <i>Lorem- ipsum dolor sit</i>.
-</p>
-<p>
-  {" "}
-  <i>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    Repellat fugiat neque, delectus Fugiat. Ipsum dolor sit amet
-    consectetur adipisicing elit. Voluptate quibusdam totam
-    pariatur accusamus, quam velit at ad enim animi aliquam, porro
-    nulla molestias tempore fuga neque similique. Necessitatibus,
-    iusto ex?
-  </i>
-  .
-</p>
-<div className="card-footer">
-  <p>last updated: 1-1-2025</p>
-</div>
-</div>
-</div>
-</div>
-
-<div className="col-12 col-md-6 my-2">
-<div className="container">
-<img
-  src={MLB}
-  alt="principal"
-  className="w3-left rounded mb-4"
-  style={{ width: "100%" }}
-/>
-<div className=" w3-body">
-<p className="posts-header">
-  <span className="w3-large">MLB BULLPENS</span>
-<br />
-  <i>Lorem- ipsum dolor sit</i>.
-</p>
-<p>
-  {" "}
-  <i>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    Repellat fugiat neque, delectus Fugiat. Ipsum dolor sit amet
-    consectetur adipisicing elit. Voluptate quibusdam totam
-    pariatur accusamus, quam velit at ad enim animi aliquam, porro
-    nulla molestias tempore fuga neque similique. Necessitatibus,
-    iusto ex?
-  </i>
-  .
-</p>
-<div className="card-footer">
-  <p>last updated: 1-1-2025</p>
-</div>
-</div>
+<div id="tweet-container">
+  <blockquote class="twitter-tweet text-center">
+    <a href="https://x.com/elonmusk/status/1853437418092847306" 
+    className=" link-light" style={{fontSize:'1.2rem'}}>View this post</a>
+  </blockquote>
 </div>
 </div>
 
         </div>
+        <div className="row">
+   <div className="col-12 col-md-4 my-2">
+<img
+  src={Big26}
+  alt="principal"
+  className=" w3-grayscale w3-hover-grayscale hover-zoom w3-left rounded mb-4 shadow-5-secondary"
+  style={{ width: "100%" }}
+/>
+<div id="tweet-container">
+  <blockquote class="twitter-tweet text-center">
+    <a href="https://x.com/elonmusk/status/1853437418092847306" 
+    className=" link-light" style={{fontSize:'1.2rem'}}>View this post</a>
+  </blockquote>
+</div>
+</div>
+
+<div className="col-12 col-md-4 my-2">
+<img
+  src={SBC}
+  alt="principal"
+  className="w3-left rounded mb-4 w3-greyscale-min"
+  style={{ width: "100%" }}
+/>
+<div id="tweet-container">
+  <blockquote class="twitter-tweet text-center">
+    <a href="https://x.com/elonmusk/status/1853437418092847306" 
+    className=" link-light" style={{fontSize:'1.2rem'}}>View this post</a>
+  </blockquote>
+</div>
+</div>
+<div className="col-12 col-md-4 my-2">
+<img
+  src={NCAA}
+  alt="principal"
+  className="w3-left rounded mb-4 w3-greyscale-min"
+  style={{ width: "100%" }}
+/>
+<div id="tweet-container">
+  <blockquote class="twitter-tweet text-center">
+    <a href="https://x.com/elonmusk/status/1853437418092847306" 
+    className=" link-light" style={{fontSize:'1.2rem'}}>View this post</a>
+  </blockquote>
+</div>
+</div>
+
+        </div>
+
+
+        {/**follow me */}
+        <div className="container w3-text-white">
+                <div className="row d-flex justify-content-center align-items-center">
+                    <div className="col-sm-12 col-md-12 col-lg-12">
+                          <div className=" container text-center w3-text-white py-3">
+                          <hr  style={{paddingTop:'10px', paddingBottom:'10px'}}/>
+                           
+                            <h5 className="">FOLLOW ME ON SOCIAL MEDIA:</h5>
+                            <Link
+                              className=" text-decoration-none link-light w3-opacity"
+                              style={{ fontSize: "2.7rem" }}
+                            >
+                              <strong>
+                                <BsTwitterX className="" />
+                              </strong>{" "}
+                            </Link>
+                            <Link
+                              className="text-decoration-none link-light w3-hover"
+                              style={{ fontSize: "2.9rem" }}
+                            >
+                              <strong>
+                                <FaSquareInstagram />
+                              </strong>{" "}
+                            </Link>
+                            <Link
+                              className="text-decoration-none w3-hover link-light"
+                              style={{ fontSize: "2.9rem" }}
+                            >
+                              <strong>
+                                <FaSnapchatSquare />
+                              </strong>
+                            </Link>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
       </div>
   );
 };
 
 export default PlayerPosts;
+
+
+/**
+ * import { Tweet } from 'react-tweet'
+ * 
+ * 
+  <div className="container w3-padding-large">
+<Tweet id="1852982550035112039" /> 
+</div>
+ */
