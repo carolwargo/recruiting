@@ -7,14 +7,10 @@ import { HiAcademicCap } from "react-icons/hi";
 import { GrScorecard } from "react-icons/gr";
 import { FaPhoneVolume } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
-import PlayerProfile2 from "./PlayerProfile2";
-import ProfileBG from "../../assets/images/ProfileBG.png";
 
 const PlayerProfile = () => {
   return (
     <div >
-
-      
       <style>
         {`
   

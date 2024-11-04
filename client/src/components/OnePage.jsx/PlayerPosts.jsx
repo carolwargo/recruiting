@@ -1,6 +1,7 @@
 import React from "react";
 import MLB from "../../assets/images/Video/MLB.png";
 import { Link } from "react-router-dom";
+import { Tweet } from 'react-tweet'
 
 const PlayerPosts = () => {
   return (
@@ -19,25 +20,32 @@ const PlayerPosts = () => {
           practice videos, categorized into Offense, Defense, and MLB Bullpens.
         </h5>
 
-        <h6 className="w3-margin-top">
-          Watch a video, share a video, request additional footage, or
-          <span>
-            {" "}
-            <Link to="contact">contact me</Link>
+ <h6 className="w3-margin-top"> Watch a video, share a video, request additional footage, or
+          <span>  {" "} <Link to="contact" className=" link-light">contact us</Link>
           </span>{" "}
           with questions or feedback.
         </h6>
       </div>
       {/* ROW 1 */}
       <div className="row">
-        <div className="col-12 col-md-6 my-2">
-<div className="container">
+   <div className="col-12 col-md-6 my-2">
+   <div id="tweet-container">
+  <blockquote class="twitter-tweet">
+    <a href="https://x.com/elonmusk/status/1853437418092847306" className=" link-light">View this post on X</a>
+  </blockquote>
+</div>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 <img
   src={MLB}
   alt="principal"
   className="w3-left rounded mb-4"
   style={{ width: "100%" }}
 />
+<div className="container w3-padding-large">
+<Tweet id="1852982550035112039" /> 
+</div>
+<a href="https://x.com/elonmusk/status/1853437418092847306">View this post on X</a>
 <div className=" w3-body">
 <p>
   <span className="w3-large">MLB BULLPENS</span>
@@ -61,10 +69,9 @@ const PlayerPosts = () => {
 </div>
 </div>
 </div>
-</div>
+
 
 <div className="col-12 col-md-6 my-2">
-<div className="container">
 <img
   src={MLB}
   alt="principal"
@@ -94,7 +101,7 @@ const PlayerPosts = () => {
 </div>
 </div>
 </div>
-</div>
+
 
 <div className="col-12 col-md-6 my-2">
 <div className="container">
