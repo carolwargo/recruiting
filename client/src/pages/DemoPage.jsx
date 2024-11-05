@@ -47,14 +47,14 @@ const DemoPage = () => {
           to="#demo1-player-performance"
           className="w3-bar-item w3-button w3-padding-large w3-hover-black"
         >
-          <i className="fa fa-eye w3-xxlarge"></i>
+          <i className=" fa fa-chart-bar w3-xxlarge"></i>
           <p className="text-center">STATS</p>
         </Link>
         <Link
           to="#demo1-player-media"
           className="w3-bar-item w3-button w3-padding-large w3-hover-black"
         >
-          <i className="fa fa-envelope w3-xxlarge"></i>
+          <i className="fa fa-film w3-xxlarge"></i>
           <p>MEDIA</p>
         </Link>
       </nav>

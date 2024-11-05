@@ -9,7 +9,8 @@ const PlayerVideo = () => {
     <div>
   
       <div className="py-2">
-        <h3 className=" fw-bold text-white">VIDEO SKILLS LIBRARY</h3>
+        <h2 className="w3-text-light-grey">Video Skills Library</h2>
+              
         <h5 className="w3-margin-top">
           The Video Library showcases my skills, featuring a mix of in-game and
           practice videos, categorized into Offense, Defense, and MLB Bullpens.
@@ -33,7 +34,7 @@ const PlayerVideo = () => {
           <img
             src={Offense}
             alt="Offense"
-            className="w3-left rounded"
+             className=" red-glow w3-left rounded w3-grayscale w3-hover-grayscale"
             style={{ width: "100%" }}
           />
           </div>
@@ -44,7 +45,7 @@ const PlayerVideo = () => {
           {" "}
           {/* Adjusted col-12 for stacking on small screens */}
           <p>
-            <span className="w3-large">OFFENSE</span>
+            <span className="w3-large red-text-glow">OFFENSE</span>
             <br />
             <i>Sub-Heading</i>.
           </p>
@@ -73,7 +74,7 @@ const PlayerVideo = () => {
           <img
             src={Defense}
             alt="Defense"
-            className="w3-left rounded"
+            className=" red-glow w3-left rounded w3-grayscale w3-hover-grayscale"
             style={{ width: "100%" }}
           />
           </div>
@@ -84,7 +85,7 @@ const PlayerVideo = () => {
           {" "}
           {/* Adjusted col-12 for stacking on small screens */}
           <p>
-            <span className="w3-large">DEFENSE</span>
+          <span className="w3-large red-text-glow">DEFENSE</span>
             <br />
             <i>Sub-Heading</i>.
           </p>
@@ -115,7 +116,7 @@ const PlayerVideo = () => {
           <img
             src={MLB}
             alt="MLB Bullpens"
-            className="w3-left rounded"
+             className=" red-glow w3-left rounded w3-grayscale w3-hover-grayscale"
             style={{ width: "100%" }}
           />
           </div>
@@ -126,7 +127,7 @@ const PlayerVideo = () => {
           {" "}
           {/* Adjusted col-12 for stacking on small screens */}
           <p>
-            <span className="w3-large">MLB BULLPENS</span>
+          <span className="w3-large red-text-glow">MLB BULLPENS</span>
             <br />
             <i>Sub-Heading</i>.
           </p>

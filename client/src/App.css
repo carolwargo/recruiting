@@ -8,13 +8,22 @@
 /*Hover Zoom Images*/
 /* Define zoom effect with smooth transition */
 .hover-zoom {
-  transition: transform 0.3s ease; /* Adjust transition duration */
+  transition: transform 0.4s ease !important; /* Adjust transition duration */
 }
 
 .hover-zoom:hover {
-  transform: scale(.9); /* Scale up the image on hover */
+  transform: scale(.95) !important; /* Scale up the image on hover */
 }
 
+.icon-hover-zoom {
+  display: inline-block;
+  transition: transform 0.4s ease;
+  color: white !important; /* Keep color white */
+}
+
+.icon-hover-zoom:hover {
+  transform: scale(0.95);
+}
 
 /*start ANIMATIONS*/
 @keyframes fadeIn {
@@ -25,6 +34,32 @@
 @keyframes slideLeft {
   from { transform: translateX(-100%); }
   to { transform: translateX(0); }
+}
+
+.red-glow {
+  box-shadow:   0 0 4px 2px rgb(179, 145, 145); /* X-offset, Y-offset, Blur Radius, Spread Distance, Color */
+}
+
+.red-glow-image {
+  box-shadow: 0 0 30px 15px red;
+}
+
+.red-border-wrapper {
+  border: 5px solid red;
+  border-radius: 8px;
+  display: inline-block;
+  background-color: white ;
+}
+
+.grayscale-image {
+  filter: grayscale(100%);
+  border-radius: inherit;
+  display: block;
+}
+
+
+.red-text-glow {
+  text-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red, 0 0 40px red;
 }
 
 .animate-fade-in {

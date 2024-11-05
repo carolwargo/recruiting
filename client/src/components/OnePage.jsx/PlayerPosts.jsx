@@ -14,15 +14,7 @@ import { FaSnapchatSquare } from "react-icons/fa";
 const PlayerPosts = () => {
   return (
     <div className="posts" id="posts">
-<style>
-    {`
-    .hover-zoom
-    --#{$prefix}image-hover-zoom-transition: #{$image-hover-zoom-transition};
---#{$prefix}image-hover-zoom-transform: #{$image-hover-zoom-transform};
-   .w3-body .posts-header .w3-large {
-    color:'white';}`}
-</style>
-        {/* MEDIA SECTION PLAYER POSTS Section */}
+
 
         <div className="py-2">
         <h3 className="fw-bold text-white">POSTS & NEWS</h3>
@@ -43,13 +35,13 @@ const PlayerPosts = () => {
 <img
   src={AllState}
   alt="principal"
-  className="w3-left rounded mb-4 w3-greyscale-min"
-  style={{ width: "100%" }}
+ className=" w3-left rounded w3-grayscale hover-zoom mb-4"
+  style={{ width: "100%", boxShadow:'0 0 4px 2px rgb(179, 145, 145)' }}
 />
 <div id="tweet-container">
-  <blockquote class="twitter-tweet text-center">
-    <a href="https://x.com/elonmusk/status/1853437418092847306" 
-    className=" link-light" style={{fontSize:'1.2rem'}}>View this post</a>
+  <blockquote className="twitter-tweet text-center">
+    <a href="https://x.com/elonmusk/status/" 
+className="w3-text-grey hover-zoom">VIEW THIS POST</a>
   </blockquote>
 </div>
 </div>
@@ -58,13 +50,13 @@ const PlayerPosts = () => {
 <img
   src={Signing}
   alt="principal"
-  className="w3-left rounded mb-4 w3-greyscale-min"
-  style={{ width: "100%" }}
+  className=" w3-left rounded w3-grayscale hover-zoom mb-4"
+  style={{ width: "100%", boxShadow:'0 0 4px 2px rgb(179, 145, 145)' }}
 />
 <div id="tweet-container">
-  <blockquote class="twitter-tweet text-center">
-    <a href="https://x.com/elonmusk/status/1853437418092847306" 
-    className=" link-light" style={{fontSize:'1.2rem'}}>View this post</a>
+  <blockquote className="twitter-tweet text-center">
+    <a href="https://x.com/elonmusk/status/" 
+className="w3-text-grey hover-zoom">VIEW THIS POST</a>
   </blockquote>
 </div>
 </div>
@@ -72,13 +64,13 @@ const PlayerPosts = () => {
 <img
   src={MVP}
   alt="principal"
-  className="w3-left rounded mb-4 w3-greyscale-min"
-  style={{ width: "100%" }}
+  className=" w3-left rounded w3-grayscale hover-zoom mb-4"
+  style={{ width: "100%", boxShadow:'0 0 4px 2px rgb(179, 145, 145)' }}
 />
 <div id="tweet-container">
-  <blockquote class="twitter-tweet text-center">
-    <a href="https://x.com/elonmusk/status/1853437418092847306" 
-    className=" link-light" style={{fontSize:'1.2rem'}}>View this post</a>
+  <blockquote className="twitter-tweet text-center">
+    <a href="https://x.com/elonmusk/status/" 
+ className="w3-text-grey hover-zoom">VIEW THIS POST</a>
   </blockquote>
 </div>
 </div>
@@ -89,13 +81,13 @@ const PlayerPosts = () => {
 <img
   src={Big26}
   alt="principal"
-  className=" w3-grayscale w3-hover-grayscale hover-zoom w3-left rounded mb-4 shadow-5-secondary"
-  style={{ width: "100%" }}
+  className=" w3-left rounded w3-grayscale hover-zoom mb-4"
+  style={{ width: "100%", boxShadow:'0 0 4px 2px rgb(179, 145, 145)' }}
 />
 <div id="tweet-container">
-  <blockquote class="twitter-tweet text-center">
-    <a href="https://x.com/elonmusk/status/1853437418092847306" 
-    className=" link-light" style={{fontSize:'1.2rem'}}>View this post</a>
+  <blockquote className="twitter-tweet text-center">
+    <a href="https://x.com/elonmusk/status/" 
+   className="w3-text-grey hover-zoom">VIEW THIS POST</a>
   </blockquote>
 </div>
 </div>
@@ -104,13 +96,13 @@ const PlayerPosts = () => {
 <img
   src={SBC}
   alt="principal"
-  className="w3-left rounded mb-4 w3-greyscale-min"
-  style={{ width: "100%" }}
+    className=" w3-left rounded w3-grayscale hover-zoom mb-4"
+  style={{ width: "100%", boxShadow:'0 0 4px 2px rgb(179, 145, 145)' }}
 />
 <div id="tweet-container">
-  <blockquote class="twitter-tweet text-center">
-    <a href="https://x.com/elonmusk/status/1853437418092847306" 
-    className=" link-light" style={{fontSize:'1.2rem'}}>View this post</a>
+  <blockquote className="twitter-tweet text-center">
+    <a href="https://x.com/elonmusk/status/" 
+    className="w3-text-grey hover-zoom">VIEW THIS POST</a>
   </blockquote>
 </div>
 </div>
@@ -118,13 +110,13 @@ const PlayerPosts = () => {
 <img
   src={NCAA}
   alt="principal"
-  className="w3-left rounded mb-4 w3-greyscale-min"
-  style={{ width: "100%" }}
+  className=" w3-left rounded w3-grayscale hover-zoom mb-4"
+  style={{ width: "100%", boxShadow:'0 0 4px 2px rgb(179, 145, 145)' }}
 />
 <div id="tweet-container">
-  <blockquote class="twitter-tweet text-center">
-    <a href="https://x.com/elonmusk/status/1853437418092847306" 
-    className=" link-light" style={{fontSize:'1.2rem'}}>View this post</a>
+  <blockquote className="twitter-tweet text-center">
+    <a href="https://x.com/elonmusk/status/" 
+  className="w3-text-grey hover-zoom">VIEW THIS POST</a>
   </blockquote>
 </div>
 </div>
@@ -139,30 +131,38 @@ const PlayerPosts = () => {
                           <div className=" container text-center w3-text-white py-3">
                           <hr  style={{paddingTop:'10px', paddingBottom:'10px'}}/>
                            
-                            <h5 className="">FOLLOW ME ON SOCIAL MEDIA:</h5>
+                            <h5>FOLLOW ME ON SOCIAL MEDIA:</h5>
                             <Link
-                              className=" text-decoration-none link-light w3-opacity"
+                              className=" mx-1"
                               style={{ fontSize: "2.7rem" }}
                             >
-                              <strong>
-                                <BsTwitterX className="" />
-                              </strong>{" "}
+                         <span className="icon-hover-zoom">
+    <strong>
+      <BsTwitterX />
+    </strong>
+  </span>
                             </Link>
                             <Link
-                              className="text-decoration-none link-light w3-hover"
+                               className="mx-1"
                               style={{ fontSize: "2.9rem" }}
                             >
-                              <strong>
-                                <FaSquareInstagram />
-                              </strong>{" "}
+                               <span className="icon-hover-zoom">
+    <strong>
+    <FaSquareInstagram />
+    </strong>
+  </span>
+                           
                             </Link>
                             <Link
-                              className="text-decoration-none w3-hover link-light"
+                           className="mx-1"
                               style={{ fontSize: "2.9rem" }}
                             >
-                              <strong>
-                                <FaSnapchatSquare />
-                              </strong>
+                                       <span className="icon-hover-zoom">
+    <strong>
+    <FaSnapchatSquare />
+    </strong>
+  </span>
+                              
                             </Link>
                           </div>
                         </div>

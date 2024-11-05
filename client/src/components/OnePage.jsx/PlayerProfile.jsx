@@ -6,7 +6,8 @@ import { RiHome6Line } from "react-icons/ri";
 import { HiAcademicCap } from "react-icons/hi";
 import { GrScorecard } from "react-icons/gr";
 import { FaPhoneVolume } from "react-icons/fa";
-import { MdOutlineEmail } from "react-icons/md";
+import { MdOutlineEmail} from "react-icons/md";
+import { RiCheckboxCircleFill } from "react-icons/ri";
 
 const PlayerProfile = () => {
   return (
@@ -53,22 +54,23 @@ const PlayerProfile = () => {
          
          }}
           */} 
-         <div className="row w3-padding-24 d-flex justify-content-center align-items-center g-3">
+         <div className="row w3-padding-16 d-flex justify-content-center align-items-center g-3">
             
 
                 {/* Main row with column 4 and nested columns in column 8 */}
-                <div className="col-sm-12 col-md-4 col-lg-4">
+                <div className="col-sm-12 col-md-4 col-lg-4 w3-hide-small w3-hide-medium">
                   <div>
-                    <img src={ClaySmall} alt="clay" style={{width:'80%'}} />
+                    <img src={ClaySmall} alt="clay" style={{width:'100%'}} />
                   </div>
                   </div>
                 <div className="col-sm-12 col-md-8 col-lg-8">
-                  <div className="row d-flex justify-content-center align-items-center g-1">
+                  <div className="row d-flex justify-content-center align-items-center g-1 py-2">
                   <div className="w3-text-white">
-                  <h3 className="fw-bold text-white mt-2">Player Profile</h3>
-                  <hr />
+                  <h1 className="w3-text-light-grey">Player Profile</h1>
+               <hr />
                 </div>
                    <div className="col-sm-12 col-md-6 col-lg-6">
+                 
                         <p
                           className="mt-0 py-0 text-white"
                           style={{ marginBottom: "4px" }}
@@ -193,13 +195,15 @@ const PlayerProfile = () => {
                           </Link>
                           <br />
                         </p>
+
                       </div>
 
                       <div className="col-sm-12 col-md-6 col-lg-6">
-                      <div className="w3-text-white py-2">
-                  <h5 className="fw-bold text-white mt-2">Player Vitals</h5>
-               
+                      <div className="w3-text-white w3-margin-top">
+                  <h5 className="fw-bold text-emphasis-light mb-3">PLAYER VITALS</h5>
+             
                 </div>
+                    
 
                 <p className="mt-0 py-0 text-white"
                 style={{ marginBottom: "4px" }}> Bats: <span 
@@ -237,11 +241,122 @@ const PlayerProfile = () => {
                 style={{ marginRight: "4px" }}><i>1234 Anywhere St. ST. 12345</i>
                           </span> 
                         </p>
+                        
+                     
                       </div>
                     </div>
+                    <div className="w3-text-white mt-4">
+                
+                  <h5 className="fw-bold text-emphasis-light" style={{color:'#81cefa'}}>NCAA ELIGIBILITY STATUS</h5>
+             <p>REGISTERED <RiCheckboxCircleFill className="w3-text-blue"/> <span className=" w3-margin-left">NCAA ID: 8736466 </span></p>
+                </div>
                   </div>
                 </div>
-{/**<PlayerProfile2 />*/}
+
+
+{/**START TEAMS*/}
+                <div className="row w3-padding-16 d-flex justify-content-center align-items-center g-3">
+                <div className="w3-text-white">
+                <h1 className="w3-text-light-grey">Team Affiliations</h1>
+                <hr style={{ width: "315px" }} className="w3-opacity" />
+                </div>
+            <div className="col-sm-12 col-md-4 col-lg-4">
+                  <div className="w3-text-white">
+              <h5 className="fw-bold text-white mt-2">HIGH SCHOOL</h5>
+           
+            </div>
+
+            <p className="mt-0 py-0 text-white"
+            style={{ marginBottom: "4px" }}>Hometown High <span 
+            className=" text-white-50"
+            style={{ marginRight: "4px" }}> <i> Anytown, ST.</i>
+                      </span>
+                    </p>
+                    <p className="mt-0 py-0 text-white"
+            style={{ marginBottom: "4px" }}>Head Coach <span 
+            className=" text-white-50"
+            style={{ marginRight: "4px" }}> <i>Coach Joe Athlete</i>
+                      </span>
+                    </p>
+                 
+                    <p className="mt-0 py-0 text-white"
+            style={{ marginBottom: "4px" }}>Coach Cell <span 
+            className=" text-white-50"
+            style={{ marginRight: "4px" }}> <i>(123)456-7890</i>
+                      </span>
+                    </p>
+
+                    <p className="mt-0 py-0 text-white"
+            style={{ marginBottom: "4px" }}>Coach Email<span 
+            className=" text-white-50"
+            style={{ marginRight: "4px" }}> <i>coachemail@mail.com</i>
+                      </span>
+                    </p>
+
+                  </div>
+         
+                  <div className="col-sm-12 col-md-4 col-lg-4">
+                      <div className="w3-text-white">
+                  <h5 className="fw-bold text-white mt-2">SUMMER TEAM</h5>
+               
+                </div>
+
+                <p className="mt-0 py-0 text-white"
+                style={{ marginBottom: "4px" }}>Dirtbags Baseball<span 
+                className=" text-white-50"
+                style={{ marginRight: "4px" }}> <i> Anytown, ST.</i>
+                          </span>
+                        </p>
+                        <p className="mt-0 py-0 text-white"
+                style={{ marginBottom: "4px" }}>Head Coach <span 
+                className=" text-white-50"
+                style={{ marginRight: "4px" }}> <i>Coach Joe Dirtbag</i>
+                          </span>
+                        </p>
+                     
+                        <p className="mt-0 py-0 text-white"
+                style={{ marginBottom: "4px" }}>Coach Cell <span 
+                className=" text-white-50"
+                style={{ marginRight: "4px" }}> <i>(123)456-7890</i>
+                          </span>
+                        </p>
+
+                        <p className="mt-0 py-0 text-white"
+                style={{ marginBottom: "4px" }}>Coach Email<span 
+                className=" text-white-50"
+                style={{ marginRight: "4px" }}> <i>coachemail@mail.com</i>
+                          </span>
+                        </p>
+
+                      </div>
+                  <div className="col-sm-12 col-md-4 col-lg-4">
+                  <div className="w3-text-white">
+              <h5 className="fw-bold text-white mt-2">SPECIAL TEAMS</h5>
+           
+            </div>
+
+            <p className="mt-0 py-0 text-white"
+            style={{ marginBottom: "4px" }}><b className="text-danger">U</b><b>S</b><b style={{color:'#81cefa'}}>A</b>BASEBALL <span><i><Link className=" link-secondary"  style={{ marginRight: "6px" }}>18U National</Link></i>
+                      </span>
+                    </p>
+                    <p className="mt-0 py-0 text-white"
+            style={{ marginBottom: "4px" }}><b>THE</b><b className="text-danger">BIG26</b> <span> <i><Link className=" link-secondary"  style={{ marginRight: "6px"}}>Team Maryland</Link></i>
+                      </span>
+                    </p>
+
+                    <p className="mt-0 py-0 text-white"
+            style={{ marginBottom: "4px" }}><b>WWBA</b> <span> <i><Link className=" link-secondary"  style={{ marginRight: "6px"}}>Perfect Game</Link></i>
+                      </span>
+                    </p>
+
+                    <p className="mt-0 py-0 text-white"
+            style={{ marginBottom: "4px" }}><b>ALL-METROPOLITAN</b><b className="text-danger"></b> <span> <i><Link className=" link-secondary"  style={{ marginRight: "6px"}}>First Team</Link></i>
+                      </span>
+                    </p>
+                  </div>
+
+            </div>
+
 </div>
  )}
     </InView>

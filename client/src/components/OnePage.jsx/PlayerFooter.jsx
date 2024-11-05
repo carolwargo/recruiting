@@ -1,10 +1,10 @@
 import React from "react";
 import { InView } from 'react-intersection-observer';
 import { Link } from "react-router-dom";
-import { BsTwitterX } from "react-icons/bs";
+import {BsTwitterX } from "react-icons/bs";
 import { FaSquareInstagram } from "react-icons/fa6";
-import { FaSnapchatSquare } from "react-icons/fa";
-
+import { FaPhoneSquare, FaSnapchatSquare } from "react-icons/fa";
+import { PiPaperPlane } from "react-icons/pi";
 
 const PlayerFooter = () => {
 
@@ -59,32 +59,66 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
           <div className="w3-container w3-center text-center">
                   <div className="w3-margin-bottom">
-                    <Link
-                      className="text-decoration-none link-body-emphasis w3-opacity text-white"
-                      style={{ fontSize: "2.2rem" }}
-                    >
-                      <strong>
-                        <BsTwitterX className="" />
-                      </strong>{" "}
-                    </Link>
-                    <Link
-                      className="text-decoration-none w3-opacity w3-text-pink w3-hover"
-                      style={{ fontSize: "2.35rem" }}
-                    >
-                      <strong>
-                        <FaSquareInstagram />
-                      </strong>{" "}
-                    </Link>
-                    <Link
-                      className="text-decoration-none w3-opacity w3-hover w3-text-purple"
-                      style={{ fontSize: "2.4rem" }}
-                    >
-                      <strong>
-                        <FaSnapchatSquare />
-                      </strong>
-                    </Link>
+                  <Link
+                              className=" mx-2"
+                              style={{ fontSize: "2.1rem" }}
+                            >
+                         <span className="icon-hover-zoom">
+    <strong>
+      <PiPaperPlane />
+    </strong>
+  </span>
+                            </Link>
+                            <Link
+                               className="mx-1"
+                              style={{ fontSize: "2rem" }}
+                            >
+                               <span className="icon-hover-zoom">
+    <strong>
+    <FaPhoneSquare />
+    </strong>
+  </span>
+                           
+                            </Link>
+
+
+                  <Link
+                              className=" mx-2"
+                              style={{ fontSize: "1.9rem" }}
+                            >
+                         <span className="icon-hover-zoom">
+    <strong>
+      <BsTwitterX />
+    </strong>
+  </span>
+                            </Link>
+
+
+                            <Link
+                               className="mx-1"
+                              style={{ fontSize: "2.1rem" }}
+                            >
+                               <span className="icon-hover-zoom">
+    <strong>
+    <FaSquareInstagram />
+    </strong>
+  </span>
+                           
+                            </Link>
+
+                            <Link
+                           className="mx-1"
+                              style={{ fontSize: "2.1rem" }}
+                            >
+                                       <span className="icon-hover-zoom">
+    <strong>
+    <FaSnapchatSquare />
+    </strong>
+  </span>               
+                            </Link>
                   </div>
                 </div>
+                
           {/* End Contact Section */}
         </div>
           )}
