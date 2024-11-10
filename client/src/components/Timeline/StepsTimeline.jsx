@@ -16,6 +16,8 @@ export default function StepsTimeline() {
               }`}
             >
     <div className="steps-timeline" id="steps-timeline">
+
+      <div>
         <p style={{fontSize:'12px'}}>  /components/Timeline/StepsTimeline</p>
       
          <h3>Getting started is said to be the hardest part but, it doesn't have to be- In face we have gone actually simplified things to a streamlined 3-step process. Step 1- Get started!</h3>
@@ -32,11 +34,8 @@ export default function StepsTimeline() {
 <p>For Example- </p>
 <p><b>SCENARIO:</b> 'You received All-Conference Honors'</p>
 <p><b>SOCIAL MEDIA USE:</b> 'Post the announcement on social media sites, WITH A SEE MORE LINK, that takes the user to your website.'</p>
-
-{/**Modal below- where to put modal button */}
-
 <h1>For more on Controlled Platforms vs. Platform Controls & Restrictions</h1>
-
+</div>
 
     <MDBContainer className="py-2">
       <MDBRow style={{marginLeft:'5px'}}>

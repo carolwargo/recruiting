@@ -1,11 +1,19 @@
 import React from "react";
 import { GiBullseye } from "react-icons/gi";
 import { InView } from "react-intersection-observer";
+import NCAABG from "../../assets/images/NCAA/NCAABG.png";
 
 const HomeOdds = () => {
   return (
-    <div className="home-odds" id="home-odds">
-      <div className="w3-light-gray">
+    <div className="home-odds" id="home-odds"
+    style={{
+      backgroundImage: `url(${NCAABG})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      backgroundAttachment: "fixed",
+      width: "100%",
+    }}>
+      <div>
         <InView triggerOnce={true}>
           {({ inView, ref }) => (
             <div
@@ -15,45 +23,6 @@ const HomeOdds = () => {
               }`}
             >
               <div className="container w3-padding-48 w3-padding-large">
-                <h4>
-                  Impact of COVID-19 on Recruiting The COVID-19 pandemic has
-                  accelerated the shift to digital recruiting, with in-person
-                  recruiting events and campus visits limited. Athletes who have
-                  a strong online presence and can effectively showcase their
-                  skills and character have a competitive advantage in the
-                  current recruiting landscape.
-                  <span className="text-danger">
-                    {" "}
-                    It COVID-19 pandemic, accelerated a massive shift to digital
-                    recruiting- Athletes with a strong online presence have a
-                    competitive advantage in the new recruiting landscape.
-                  </span>
-                </h4>
-                
-                <h4>A flurry of changes occured during COVID that went way beyond limiting in-person recruiting 
-                events, and campus visits.</h4>
-                <ul>
-                  <li className="text-danger">
-                    {" "}
-                    The COVID-19 pandemic, accelerated a massive shift to digital
-                    recruiting- Athletes with a strong online presence have a
-                    competitive advantage in the new recruiting <br /> <span className="">
-In addition to the limiting in-person recruiting events, and campus visits
-Here are some of the key changes that
-student-athletes should be aware of:</span>
-
-                
-                    Here is what happened:
-                    <ul>
-                        <li>2020- An additional year of eligibility was granted for current athletes.</li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                  </li>
-                  <li>The NCAA transfer portal-</li>
-                </ul>
-
-
                 <div className="row py-4">
                   <div className="col-sm-12 col-md-6 col-lg-6">
                     <div className="w3-container w3-content mb-4">
@@ -193,6 +162,47 @@ student-athletes should be aware of:</span>
 };
 
 export default HomeOdds;
+
+
+/**<div>
+ *  <h4>
+                  Impact of COVID-19 on Recruiting The COVID-19 pandemic has
+                  accelerated the shift to digital recruiting, with in-person
+                  recruiting events and campus visits limited. Athletes who have
+                  a strong online presence and can effectively showcase their
+                  skills and character have a competitive advantage in the
+                  current recruiting landscape.
+                  <span className="text-danger">
+                    {" "}
+                    It COVID-19 pandemic, accelerated a massive shift to digital
+                    recruiting- Athletes with a strong online presence have a
+                    competitive advantage in the new recruiting landscape.
+                  </span>
+                </h4>
+                
+                <h4>A flurry of changes occured during COVID that went way beyond limiting in-person recruiting 
+                events, and campus visits.</h4>
+                <ul>
+                  <li className="text-danger">
+                    {" "}
+                    The COVID-19 pandemic, accelerated a massive shift to digital
+                    recruiting- Athletes with a strong online presence have a
+                    competitive advantage in the new recruiting <br /> <span className="">
+In addition to the limiting in-person recruiting events, and campus visits
+Here are some of the key changes that
+student-athletes should be aware of:</span>
+
+                
+                    Here is what happened:
+                    <ul>
+                        <li>2020- An additional year of eligibility was granted for current athletes.</li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                  </li>
+                  <li>The NCAA transfer portal-</li>
+                </ul>
+ * </div> */
 
 /**   
 Key metrics highlighting the growing need for 
