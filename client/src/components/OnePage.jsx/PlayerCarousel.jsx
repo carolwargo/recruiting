@@ -17,7 +17,7 @@ const PlayerCarousel = () => {
           <div ref={ref} className={`w3-content w3-justify w3-text-grey 
             ${inView ? "animate-fade-in" : ""}`} 
           id="media">
-          <hr className="w3-opacity w3-padding-16" />
+          <hr className="w3-opacity w3-text-white w3-padding-16" />
 
      <div className="row" style={{ margin: "0 -16px" }}>
        

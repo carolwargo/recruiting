@@ -16,7 +16,7 @@ const PlayerMedia = () => {
           <div ref={ref} className={`w3-content w3-justify w3-text-grey 
             ${inView ? "animate-fade-in" : ""}`} 
           id="media">
-               <hr className="w3-opacity w3-padding-16" />
+               <hr className="w3-opacity w3-text-white w3-padding-16 w3-margin-top" />
                <div className="d-flex justify-content-between align-items-center">
   {/* Start Brand <h1> keep in same position */}
   <h1 className="w3-text-light-grey w3-margin-bottom">Player Media</h1>
@@ -43,8 +43,8 @@ const PlayerMedia = () => {
 <div>
 <PlayerVideo  />
 </div>
-<hr className="w3-opacity w3-padding-16" />
-<div className="w3-padding-16">
+
+<div>
 <PlayerPosts  />  
 </div>
 </div>

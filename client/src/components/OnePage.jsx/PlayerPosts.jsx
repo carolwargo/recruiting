@@ -16,18 +16,12 @@ const PlayerPosts = () => {
     <div className="posts" id="posts">
 
 
-        <div className="py-2">
+        <div className="w3-padding-16">
+        <hr className="w3-opacity w3-text-grey w3-padding-16 w3-margin-top" />
         <h3 className="fw-bold text-white">POSTS & NEWS</h3>
-        <h5 className="w3-margin-top">
-          The Video Library showcases my skills, featuring a mix of in-game and
-          practice videos, categorized into Offense, Defense, and MLB Bullpens.
-        </h5>
-
- <h6 className="w3-margin-top"> Watch a video, share a video, request additional footage, or
-          <span>  {" "} <Link to="contact" className=" link-light">contact me</Link>
-          </span>{" "}
-          with questions or feedback.
-        </h6>
+        <p className="w3-margin-top">
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, harum! Quos molestias nihil at, molestiae eligendi tempora rerum maxime facilis eos dicta, ipsam aspernatur, aliquid voluptas provident mollitia expedita numquam!
+          </p>
       </div>
       {/* ROW 1 */}
       <div className="row">
@@ -125,15 +119,23 @@ className="w3-text-grey hover-zoom">VIEW THIS POST</a>
 
 
         {/**follow me */}
-        <div className="container w3-text-white">
-                <div className="row d-flex justify-content-center align-items-center">
-                    <div className="col-sm-12 col-md-12 col-lg-12">
-                          <div className=" container text-center w3-text-white py-3">
-                          <hr  style={{paddingTop:'10px', paddingBottom:'10px'}}/>
-                           
-                            <h5>FOLLOW ME ON SOCIAL MEDIA:</h5>
-                            <Link
-                              className=" mx-1"
+  
+     
+    
+                          
+ 
+            <div className="row d-flex justify-content-center align-items-center text-center">
+            <div className="w3-padding-16">
+        <hr className="w3-opacity w3-text-white w3-padding-16 w3-margin-top" />
+        <h3 className="fw-bold text-white">FOLLOW ME ON SOCIAL MEDIA:</h3>
+        <p className="w3-margin-top">
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, harum! Quos molestias nihil at, molestiae eligendi tempora rerum maxime facilis eos dicta, ipsam aspernatur, aliquid voluptas provident mollitia expedita numquam!
+          </p>
+   
+             
+              <div className="col-sm-12 col-md-12 col-lg-12">
+                    <Link
+                              className=" mx-1 my-0"
                               style={{ fontSize: "2.7rem" }}
                             >
                          <span className="icon-hover-zoom">
@@ -143,7 +145,7 @@ className="w3-text-grey hover-zoom">VIEW THIS POST</a>
   </span>
                             </Link>
                             <Link
-                               className="mx-1"
+                             className=" mx-1 my-0"
                               style={{ fontSize: "2.9rem" }}
                             >
                                <span className="icon-hover-zoom">
@@ -154,7 +156,7 @@ className="w3-text-grey hover-zoom">VIEW THIS POST</a>
                            
                             </Link>
                             <Link
-                           className="mx-1"
+                         className=" mx-1 my-0"
                               style={{ fontSize: "2.9rem" }}
                             >
                                        <span className="icon-hover-zoom">
@@ -168,7 +170,7 @@ className="w3-text-grey hover-zoom">VIEW THIS POST</a>
                         </div>
                       </div>
                       </div>
-      </div>
+   
   );
 };
 

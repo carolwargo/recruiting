@@ -1,5 +1,7 @@
 import React from "react";
 import { InView } from 'react-intersection-observer';
+import { Link } from "react-router-dom";
+
 
 const PlayerContact = () => {
 
@@ -51,14 +53,12 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
           <div ref={ref} className={`w3-content w3-justify w3-text-grey w3-padding-16 
             ${inView ? "animate-fade-in" : ""}`} 
         id="contact">
-          <h2 className="w3-text-light-grey">Contact Me</h2>
-          <h5>Get in touch direct or send me a message through the site:</h5>
- 
+          <h1 className="w3-text-light-grey">Contact Me</h1>
        {/* Contact section */}
-       <div className="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+       <div className="w3-container w3-light-grey rounded w3-padding-32 w3-padding-large" id="contact">
     <div className="w3-content" style={{maxWidth:"600px"}}>
       <h4 className="w3-center"><b>Contact Me</b></h4>
-      <p>Do you want me to photograph you? Fill out the form and fill me in with the details :) I love meeting new people!</p>
+      <p className="w3-center">Get in touch direct- message me on social media, <Link>call</Link>, <Link>email</Link>  or fill out the form to send me a message through the site.</p>
       <form action="/action_page.php" target="_blank">
         <div className="w3-section">
           <label>Name</label>

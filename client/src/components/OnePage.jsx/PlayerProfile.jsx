@@ -8,6 +8,7 @@ import { GrScorecard } from "react-icons/gr";
 import { FaPhoneVolume } from "react-icons/fa";
 import { MdOutlineEmail} from "react-icons/md";
 import { RiCheckboxCircleFill } from "react-icons/ri";
+import { BsXCircleFill } from "react-icons/bs";
 
 const PlayerProfile = () => {
   return (
@@ -56,7 +57,10 @@ const PlayerProfile = () => {
           */} 
          <div className="row w3-padding-16 d-flex justify-content-center align-items-center g-3">
             
-
+         <div className="w3-text-white">
+                  <h1 className="w3-text-light-grey">Player Profile</h1>
+                 <hr  className="w3-opacity" />
+                </div>
                 {/* Main row with column 4 and nested columns in column 8 */}
                 <div className="col-sm-12 col-md-4 col-lg-4 w3-hide-small w3-hide-medium">
                   <div>
@@ -64,15 +68,13 @@ const PlayerProfile = () => {
                   </div>
                   </div>
                 <div className="col-sm-12 col-md-8 col-lg-8">
-                  <div className="row d-flex justify-content-center align-items-center g-1 py-2">
-                  <div className="w3-text-white">
-                  <h1 className="w3-text-light-grey">Player Profile</h1>
-               <hr />
-                </div>
+                  
+                  <div className="row d-flex justify-content-center align-items-center g-2">
+              
                    <div className="col-sm-12 col-md-6 col-lg-6">
                  
                         <p
-                          className="mt-0 py-0 text-white"
+                          className="my-0 py-0 text-white"
                           style={{ marginBottom: "4px" }}
                         >
                           <span
@@ -97,7 +99,7 @@ const PlayerProfile = () => {
                         </p>
 
                         <p
-                          className="mt-0 py-0 text-white"
+                          className="my-0 py-0 text-white"
                           style={{ marginBottom: "4px" }}
                         >
                           <span
@@ -123,7 +125,7 @@ const PlayerProfile = () => {
                         </p>
 
                         <p
-                          className="mt-0 py-0 text-white"
+                          className="my-0 py-0 text-white"
                           style={{ marginBottom: "4px" }}
                         >
                           <span
@@ -149,7 +151,7 @@ const PlayerProfile = () => {
                         </p>
 
                         <p
-                          className="mt-0 py-0 text-white"
+                          className="my-0 py-0 text-white"
                           style={{ marginBottom: "4px" }}
                         >
                           <span
@@ -173,7 +175,7 @@ const PlayerProfile = () => {
                         </p>
 
                         <p
-                          className="mt-0 py-0 text-white"
+                          className="my-0 py-0 text-white"
                           style={{ marginBottom: "4px" }}
                         >
                           <span
@@ -199,8 +201,8 @@ const PlayerProfile = () => {
                       </div>
 
                       <div className="col-sm-12 col-md-6 col-lg-6">
-                      <div className="w3-text-white w3-margin-top">
-                  <h5 className="fw-bold text-emphasis-light mb-3">PLAYER VITALS</h5>
+                      <div className="w3-text-white">
+                  <h5 className="fw-bold text-emphasis-light mb-2">PLAYER VITALS</h5>
              
                 </div>
                     
@@ -245,11 +247,54 @@ const PlayerProfile = () => {
                      
                       </div>
                     </div>
-                    <div className="w3-text-white mt-4">
+              
+                <div className="row d-flex justify-content-center align-items-center g-2 mt-2">
                 
-                  <h5 className="fw-bold text-emphasis-light" style={{color:'#81cefa'}}>NCAA ELIGIBILITY STATUS</h5>
-             <p>REGISTERED <RiCheckboxCircleFill className="w3-text-blue"/> <span className=" w3-margin-left">NCAA ID: 8736466 </span></p>
+                <div className="w3-text-white">
+                  <hr />
+                <h2 className="fw-bold text-emphasis-light mt-3 " style={{color:'#81cefa'}}>NCAA Eligibility Status 
+                <span className=" " style={{fontSize:'16px'}}> <i className="fw-light text-white-50 w3-margin-left">NCAA ID: 8736466</i> </span>
+                </h2>
+
                 </div>
+
+                   <div className="d-flex justify-content-center">
+
+<span className="col-sm-12 col-md-3 col-lg-3">
+                   <div className="w3-text-white">
+                  <h5 className="w3-text-light-grey fw-bold" style={{fontSize:'13px'}}>Registered   <span><RiCheckboxCircleFill  style={{color:'#81cefa'}}/></span> <br />
+                  <i className="fw-light text-white-50" style={{fontSize:'10px'}}>-Freshman, 2002</i> 
+                  </h5>
+                </div>
+                   </ span>
+                
+                    <span className="col-sm-12 col-md-3 col-lg-3">
+                   <div className="w3-text-white">
+                  <h5 className="w3-text-light-grey fw-bold" style={{fontSize:'13px'}}>Core Courses   <span><RiCheckboxCircleFill className="w3-text-blue"/></span><br />
+                  <i className="fw-light text-white-50" style={{fontSize:'10px'}}>-Junior, 2004</i> 
+                  </h5>
+              
+                </div>
+                    </ span>
+                    <span className="col-sm-12 col-md-3 col-lg-3">
+                   <div className="w3-text-white">
+                  <h5 className="w3-text-light-grey fw-bold" style={{fontSize:'13px'}}>GPA/Test Scale   <span><RiCheckboxCircleFill  style={{color:'#016dab'}}/></span><br />
+                  <i className="fw-light text-white-50" style={{fontSize:'10px'}}>-Junior, 2004</i> 
+                  </h5>
+               
+             
+              
+                </div>
+                    </span>
+                    <span className="col-sm-12 col-md-3 col-lg-3">
+                   <div className="w3-text-white">
+                  <h5 className="w3-text-light-grey fw-bold" style={{fontSize:'13px'}}>Transcripts/Scores   <span><BsXCircleFill className="text-secondary text-opacity-50"/></span><br />
+                  <i className="fw-light text-white-50" style={{fontSize:'10px'}}>(Senior, 2005)</i> 
+                  </h5>
+                </div>
+                    </ span>
+                    </ div>
+                   </div>
                   </div>
                 </div>
 
@@ -257,8 +302,9 @@ const PlayerProfile = () => {
 {/**START TEAMS*/}
                 <div className="row w3-padding-16 d-flex justify-content-center align-items-center g-3">
                 <div className="w3-text-white">
-                <h1 className="w3-text-light-grey">Team Affiliations</h1>
-                <hr style={{ width: "315px" }} className="w3-opacity" />
+                <hr  />
+                <h3 className="w3-text-light-grey">Team Affiliations</h3>
+          
                 </div>
             <div className="col-sm-12 col-md-4 col-lg-4">
                   <div className="w3-text-white">

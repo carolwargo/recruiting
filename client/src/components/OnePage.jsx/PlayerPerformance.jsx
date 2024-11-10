@@ -53,7 +53,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
                ${inView ? "animate-fade-in" : ""}`}
             id="performance"
         >
-                   <hr className="w3-opacity w3-padding-16 w3-margin-top" />
+                   <hr className="w3-opacity w3-text-white w3-padding-16 w3-margin-top" />
             <h1 className="w3-text-light-grey w3-margin-bottom">Performance</h1>
          <h6>Performance numbers are done through Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur qui reiciendis dolor quasi aperiam ut repellendus sint in vel vero, cupiditate tempore et nam repudiandae dolore, iste aliquid? Voluptatum, expedita.</h6>
           <br />
@@ -119,7 +119,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
             className={`w3-content w3-justify w3-text-grey w3-padding-16 
             ${inView ? "animate-fade-in" : ""}`} 
             id="quick-stats">            
-            <hr className="w3-opacity w3-padding-16 w3-margin-top" />
+   <hr className="w3-opacity w3-text-white w3-padding-16 w3-margin-top" />
             <h1 className="w3-text-light-grey w3-margin-bottom">Quick Stats</h1>
          <h6>Quick Stats provide a weekly updated snapshot of four key performance metrics—Batting Average, On Base Percentage, Pop-Time, and Put-Outs— broadly highlighting important aspects of play.</h6>
           <div className="w3-row w3-center w3-padding-16 w3-section w3-light-grey">

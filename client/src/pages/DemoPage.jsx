@@ -11,6 +11,7 @@ import PlayerIntro from "../components/OnePage.jsx/PlayerIntro";
 import PlayerCarousel from "../components/OnePage.jsx/PlayerCarousel";
 import ClaySmall from '../assets/images/ClaySmall.png';
 import ClayCover3 from '../assets/images/ClayCover3.png';
+import { RiHome6Line } from "react-icons/ri";
 import '../styles/demo.css'; 
 
 const DemoPage = () => {
@@ -33,7 +34,7 @@ const DemoPage = () => {
           to="/demo"
           className="w3-bar-item w3-button w3-padding-large w3-black"
         >
-          <i className="fa fa-home w3-xxlarge"></i>
+          <RiHome6Line className="" style={{fontSize:'3rem'}}/>
           <p>HOME</p>
         </Link>
         <Link
