@@ -24,8 +24,8 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 
 function App() {
   return (
-    <div>
-      <BrowserRouter>
+    <div >
+      <BrowserRouter basename="/recruiting">
         <ErrorBoundary>
           <ScrollToTop />
           <UserContextProvider>
