@@ -139,8 +139,7 @@ const AboutUs = () => {
 
                 <h3>
                   Self-promotion has become an assumed and unavoidable part of
-                  the recruitment journey, essential for securing opportunities,
-                  even if it's not what they initially signed up for.
+                  the recruitment journey, essential for securing opportunities.
                 </h3>
               </div>
               <div className="w3-container w3-content">
@@ -194,13 +193,11 @@ const AboutUs = () => {
                         What's in the name?{" "}
                       </h2>
                       <p className=" w3-margin-top">
-                        Self-promotion has become an assumed and unavoidable
-                        part of the recruitment journey, essential for securing
-                        opportunities, even if it's not what they initially
-                        signed up for.
+                   Student athletes are unknowingly up against tremendous competition for scholarships and roster spots. 
+                    The pressure to stand out is immense, and the need to be proactive is paramount.
                       </p>
                       <p className=" w3-margin-top">
-                        Though the focus should be on performance, athletes are
+                        Though the focus should be on performance & academics, athletes are
                         required to build their brand and market their talents.
                       </p>
                     </div>
