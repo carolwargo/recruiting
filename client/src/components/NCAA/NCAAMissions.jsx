@@ -138,7 +138,8 @@ const NCAAMission = () => {
  </div>
 
 <div className="w3-container w3-content">
-<hr className="w3-padding-16"/>
+  <p>Get Started Now <FaLongArrowAltRight className=" w3-margin-left"/></p>
+
 </div>
 
 

@@ -97,7 +97,7 @@ export default function AboutMe() {
                     <h5 className="text-center">
                       <em>Huntingtown, Maryland!</em>
                     </h5>
-                    <div className="text-center">
+                    <div className="text-center container">
                       <ContactModal />
                     </div>
                   </div>

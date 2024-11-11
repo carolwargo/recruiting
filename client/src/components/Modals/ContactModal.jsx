@@ -11,10 +11,10 @@ const ContactModal = () => {
     <>
  
       {/* Button to trigger modal */}
-      <p className='px-4 w3-hide-small'>Click <span className='w3-text-pink'><i>LEARN MORE</i></span> to explore.</p>
+      <p className='w3-hide-small'><i>HAVE QUESTIONS - MESSAGE US FOR THE ANSWERS.</i></p>
               <button tag="a" 
                onClick={openModal}
-               className='btn mt-4 pink-button' size="lg"
+               className=' btn btn-sm pink-button mb-3'
                style={{backgroundImage: 'linear-gradient(to right, #f64b65, #fa52ce)'}}>
                  Message us
               </button>

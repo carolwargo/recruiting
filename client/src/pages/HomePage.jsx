@@ -2,59 +2,82 @@ import React from "react";
 import Services from "../components/Home/Services";
 import Intro from "../components/Home/Intro";
 import AboutMe from "../components/Home/AboutMe";
-import AboutUs from "../components/Home/AboutUs";
 import FAQS from "../components/Home/FAQS";
-import Odds from "../components/Home/Odds"; 
+import Test from "../components/Home/Test"; 
+import '../styles/pricing.css'
 
 const HomePage = () => {
   return (
     <div>
-
-<div className="w3-black">
-        <div className="d-flex justify-content-center py-2 border-bottom">
+{/** 
+        <div className="d-flex border-bottom w3-black w3-hide-medium w3-hide-small">
             <nav
-              className="d-inline-flex fw-bold mt-2"
+              className="d-inline-flex fw-bold w3-hide-medium w3-hide-small"
               style={{ fontSize: "15px" }}
             >
+              <button className="w3-button me-2 w3-black w3-hover-pink w3-hide-medium w3-hide-small">
               <a
-                className="me-3 py-2 link-light text-decoration-underline"
+                className=" link-light text-decoration-none "
                  href="#web-pricing-component"
+                 style={{fontSize: "13px"}}
               >
-               Pricing
+              Who We Are
               </a>
+              </button>
+              <button className="w3-button me-2 w3-black w3-hover-pink w3-hide-medium w3-hide-small">
               <a
-                className="me-3 py-2 link-light text-decoration-underline"
-                  href="#web-timeline-component"
+                className=" link-light text-decoration-none "
+                 href="#web-pricing-component"
+                 style={{fontSize: "13px"}}
               >
-                Process
+              What We Do
               </a>
-
+              </button>
+      
+              <button className="w3-button me-2 w3-black w3-hover-pink w3-hide-medium w3-hide-small">
               <a
-                className="me-3 py-2 link-light text-decoration-underline"
-                href="#web-start-component"
+                className=" link-light text-decoration-none "
+                 href="#web-pricing-component"
+                 style={{fontSize: "13px"}}
               >
-                Start Now
+                Why We Do It
               </a>
+              </button>
+              <button className="w3-button me-2 w3-black w3-hover-pink w3-hide-medium w3-hide-small">
+              <a
+                className=" link-light text-decoration-none "
+                 href="#web-pricing-component"
+                 style={{fontSize: "13px"}}
+              >
+              Recruiting FAQS
+              </a>
+              </button>
+              <button className="w3-button me-2 w3-black w3-hover-pink w3-hide-medium w3-hide-small">
+              <a
+                className=" link-light text-decoration-none "
+                 href="#web-pricing-component"
+                 style={{fontSize: "13px"}}
+              >
+             Where To Start
+              </a>
+              </button>
             </nav>
-          </div>
-          </div>
-
-<div>
-        <AboutUs/>
-        </div>
-
-<div >
-  <Intro/>
-        </div>
-
-<div>
-  <Odds/>
-</div>
+          </div>    
+*/}
 
 
 <div>
   <Services/>
   </div>
+
+
+
+
+  <Intro/>
+      
+  <Test/>
+
+
     
     <div>
         <AboutMe />

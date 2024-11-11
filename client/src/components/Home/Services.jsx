@@ -101,7 +101,6 @@ const Services = () => {
    <div>
 
 <div className="w3-black">
-<p style={{fontSize:'12px'}}>/components/Home/Services</p>
 <div className="w3-container w3-padding-large w3-padding-32 ">
 <div className="row w3-margin-top w3-margin-bottom">
           {/*Start Service Header & intro container */}
@@ -140,10 +139,10 @@ const Services = () => {
    
          
           <div className="text-center fw-light w3-padding-large">
-          <h4 className="mb-4 px-4 w3-hide-small w3-hide-medium">
+          <h3 className="mb-4 px-4 w3-hide-small w3-hide-medium">
             EXPLORE OUR KEY OFFERINGS- <br />DISCOVER HOW WE CAN HELP CREATE OR ELEVATE
             YOUR PERSONAL BRAND & STREAMLINE YOUR MARKETING STRATEGIES.
-          </h4>
+          </h3>
           <h5 className="mb-4 px-4 w3-hide-large">
             EXPLORE OUR KEY OFFERINGS- DISCOVER HOW WE CAN HELP CREATE OR ELEVATE
             YOUR PERSONAL BRAND & STREAMLINE YOUR MARKETING STRATEGIES.
@@ -204,27 +203,7 @@ const Services = () => {
        </div>
      </div>
    </div>
-
  </div>
-
-<div className="w3-container w3-content">
-<hr className="w3-padding-16"/>
-</div>
-
-
-
-
-
-
-
- <div className="w3-container w3-content w3-padding-16">
- 
-  <div className=" w3-padding-16">
- <h3 className="text-center">
-Not sure where to start? <Link to="contact">Contact us</Link> with questions or schedule a 30-minute <Link to="contact">discovery call</Link> to learn more.
-          </h3>
-          </div>
-          </div>
  </div>
     </div>
   );

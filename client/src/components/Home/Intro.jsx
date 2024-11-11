@@ -7,19 +7,18 @@ const HomeIntro = () => {
       <div
         style={{
           backgroundImage:
-            "linear-gradient(to right,  #f64b65 , #d32c9a, #b42b81)",
+            "linear-gradient(to right, #000000, #000000, #d32c9a)",
         }}
       >
         <InView triggerOnce={true}>
           {({ inView, ref }) => (
             <div
               ref={ref}
-              className={`w3-content w3-justify w3-text-black w3-padding-16 ${
+              className={`w3-justify w3-text-white ${
                 inView ? "animate-fade-in" : ""
               }`}
             >
-              <p style={{ fontSize: "12px" }}>/components/Home/Intro</p>
-              <div>
+       <div>
                 <div className="container w3-padding-48">
                   <div className="text-center w3-padding-large">
                     <h1>
@@ -27,20 +26,25 @@ const HomeIntro = () => {
                         style={{
                           fontFamily: "Raleway",
                           fontSize: "2.5rem",
-                          textShadow: "1px 1px 4px black",
+                          textShadow: "1px 1px 4px white",
                         }}
                       >
                         BUILD YOUR BRAND
                       </i>
+                      
                     </h1>
 
-                    <h3 className="text-white mb-3">
-                      Successful recruitment requires more than the traditional metrics
-                      — it’s about creating, controlling and conveying a compelling narrative to
-                      showcases both your skills and your academic achievements, and character requires strategies & experience in the recruitment landscape.
-                    </h3>
-                    <div className="mt-4">
-                      <button className="btn btn-dark border-dashed">
+                    <h4 className="text-white my-3">
+                    "Successful recruitment requires much more than traditional strategies— it’s about 
+                    crafting a powerful narrative that showcases your <span className=" w3-text-gray"><b><i>skills
+                      </i></b>
+                    </span>, <span className=" w3-text-gray">
+                    <b><i>academic achievements</i></b>  </span> , and <span className=" w3-text-gray"><b><i>character</i></b></span>, that conveys an exceptional level of 
+                    <span className="w3-text-gray"><b><i> commitment</i></b> 
+                    </span> and <span className="w3-text-gray"><b><i>discipline</i></b>
+                    </span>  ." </h4>
+                    <div className="">
+                      <button className="btn btn-light border-dashed w3-margin-top">
                         <b>Get Started</b>
                       </button>
                     </div>

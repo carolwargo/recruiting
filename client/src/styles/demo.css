@@ -1,3 +1,11 @@
+@keyframes slideRight {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+.animate-slide-right {
+  animation: slideRight 2s ease-in-out;
+}
 
         /*start ANIMATIONS*/
         @keyframes fadeIn {

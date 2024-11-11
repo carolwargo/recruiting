@@ -1,28 +1,26 @@
 import React from "react";
 import { GiBullseye } from "react-icons/gi";
 import { InView } from "react-intersection-observer";
-import NCAABG from "../../assets/images/NCAA/NCAABG.png";
+
 
 const HomeOdds = () => {
   return (
-    <div className="home-odds" id="home-odds"
-    style={{
-      backgroundImage: `url(${NCAABG})`,
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-      backgroundAttachment: "fixed",
-      width: "100%",
-    }}>
+    <div className="home-odds" id="home-odds">
       <div>
         <InView triggerOnce={true}>
           {({ inView, ref }) => (
             <div
               ref={ref}
-              className={`w3-justify w3-text-grey w3-padding-16 ${
+              className={`w3-justify w3-text-black w3-padding-16 ${
                 inView ? "animate-fade-in" : ""
               }`}
             >
-              <div className="container w3-padding-48 w3-padding-large">
+              <div className="w3-padding-large"
+              >
+                <div>
+                  <h1 className=" text-dark-emphasis"><b>WHAT YOU NEED TO KNOW</b></h1>
+                  <h4>First</h4>
+                </div>
                 <div className="row py-4">
                   <div className="col-sm-12 col-md-6 col-lg-6">
                     <div className="w3-container w3-content mb-4">
@@ -158,6 +156,7 @@ const HomeOdds = () => {
         </InView>
       </div>
     </div>
+ 
   );
 };
 
