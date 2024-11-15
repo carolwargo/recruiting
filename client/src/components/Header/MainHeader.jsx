@@ -32,8 +32,8 @@ const MainHeader = () => {
              <AnimatedHeading />
         
         <h2 className="align-items-center w3-padding-large text-white fw-bold w3-hide-small w3-hide-medium" 
-         style={{ textShadow: "2px 2px 4px black"}}>PROVIDING <span 
-         className="glowing-text fw-bold" style={{color:'#d32c9a'}}> GRAPHICS, EDITING, RECRUITING STRATEGIES & PLATFORMS</span> FOR STUDENT-ATHELETES, TEAMS & ORGANIZATIONS. 
+         style={{ textShadow: "2px 2px 4px black"}}>PROVIDING UNFILTERED GUIDANCE & DIGITAL RECRUITING SERVICES<span 
+         className="glowing-text fw-bold" style={{color:'#d32c9a'}}> FOR STUDENT-ATHLETES</span>, WITH A         <span className="glowing-text fw-bold" style={{color:'#d32c9a'}}>SEASONED PERSPECTIVE</span> AND A <span className="glowing-text fw-bold" style={{color:'#d32c9a'}}>UNIQUE APPROACH</span>. 
         </h2>
         
         <h4 className="align-items-center mb-4 text-white  w3-hide-large" 
@@ -43,7 +43,7 @@ const MainHeader = () => {
 
              <p 
              style={{ textShadow: "2px 2px 4px black"}}>
-              <i> Graphic Design | Digital Marketing | Web Design | Content Management</i></p>
+              <i> Web Design | Graphic Design | Digital Marketing | Video Editing | Content Management</i></p>
              
   
 <div className="py-3">

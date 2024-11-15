@@ -24,7 +24,7 @@ export default function App() {
     className="home"
     
     >
-    <div className='footer' id='footer' style={{fontFamily:'Raleway'}}>
+    <div className='footer' id='footer' style={{fontFamily:'Montserrat'}}>
     <MDBFooter className=' w3-black' >
     
 
@@ -35,7 +35,7 @@ export default function App() {
           <MDBCol md="4" lg="4" xl="4" className='mx-auto mb-5  w3-padding-large'>
            
        <h6 className='mb-4'
-            style={{fontSize:"1rem", fontFamily:'Raleway', textShadow:'.5px .5px 1px black'}}>Con
+            style={{fontSize:"1rem", fontFamily:'Montserrat', textShadow:'.5px .5px 1px black'}}>Con
             <span className='w3-text-pink fw-bold' style={{ fontFamily:"Dancing Script", marginLeft:'-2px', textShadow:'.5px .5px 1px black', fontSize:'18px'}}>Scribe</span>
               
             </h6>
@@ -161,7 +161,7 @@ export default function App() {
       */}
     <section className='d-flex justify-content-center w3-padding-large border-bottom'>
       <div className='d-none d-lg-block ' >
-      <p       style={{fontSize:"1rem", fontFamily:'Raleway', textShadow:'.5px .5px 1px black'}}>Con
+      <p       style={{fontSize:"1rem", fontFamily:'Montserrat', textShadow:'.5px .5px 1px black'}}>Con
             <span className='w3-text-pink fw-bold' style={{ fontFamily:"Dancing Script", marginLeft:'-2px', textShadow:'.5px .5px 1px black', fontSize:'18px'}}>Scribe</span>
           
         </p>

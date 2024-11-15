@@ -3,10 +3,10 @@ import Faq from "react-faq-component";
 import { InView } from "react-intersection-observer";
 
 const data = {
-  title: "FAQS (How it works)",
+  title: "FAQS About the Process (How it works)",
   rows: [
     {
-        title: "Lorem ipsum dolor sit amet,",
+        title: " Does a website eliminate the use of my Social Media Accounts?,",
         content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed tempor sem. Aenean vel turpis feugiat,
           ultricies metus at, consequat velit. Curabitur est nibh, varius in tellus nec, mattis pulvinar metus.
           In maximus cursus lorem, nec laoreet velit eleifend vel. Ut aliquet mauris tortor, sed egestas libero interdum vitae.

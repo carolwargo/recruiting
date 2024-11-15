@@ -1,92 +1,122 @@
-import React from "react";
-import { GiBullseye } from "react-icons/gi";
+import React, { useRef } from "react";
 import { InView } from "react-intersection-observer";
-
-
+import { useInView } from "framer-motion";
+import NCAABWTrans from "../../assets/images/NCAA/NCAABWTrans.png";  
 const HomeOdds = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: false });
+
   return (
-    <div className="home-odds" id="home-odds">
+    <div className="home-odds" id="home-odds"
+    style={{
+      backgroundImage: `url(${NCAABWTrans})`,
+      backgroundSize: "cover", 
+      backgroundRepeat: "no-repeat",
+      backgroundAttachment: "fixed",
+  }}>
+    
+      <div className="w3-padding-16">
+      <p>
+        <i>**Odds</i>
+      </p>
+      <div className="container text-center w3-padding-24">
+        <h1
+          ref={ref}
+          style={{
+            fontSize: "3rem" ,
+            textShadow:'1px 1px 4px black',
+            transform: isInView ? "none" : "translateX(-150px)",
+            opacity: isInView ? 1 : 0,
+            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+          }}
+        >
+        What Sets Us Apart?
+        </h1>
+
+        <h4>"We go beyond the information overload provided on the NCAA’s website. We've analyzed, summarized key facts, and developed strategies to inform our recruits with insights 'between the lines' that aren't publicly available."</h4>   
+      </div>
       <div>
         <InView triggerOnce={true}>
           {({ inView, ref }) => (
             <div
               ref={ref}
-              className={`w3-justify w3-text-black w3-padding-16 ${
+              className={`w3-justify w3-text-black  ${
                 inView ? "animate-fade-in" : ""
               }`}
             >
-              <div className="w3-padding-large"
-              >
-                <div>
-                  <h1 className=" text-dark-emphasis"><b>WHAT YOU NEED TO KNOW</b></h1>
-                  <h4>First</h4>
-                </div>
-                <div className="row py-4">
-                  <div className="col-sm-12 col-md-6 col-lg-6">
+
+              
+               <div className="container">
+                <div className="row">
+             <div className="col-sm-12 col-md-6 col-lg-6">
                     <div className="w3-container w3-content mb-4">
                       <div className="row d-flex justify-content-start align-items-center">
                         <div className="w3-container w3-content">
                           <div className="card mb-2 bg-black border-light-subtle">
                             <div className="card-body">
-                              <div className="row d-flex justify-content-start align-items-center">
-                                <div className="col-md-2">
-                                  <GiBullseye style={{ fontSize: "5.5rem" }} />
-                                </div>
-                                <div className="col-md-10">
                                   <div className="w3-margin-left text-white">
-                                    {/*    <h5>8 MILLION HIGH SCHOOL ATHLETES</h5>*/}
-                                    Out of 8 million U.S. high school athletes,
-                                    roughly 6% will compete in college. In major
-                                    college sports like football and basketball,
-                                    the percentage is even lower. Marketing
-                                    isn’t a requirement, but with only 7% of
-                                    high school athletes getting the chance to
-                                    play in college and less than 2% reaching
-                                    Division I, effective self-promotion is
-                                    essential.
+          <p className="text-white">"We go beyond the information overload provided on the NCAA’s website. We've analyzed, summarized key facts, and developed strategies to inform our recruits with insights 'between the lines' that aren't publicly available."</p>
                                   </div>
                                 </div>
                               </div>
                             </div>
-                          </div>
-                        </div>
-                        <div className="w3-container w3-content">
+                        
+                        <div className="">
                           <div className="card mb-2 bg-black border-light-subtle">
                             <div className="card-body">
-                              <div className="row d-flex justify-content-start align-items-center">
-                                <div className="col-md-2">
-                                  <GiBullseye style={{ fontSize: "5.5rem" }} />
-                                </div>
-                                <div className="col-md-10">
                                   <div className="w3-margin-left text-white">
                                     {/** <h4>MISSION</h4>*/}
-                                    The NCAA awards about $3.6 billion in
-                                    athletic scholarships annually, but only
-                                    1%-2% undergraduates will receive athletic
-                                    money.
+                                    ORIGIN OF THE NCAA-
+Short PC Answer:
+'The NCAA was founded in response to the need for safer play in college football'-
+
+The Unedited Reality- (The Death Harvest 1905):
+College football's exploitation and disregard for player safety nearly led to its ban, with reports of 18-25 deaths and countless injuries in a single season.
                                   </div>
                                 </div>
                               </div>
                             </div>
-                          </div>
-                        </div>
+
+                            <div className="">
+                          <div className="card mb-2 bg-black border-light-subtle">
+                            <div className="card-body">
+                                  <div className="w3-margin-left text-white">
+                                    {/** <h4>MISSION</h4>*/}
+                                    The NCAA is struggling to maintain relevance, and prove their value to simply stay afloat-
+                                    ORIGIN & MISSION Loyalty to ALL student-athletes has narrowed to the money-makers, and compromise is inevitable.
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div className="">
+                          <div className="card mb-2 bg-black border-light-subtle">
+                            <div className="card-body">
+                                  <div className="w3-margin-left text-white">
+                                    {/** <h4>MISSION</h4>*/}
+                                    The NCAA's main source of revenue (90%+) is generated by FUNDING SOURCES, BOARD STRUCTURE, LEGISLATURE, and FOCUSED MISSION— is essential for effective planning and tempering expectations..
+                                    "Where the money flows is where the loyalty goes."
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                       </div>
                     </div>
                   </div>
+
+
+
+
                   <div className="col-sm-12 col-md-6 col-lg-6">
-                    <div className="w3-container w3-content mb-4">
+                    <div className="mb-4">
                       <div className="row d-flex justify-content-start align-items-center">
                         <div className="w3-container w3-content">
                           <div className="card mb-2 bg-black border-light-subtle">
                             <div className="card-body">
-                              <div className="row d-flex justify-content-start align-items-center">
-                                <div className="col-md-2">
-                                  <GiBullseye style={{ fontSize: "5.5rem" }} />
-                                </div>
-                                <div className="col-md-10">
+                           
                                   <div className="w3-margin-left text-white">
                                     {/**  <h4>MISSION</h4>*/}
-                                    4. Importance of Video in Recruitment 90% of
+                                    Importance of Video in Recruitment 90% of
                                     coaches say that highlight videos are a key
                                     part of their evaluation process. Properly
                                     edited skills videos that are easy to access
@@ -96,53 +126,39 @@ const HomeOdds = () => {
                                 </div>
                               </div>
                             </div>
-                          </div>
-                        </div>
+                         
                         <div className="w3-container w3-content">
                           <div className="card mb-2 bg-black border-light-subtle">
                             <div className="card-body">
-                              <div className="row d-flex justify-content-start align-items-center">
-                                <div className="col-md-2">
-                                  <GiBullseye style={{ fontSize: "5.5rem" }} />
-                                </div>
-                                <div className="col-md-10">
                                   <div className="w3-margin-left text-white">
                                     {/**<h4>MISSION</h4> */}
-                                    5. Rise of Digital Recruiting In a survey,
-                                    40% of college coaches indicated they use
-                                    online recruiting platforms as their primary
-                                    source for identifying athletes. This shift
-                                    to digital recruitment highlights the need
-                                    for athletes to have an optimized personal
+                                    Rise of Digital Recruiting In a survey, 40%
+                                    of college coaches indicated they use online
+                                    recruiting platforms as their primary source
+                                    for identifying athletes. This shift to
+                                    digital recruitment highlights the need for
+                                    athletes to have an optimized personal
                                     website, social media presence, and
                                     professional digital content.
                                   </div>
                                 </div>
-                              </div>
                             </div>
                           </div>
-                        </div>
+                      
 
                         <div className="w3-container w3-content">
                           <div className="card mb-2 bg-black border-light-subtle">
                             <div className="card-body">
-                              <div className="row d-flex justify-content-start align-items-center">
-                                <div className="col-md-2">
-                                  <GiBullseye style={{ fontSize: "5.5rem" }} />
-                                </div>
-                                <div className="col-md-10">
-                                  <div className="w3-margin-left text-white">
+                            <div className="w3-margin-left text-white">
                                     {/**<h4>MISSION</h4> */}
-                                    6. Increased Focus on Personal Branding 78%
-                                    of college coaches recommend that athletes
+                                    Increased Focus on Personal Branding 78% of
+                                    college coaches recommend that athletes
                                     brand themselves online to maximize
                                     exposure. A consistent personal brand that
                                     reflects an athlete’s unique strengths,
                                     achievements, and personality can attract
                                     more interest from recruiters.
                                   </div>
-                                </div>
-                              </div>
                             </div>
                           </div>
                         </div>
@@ -152,16 +168,16 @@ const HomeOdds = () => {
                 </div>
               </div>
             </div>
+         
           )}
         </InView>
       </div>
     </div>
- 
+    </div>
   );
 };
 
 export default HomeOdds;
-
 
 /**<div>
  *  <h4>

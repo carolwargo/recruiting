@@ -13,7 +13,7 @@ const VideoCards = () => {
       id="service-cards"
       style={{
         backgroundImage:
-          "linear-gradient(to right, white,  #e6e6e6, light-gray, #d32c9a)",
+          "linear-gradient(to right, white,  #e6e6e6, light-gray, gray)",
       }}
     >
  

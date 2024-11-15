@@ -10,6 +10,7 @@ const AboutUs = () => {
         backgroundImage:
           "linear-gradient(to right, #eeeeee, #ffffff, #e6e6e6)",
       }}>
+         <p><i>**AboutUs</i></p>
         <InView triggerOnce={true}>
           {({ inView, ref }) => (
             <div
@@ -45,7 +46,7 @@ const AboutUs = () => {
                         fontFamily: "Dancing Script",
                         marginLeft: "-10px",
                         textShadow: "1px 1px 4px black",
-                        color: " #d32c9a",
+                        color: "color:'#d32c9a'",
                       }}
                     >
                       Scribe

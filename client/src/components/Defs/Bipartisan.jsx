@@ -7,7 +7,7 @@ const PlatformModal = () => {
 <div>
 <style>
     {`
-main,h1,h5 {font-family: "Raleway", sans-serif}
+main,h1,h5 {font-family: "Montserrat", sans-serif}
 main, html {height: 100%}
 .bgimg {
   background-image: url('/w3images/onepage_restaurant.jpg');

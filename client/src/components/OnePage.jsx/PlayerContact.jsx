@@ -1,13 +1,10 @@
 import React from "react";
-import { InView } from 'react-intersection-observer';
+import { InView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
 
-
 const PlayerContact = () => {
-
   return (
     <div>
-
       <style>
         {`
   
@@ -40,51 +37,78 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
  `}
       </style>
 
- 
-<div className="page-container" >
-      {/* Page Content */}
+      <div className="page-container">
+        {/* Page Content */}
 
-    {/* Contact Section */}
+        {/* Contact Section */}
 
-            <hr />
+        <hr />
 
-    <InView triggerOnce={true}>
+        <InView triggerOnce={true}>
           {({ inView, ref }) => (
-          <div ref={ref} className={`w3-content w3-justify w3-text-grey w3-padding-16 
-            ${inView ? "animate-fade-in" : ""}`} 
-        id="contact">
-          <h1 className="w3-text-light-grey">Contact Me</h1>
-       {/* Contact section */}
-       <div className="w3-container w3-light-grey rounded w3-padding-32 w3-padding-large" id="contact">
-    <div className="w3-content" style={{maxWidth:"600px"}}>
-      <h4 className="w3-center"><b>Contact Me</b></h4>
-      <p className="w3-center">Get in touch direct- message me on social media, <Link>call</Link>, <Link>email</Link>  or fill out the form to send me a message through the site.</p>
-      <form action="/action_page.php" target="_blank">
-        <div className="w3-section">
-          <label>Name</label>
-          <input className="w3-input w3-border" type="text" name="Name" required/>
-        </div>
-        <div className="w3-section">
-          <label>Email</label>
-          <input className="w3-input w3-border" type="text" name="Email" required/>
-        </div>
-        <div className="w3-section">
-          <label>Message</label>
-          <input className="w3-input w3-border" type="text" name="Message" required/>
-        </div>
-        <button type="submit" className="w3-button w3-block w3-black w3-margin-bottom">Send Message</button>
-      </form>
-    </div>
-  </div>
-
-        </div>
+            <div
+              ref={ref}
+              className={`w3-content w3-justify w3-text-grey w3-padding-16 
+            ${inView ? "animate-fade-in" : ""}`}
+              id="contact"
+            >
+              {/* Contact section */}
+              <div
+                className="w3-container w3-light-grey rounded w3-padding-32 w3-padding-large"
+                id="contact"
+              >
+                <div className="w3-content" style={{ maxWidth: "600px" }}>
+                  <h4 className="w3-center">
+                    <b>Contact Me</b>
+                  </h4>
+                  <p className="w3-center">
+                    Get in touch direct- message me on social media,{" "}
+                    <Link>call</Link>, <Link>email</Link> or fill out the form
+                    to send me a message through the site.
+                  </p>
+                  <form action="/action_page.php" target="_blank">
+                    <div className="w3-section">
+                      <label>Name</label>
+                      <input
+                        className="w3-input w3-border"
+                        type="text"
+                        name="Name"
+                        required
+                      />
+                    </div>
+                    <div className="w3-section">
+                      <label>Email</label>
+                      <input
+                        className="w3-input w3-border"
+                        type="text"
+                        name="Email"
+                        required
+                      />
+                    </div>
+                    <div className="w3-section">
+                      <label>Message</label>
+                      <input
+                        className="w3-input w3-border"
+                        type="text"
+                        name="Message"
+                        required
+                      />
+                    </div>
+                    <button
+                      type="submit"
+                      className="w3-button w3-block w3-black w3-margin-bottom"
+                    >
+                      Send Message
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
           )}
-    </InView>
+        </InView>
 
-
-  
         {/* END PAGE CONTENT */}
-        
+
         <script>
           {`
 function myFunction(id) {
@@ -110,8 +134,7 @@ function openNav() {
 }
   `}
         </script>
-      
-    </div>
+      </div>
     </div>
   );
 };

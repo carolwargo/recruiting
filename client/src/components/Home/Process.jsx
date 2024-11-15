@@ -8,6 +8,7 @@ import { InView } from "react-intersection-observer";
 const Process = () => {
     return (
       <div className="process" id="process">
+          <p>components/home/process</p>
    <div>
 
  <div className="w3-container w3-content w3-padding-16">

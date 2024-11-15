@@ -1,11 +1,15 @@
 //components/Home/Services.jsx
-import React from "react";
+import React, { useRef } from 'react';
+import '../../App.css'; // Import your CSS file
+import { useInView } from "framer-motion";
 import { Link } from "react-router-dom";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
 
 
 const Services = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: false});
     return (
       <div className="services" id="services">
 
@@ -23,9 +27,7 @@ const Services = () => {
       <symbol id="sun-fill" viewBox="0 0 16 16">
         <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
       </symbol>
-    </svg>
-    <svg xmlns="http://www.w3.org/2000/svg" className="d-none">
-  
+ 
     <symbol id="web" viewBox="0 0 16 16">
     <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5"/>
     </symbol>
@@ -94,18 +96,26 @@ const Services = () => {
   <symbol id="geo-fill" viewBox="0 0 16 16">
     <path fillRule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/>
   </symbol>
+  
 </svg>
 
 
    {/* Start 8 Column Icon Grid */}
    <div>
-
 <div className="w3-black">
 <div className="w3-container w3-padding-large w3-padding-32 ">
 <div className="row w3-margin-top w3-margin-bottom">
           {/*Start Service Header & intro container */}
         <div className="container text-center">
-          <h1>
+    <p><i>**Services</i></p>
+        
+        
+          <h1 ref={ref}
+          style={{
+            transform: isInView ? "none" : "translateX(-50px)",
+            opacity: isInView ? 1 : 0,
+            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",    
+          }}>
             <span
               style={{
                 fontSize: "4.5rem",
@@ -129,7 +139,7 @@ const Services = () => {
                   fontFamily: "Dancing Script",
                   marginLeft: "-10px",
                   textShadow: "1px 1px 4px black",
-                  color: " #d32c9a",
+                  color: " gray",
                 }}
               >
                 Services
@@ -156,7 +166,7 @@ const Services = () => {
 
     <div className="w3-container w3-content w3-padding-32">
    <div className="row px-4 mb-2">
-   <div className="col-sm-12 col-md-6 col-lg-6 d-flex mb-2 align-items-start w3-padding-large">
+   <div className="col-sm-12 col-md-6 col-lg-6 d-flex mb-2 align-items-start w3-padding-small">
        <svg className="bi text-body-secondary flex-shrink-0 me-3" width="2em" height="2em"><use xlinkHref="#web"/></svg>
        <div>
          <h4 className="fw-bold mb-0 fs-2 text-body-emphasis">Custom Website Development</h4>
@@ -167,10 +177,10 @@ const Services = () => {
             </Link>
        </div>
      </div>
-     <div className="col-sm-12 col-md-6 col-lg-6 d-flex mb-2 align-items-start w3-padding-large">
+     <div className="col-sm-12 col-md-6 col-lg-6 d-flex mb-2 align-items-start w3-padding-small">
        <svg className="bi text-body-secondary flex-shrink-0 me-3" width="2em" height="2em"><use xlinkHref="#graphics"/></svg>
        <div>
-         <h4 className="fw-bold mb-0 fs-2 text-body-emphasis">Graphic Design Elements</h4>
+         <h4 className="fw-bold mb-0 fs-2 text-body-emphasis">Graphic Displays & Design Elements</h4>
          <p style={{fontSize:'16px', marginTop:'5px', marginBottom:'10px'}}> 
           Graphics that enhance your brand, promote a buzz on social media, relay statistics & accolades and more that make a lasting impression.
          </p>
@@ -178,7 +188,7 @@ const Services = () => {
             </Link>
        </div>
      </div>
-     <div className="col-sm-12 col-md-6 col-lg-6 d-flex w3-margin-top align-items-start">
+     <div className="col-sm-12 col-md-6 col-lg-6 d-flex w3-margin-top align-items-start w3-padding-small">
      <svg className="bi text-body-secondary flex-shrink-0 me-3" width="2em" height="2em"><use xlinkHref="#market"/></svg>
        <div>
          <h4 className="fw-bold mb-0 fs-2 text-body-emphasis">Personal Branding Strategies</h4>
@@ -190,7 +200,7 @@ const Services = () => {
             </Link>   
        </div>
      </div>
-     <div className="col-sm-12 col-md-6 col-lg-6 d-flex w3-margin-top align-items-start">
+     <div className="col-sm-12 col-md-6 col-lg-6 d-flex w3-margin-top align-items-start w3-padding-small">
        <svg className="bi text-body-secondary flex-shrink-0 me-3" width="2em" height="2em"><use xlinkHref="#video"/></svg>
        <div>
          <h4 className="fw-bold mb-0 fs-2 text-body-emphasis">

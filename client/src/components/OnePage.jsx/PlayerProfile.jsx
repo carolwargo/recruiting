@@ -55,7 +55,7 @@ const PlayerProfile = () => {
          
          }}
           */} 
-         <div className="row w3-padding-16 d-flex justify-content-center align-items-center g-3">
+         <div className="row d-flex justify-content-center align-items-center g-3">
             
          <div className="w3-text-white">
                   <h1 className="w3-text-light-grey">Player Profile</h1>
@@ -251,7 +251,7 @@ const PlayerProfile = () => {
                 <div className="row d-flex justify-content-center align-items-center g-2 mt-2">
                 
                 <div className="w3-text-white">
-                  <hr />
+              
                 <h2 className="fw-bold text-emphasis-light mt-3 " style={{color:'#81cefa'}}>NCAA Eligibility Status 
                 <span className=" " style={{fontSize:'16px'}}> <i className="fw-light text-white-50 w3-margin-left">NCAA ID: 8736466</i> </span>
                 </h2>
@@ -302,7 +302,6 @@ const PlayerProfile = () => {
 {/**START TEAMS*/}
                 <div className="row w3-padding-16 d-flex justify-content-center align-items-center g-3">
                 <div className="w3-text-white">
-                <hr  />
                 <h3 className="w3-text-light-grey">Team Affiliations</h3>
           
                 </div>

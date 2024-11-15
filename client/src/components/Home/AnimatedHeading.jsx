@@ -17,11 +17,14 @@ const AnimatedHeading = () => {
         opacity: isInView ? 1 : 0,
         transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
       }}
+
       className='mb-3'>
-     <span><i style={{fontFamily:'Raleway',fontSize:'4.5rem', textShadow:'1px 1px 4px black'}}>Con</i></span>
-     <span className=' fw-bold' style={{ fontFamily:"Dancing Script", marginLeft:'-10px', color:'#d32c9a', textShadow:'1px 1px 4px black'}}>Scribe</span>
+      <span><i style={{fontFamily:'Raleway',fontSize:'4.5rem', textShadow:'1px 1px 4px black'}}>Con</i></span>
+      <span className=' fw-bold' style={{ fontFamily:"Dancing Script", marginLeft:'-10px', color:'#d32c9a', textShadow:'2px 2px 5px black'}}>Scribe</span>
+    
+   </h1>
    
-  </h1>
+ 
 
     </div>
   );

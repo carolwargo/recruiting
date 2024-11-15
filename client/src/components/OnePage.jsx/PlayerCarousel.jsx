@@ -22,20 +22,22 @@ const PlayerCarousel = () => {
      <div className="row" style={{ margin: "0 -16px" }}>
        
 <div className="col-12 col-md-4 my-2">
-    <div className="container py-2">
-        <h4 className="fw-bold text-white">IN-SEASON PROGRESS & OFF-SEASON UPDATES</h4>
+    <div className="container">
+    <h3 className="fw-bold text-white w3-hide-small w3-hide-medium">IN-SEASON PROGRESS TRACKER & OFF-SEASON UPDATES:</h3>
+      
+        <h3 className="fw-bold text-white w3-hide-large">PROGRESS & UPDATES</h3>
       
         <p className="w3-margin-top w3-text-grey">
-        <span className="w3-margin-top w3-text-grey fw-bolder"><i className="fa fa-calendar-check-o fa-fw"></i> 2.12.2023 </span> <i className="w3-margin-right"> Slow start but, felt great. Good swings, good visions, good at-bats, great contact, and walked a lot. Stayed focused by working on approach, timing and patience.</i>   </p>
+        <i className="w3-margin-right"> Slow start but, felt great. Good swings, good visions, good at-bats, great contact, and walked a lot. Stayed focused by working on approach, timing and patience.</i>   </p>
 
-        <h6 className="w3-margin-top w3-text-grey">
+        <h3 className="w3-margin-top w3-text-grey">
           Watch a video, share a video, request additional footage, or
           <span>
             {" "}
             <Link className="link-light text-decoration-none" to="contact">contact me</Link>
           </span>{" "}
           with questions or feedback.
-        </h6>
+        </h3>
       </div>
     </div>
     <div className="col-12 col-md-8 my-2">

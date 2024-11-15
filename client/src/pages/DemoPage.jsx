@@ -9,6 +9,7 @@ import PlayerFooter from "../components/OnePage.jsx/PlayerFooter";
 import PlayerPerformance from "../components/OnePage.jsx/PlayerPerformance";
 import PlayerIntro from "../components/OnePage.jsx/PlayerIntro";
 import PlayerCarousel from "../components/OnePage.jsx/PlayerCarousel";
+import PlayerDownloads from "../components/OnePage.jsx/PlayerDownloads";  
 import ClaySmall from '../assets/images/ClaySmall.png';
 import ClayCover3 from '../assets/images/ClayCover3.png';
 import { RiHome6Line } from "react-icons/ri";
@@ -18,8 +19,6 @@ const DemoPage = () => {
 
   return (
     <div>
-
-
 <div className="body w3-black"
     style={{paddingTop:'1rem'}}>
       {/* Icon Bar (Sidebar - hidden on small screens) */}
@@ -166,7 +165,7 @@ const DemoPage = () => {
     {/* Contact Section */}
     <PlayerCarousel/>
 </div>
-
+<PlayerDownloads/>
     <PlayerContact/>
 
    {/* Footer */}

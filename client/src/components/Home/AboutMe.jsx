@@ -1,22 +1,85 @@
-import React from "react";
-import MeWhite from "../../assets/images/MeWhite.png";
-import LocationView from "../../assets/images/LocationView.png";
-import ContactModal from "../Modals/ContactModal";
+// components/Home/AboutMe.jsx
+
+import React, { useRef } from "react";
+import { useInView } from "framer-motion";
+//import MeWhite from "../../assets/images/MeWhite.png";
+//import LocationView from "../../assets/images/LocationView.png";
+//import ContactModal from "../Modals/ContactModal";
 import { InView } from "react-intersection-observer";
 
 export default function AboutMe() {
-  return (
-    <div className="about-me" id="about-me">
-            <div className="w3-light-gray">
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: false });
 
-            <InView triggerOnce={true}>
-        {({ inView, ref }) => (
-          <div
+  return (
+    <div className="about-me w3-black" id="about-me">
+      <p>
+        <i>**AboutMe</i>
+      </p>
+
+      <div>
+        <div className="container text-center">
+          <h1
             ref={ref}
-            className={`w3-justify w3-text-grey w3-padding-16 
-            ${inView ? "animate-fade-in" : ""}`}
+            style={{
+              transform: isInView ? "none" : "translateX(-50px)",
+              opacity: isInView ? 1 : 0,
+              transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+            }}
           >
-              <p style={{ fontSize: "12px" }}>/components/Home/AboutMe</p>
+            <span
+              style={{
+                fontSize: "4.5rem",
+              }}
+              className="mb-3"
+            >
+              <span>
+                <i
+                  style={{
+                    fontFamily: "Montserrat",
+                    fontSize: "3.5rem",
+                    textShadow: "1px 1px 4px black",
+                  }}
+                >
+                Who We Are
+                </i>
+              </span>
+           
+            </span>
+          </h1>
+
+          <h3>
+            <i
+              style={{
+                fontFamily: "Montserrat",
+              }}
+            >
+              <b className=" w3-text-gray">"PASSION & EXPERTISE </b>{" "}
+            </i>
+            <i>
+              Unite to <b className=" w3-text-gray">CHAMPION & PROMOTE</b> the
+              essential yet often overlooked force shaping our future:
+              <span className=" w3-text-gray">
+                {" "}
+                <i>
+                  <b>YOUNG PEOPLE</b>
+                </i>
+              </span>{" "}
+              with bold dreams, relentless ambition, and a refusal to accept
+              limits."
+            </i>
+          </h3>
+        </div>
+
+        <InView triggerOnce={true}>
+          {({ inView, ref }) => (
+            <div
+              ref={ref}
+              className={`w3-justify w3-text-grey w3-padding-16 
+            ${inView ? "animate-fade-in" : ""}`}
+            >
+              {/*start About Me personally */}
+              {/** 
               <div
                 className="w3-content w3-container w3-padding-32"
                 style={{ padding: "40px" }}
@@ -61,35 +124,41 @@ export default function AboutMe() {
                   </div>
                 </div>
               </div>
+              */}
+              {/*end About Me personally */}
+
+              {/*start Quick Stats */}
               <div
                 className="w3-row w3-center w3-black w3-padding-32"
                 style={{ backgroundColor: "#FF385C" }}
               >
                 <div className="w3-quarter w3-section">
-                  <span className="w3-xlarge">
-                    20<span style={{ fontSize: "10px" }}>yrs</span> +
-                  </span>
+                  <span className="w3-xxlarge">20+</span>
                   <br />
-                  BUSINESS EXPERIENCE
+                  <span className="w3-large"> BUSINESS EXPERIENCE</span>
                 </div>
+
                 <div className="w3-quarter w3-section">
-                  <span className="w3-xlarge">100+</span>
+                  <span className="w3-xxlarge">100+</span>
                   <br />
-                  DESIGN PROJECTS
+                  <span className="w3-large"> TRANSFER STUDENTS</span>
                 </div>
+
                 <div className="w3-quarter w3-section">
-                  <span className="w3-xlarge">10+</span>
+                  <span className="w3-xxlarge">100+</span>
                   <br />
-                  LEADERSHIP ROLES
+                  <span className="w3-large"> HIGH SCHOOL RECRUITS</span>
                 </div>
+
                 <div className="w3-quarter w3-section">
-                  <span className="w3-xlarge">100+</span>
+                  <span className="w3-xxlarge">100%</span>
                   <br />
-                  MEETINGS
+                  <span className="w3-large">DEDICATED TO SUCCESS</span>
                 </div>
               </div>
-
-              {/* Location */}
+              {/*end Quick Stats */}
+              {/*start Location */}
+              {/** 
               <div className="w3-content w3-container w3-padding-32 ">
                 <div className="row justify-content-center align-items-center">
                   <div className="col-lg-4">
@@ -111,9 +180,10 @@ export default function AboutMe() {
                   </div>
                 </div>
               </div>
+*/}
             </div>
-        )}
-      </InView>
+          )}
+        </InView>
       </div>
     </div>
   );

@@ -10,6 +10,7 @@ const HomeIntro = () => {
             "linear-gradient(to right, #000000, #000000, #d32c9a)",
         }}
       >
+         <p><i>**Intro</i></p>
         <InView triggerOnce={true}>
           {({ inView, ref }) => (
             <div
@@ -24,7 +25,7 @@ const HomeIntro = () => {
                     <h1>
                       <i
                         style={{
-                          fontFamily: "Raleway",
+                          fontFamily: "Montserrat",
                           fontSize: "2.5rem",
                           textShadow: "1px 1px 4px white",
                         }}
@@ -36,12 +37,12 @@ const HomeIntro = () => {
 
                     <h4 className="text-white my-3">
                     "Successful recruitment requires much more than traditional strategies— it’s about 
-                    crafting a powerful narrative that showcases your <span className=" w3-text-gray"><b><i>skills
+                    crafting a powerful narrative that showcases your <span style={{color:'#d32c9a'}}><b><i>skills
                       </i></b>
-                    </span>, <span className=" w3-text-gray">
-                    <b><i>academic achievements</i></b>  </span> , and <span className=" w3-text-gray"><b><i>character</i></b></span>, that conveys an exceptional level of 
-                    <span className="w3-text-gray"><b><i> commitment</i></b> 
-                    </span> and <span className="w3-text-gray"><b><i>discipline</i></b>
+                    </span>, <span style={{color:'#d32c9a'}}>
+                    <b><i>academic achievements</i></b>  </span> , and <span style={{color:'#d32c9a'}}><b><i>character</i></b></span>, that conveys an exceptional level of 
+                    <span style={{color:'#d32c9a'}}><b><i> commitment</i></b> 
+                    </span> and <span style={{color:'#d32c9a'}}><b><i>discipline</i></b>
                     </span>  ." </h4>
                     <div className="">
                       <button className="btn btn-light border-dashed w3-margin-top">

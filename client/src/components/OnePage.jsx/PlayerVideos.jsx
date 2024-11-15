@@ -11,19 +11,19 @@ const PlayerVideo = () => {
       <div className="py-2">
         <h2 className="w3-text-light-grey">Video Skills Library</h2>
               
-        <h5 className="w3-margin-top">
+        <h5 className="w3-margin-top w3-hide-small w3-hide-medium">
           The Video Library showcases my skills, featuring a mix of in-game and
           practice videos, categorized into Offense, Defense, and MLB Bullpens.
         </h5>
 
-        <h6 className="w3-margin-top w3-text-grey">
+        <h5 className="w3-margin-top w3-text-grey">
           Watch a video, share a video, request additional footage, or
           <span>
             {" "}
             <Link className="link-light text-decoration-none" to="contact">contact me</Link>
           </span>{" "}
           with questions or feedback.
-        </h6>
+        </h5>
       </div>
       {/* ROW 1 */}
       <div className="row w3-padding-top-16 justify-content-between align-items-center">
