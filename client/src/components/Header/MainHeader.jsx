@@ -1,7 +1,7 @@
 import React from 'react';
 import PinkBlackBG from '../../assets/images/PinkBlackBG.png';
 import { Link as ScrollLink } from 'react-scroll';
-import AnimatedHeading from '../Home/AnimatedHeading';
+import AnimatedHeading from './Animated/AnimatedHeading';
 import TopNav from '../Navigation/TopNav';
 const MainHeader = () => {
 
@@ -51,7 +51,7 @@ const MainHeader = () => {
 <ScrollLink to="/contact" smooth={true} duration={500}>
 <button
   type="button"
-  className="btn mx-2 mb-2 custom-btn-purple"
+  className="btn mx-2 mb-2 custom-btn-pink"
 >
   <b style={{textShadow:'2px 2px 4px black', color:'white'}}>Get Started</b>
 </button>

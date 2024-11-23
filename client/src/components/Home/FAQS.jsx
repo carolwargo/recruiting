@@ -35,9 +35,7 @@ export default function FAQSComponent() {
             >
               <div className="container w3-padding-48 w3-padding-large">
                 <Faq data={data} styles={styles} config={config} />
-                <p>
-                  <Faq data={data.text}></Faq>
-                </p>
+             
               </div>
             </div>
           )}

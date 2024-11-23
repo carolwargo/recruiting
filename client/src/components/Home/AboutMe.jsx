@@ -37,40 +37,32 @@ export default function AboutMe() {
                 <i
                   style={{
                     fontFamily: "Montserrat",
-                    fontSize: "3.5rem",
-                    textShadow: "1px 1px 4px black",
+                    fontSize: "3rem",
+                    textShadow: "1px 1px 4px #blue",
                   }}
                 >
-                Who We Are
+                  <b className=""> WHO <span style={{color:'#67c3f8'}}>WE</span> ARE</b>
+               
                 </i>
               </span>
            
             </span>
           </h1>
 
-          <h3>
-            <i
-              style={{
-                fontFamily: "Montserrat",
-              }}
-            >
-              <b className=" w3-text-gray">"PASSION & EXPERTISE </b>{" "}
-            </i>
-            <i>
-              Unite to <b className=" w3-text-gray">CHAMPION & PROMOTE</b> the
-              essential yet often overlooked force shaping our future:
-              <span className=" w3-text-gray">
-                {" "}
-                <i>
-                  <b>YOUNG PEOPLE</b>
-                </i>
-              </span>{" "}
-              with bold dreams, relentless ambition, and a refusal to accept
-              limits."
-            </i>
-          </h3>
-        </div>
 
+
+<div className=" w3-padding-large">
+<h4  style={{ fontFamily: "Montserrat" }}>
+ <span style={{ color: '#67c3f8', textShadow:  '1px 1px 2px #67c3f8, 2px 2px 2px #67c3f8, 1px 1px 1px 1px black' }}>PASSION, PURPOSE & EXPERTISE</span> UNITED, TO 
+ <span style={{ color: '#67c3f8', textShadow:  '1px 1px 2px #67c3f8, 2px 2px 2px #67c3f8, 1px 1px 1px 1px black' }}> CHAMPION & PROMOTE</span> THE MOST ESSENTIAL FORCE SHAPING OUR FUTURE- <br />
+  <span style={{ color: '#67c3f8', textShadow:  '1px 1px 2px #67c3f8, 2px 2px 2px #67c3f8, 1px 1px 1px 1px black' }}>
+   YOUNG PEOPLE
+  </span> WITH <span style={{ color: '#67c3f8', textShadow:  '1px 1px 2px #67c3f8, 2px 2px 2px #67c3f8, 1px 1px 1px 1px black' }}>BOLD</span> DREAMS, 
+  <span style={{ color: '#67c3f8', textShadow:  '1px 1px 2px #67c3f8, 2px 2px 2px #67c3f8, 1px 1px 1px 1px black' }}> RELENTLESS</span> AMBITION, AND A  
+  <span style={{ color: '#67c3f8', textShadow:  '1px 1px 2px #67c3f8, 2px 2px 2px #67c3f8, 1px 1px 1px 1px black' }}> REFUSAL</span> TO ACCEPT LIMITS!
+</h4>
+        </div>
+        </div>
         <InView triggerOnce={true}>
           {({ inView, ref }) => (
             <div
@@ -126,36 +118,37 @@ export default function AboutMe() {
               </div>
               */}
               {/*end About Me personally */}
-
+              <div className=" w3-padding-large">
               {/*start Quick Stats */}
               <div
-                className="w3-row w3-center w3-black w3-padding-32"
-                style={{ backgroundColor: "#FF385C" }}
+                className="w3-row w3-center w3-black"
+                style={{ backgroundColor: "#FF385C", fontFamily:'Montserrat'}}
               >
                 <div className="w3-quarter w3-section">
-                  <span className="w3-xxlarge">20+</span>
+                  <span  className=' w3-xxlarge'>20+<span style={{ fontWeight: 'light', fontSize:'18px'}}>YRS</span></span>
                   <br />
-                  <span className="w3-large"> BUSINESS EXPERIENCE</span>
+                  <span className="w3-large" style={{fontFamily:'Roboto'}}> BUSINESS EXPERIENCE</span>
                 </div>
 
                 <div className="w3-quarter w3-section">
-                  <span className="w3-xxlarge">100+</span>
+                  <span  className=' w3-xxlarge'>100+</span>
                   <br />
-                  <span className="w3-large"> TRANSFER STUDENTS</span>
+                  <span className="w3-large" style={{fontFamily:'Roboto'}}> TRANSFER STUDENTS</span>
                 </div>
 
                 <div className="w3-quarter w3-section">
-                  <span className="w3-xxlarge">100+</span>
+                  <span  className=' w3-xxlarge'>100+</span>
                   <br />
-                  <span className="w3-large"> HIGH SCHOOL RECRUITS</span>
+                  <span className="w3-large" style={{fontFamily:'Roboto'}}> HIGH SCHOOL RECRUITS</span>
                 </div>
 
                 <div className="w3-quarter w3-section">
-                  <span className="w3-xxlarge">100%</span>
+                  <span  className=' w3-xxlarge'>100%</span>
                   <br />
-                  <span className="w3-large">DEDICATED TO SUCCESS</span>
+                  <span className="w3-large" style={{fontFamily:'Roboto'}}>DEDICATED TO SUCCESS</span>
                 </div>
               </div>
+              </ div>
               {/*end Quick Stats */}
               {/*start Location */}
               {/** 

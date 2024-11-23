@@ -1,6 +1,6 @@
 import React from "react";
 import { InView } from "react-intersection-observer";
-import about from "../../assets/images/HomeImages/about.png";
+//import about from "../../assets/images/HomeImages/about.png";
 
 const Stats = () => {
   return (

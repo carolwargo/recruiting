@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import '../../App.css'; // Import your CSS file
+import '../../../App.css'; // Import your CSS file
 import { useInView } from "framer-motion";
 
 
@@ -20,7 +20,7 @@ const BlueAnimatedHeading = () => {
 
       className='mb-3'>
       <span><i style={{fontFamily:'Raleway',fontSize:'4.5rem', textShadow:'1px 1px 4px black'}}>Con</i></span>
-      <span className=' fw-bold w3-text-blue' style={{ fontFamily:"Dancing Script", marginLeft:'-10px', textShadow:'2px 2px 5px black'}}>Scribe</span>
+      <span className=' fw-bold' style={{color:'#67c3f8', fontFamily:"Dancing Script", marginLeft:'-10px', textShadow:'2px 2px 5px black'}}>Scribe</span>
     
    </h1>
    

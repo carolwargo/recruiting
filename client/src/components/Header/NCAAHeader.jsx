@@ -1,7 +1,7 @@
 import React from 'react';
 import NCAABWTrans from '../../assets/images/NCAA/NCAABWTrans.png'; 
 import { Link as ScrollLink } from 'react-scroll';
-import AnimatedHeading from '../Home/AnimatedHeading';
+import AnimatedHeading from '../Header/Animated/AnimatedHeading';
 import TopNav from '../Navigation/TopNav';
 //import { FaArrowRight } from 'react-icons/fa';
 

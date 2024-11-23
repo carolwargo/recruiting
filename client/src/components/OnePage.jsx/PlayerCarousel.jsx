@@ -20,9 +20,7 @@ const PlayerCarousel = () => {
           <hr className="w3-opacity w3-text-white w3-padding-16" />
 
      <div className="row" style={{ margin: "0 -16px" }}>
-       
-<div className="col-12 col-md-4 my-2">
-    <div className="container">
+     <div className="container">
     <h3 className="fw-bold text-white w3-hide-small w3-hide-medium">IN-SEASON PROGRESS TRACKER & OFF-SEASON UPDATES:</h3>
       
         <h3 className="fw-bold text-white w3-hide-large">PROGRESS & UPDATES</h3>
@@ -38,9 +36,9 @@ const PlayerCarousel = () => {
           </span>{" "}
           with questions or feedback.
         </h3>
+        <p></p>
       </div>
-    </div>
-    <div className="col-12 col-md-8 my-2">
+    <div className="col-12 col-md-12 col-lg-12 my-2">
       <div className="w3-container w3-padding">
       <Carousel data-bs-theme="light red-glow">
       <Carousel.Item>

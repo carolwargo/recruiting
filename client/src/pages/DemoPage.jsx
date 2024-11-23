@@ -21,6 +21,7 @@ const DemoPage = () => {
     <div>
 <div className="body w3-black"
     style={{paddingTop:'1rem'}}>
+      
       {/* Icon Bar (Sidebar - hidden on small screens) */}
       <nav className="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
         {/* Avatar image in top left corner */}
@@ -29,64 +30,73 @@ const DemoPage = () => {
           alt="pic"
           style={{ width: "100%" }}
         />
-        <Link
-          to="/demo"
+        <a
+          href="/demo"
           className="w3-bar-item w3-button w3-padding-large w3-black"
         >
           <RiHome6Line className="" style={{fontSize:'3rem'}}/>
           <p>HOME</p>
-        </Link>
-        <Link
-          to="#demo1-player-profile"
+        </a>
+        <a
+          href="#demo1-player-profile"
           className="w3-bar-item w3-button w3-padding-large w3-hover-black"
         >
           <i className="fa fa-user w3-xxlarge"></i>
           <p>PROFILE</p>
-        </Link>
-        <Link
-          to="#demo1-player-performance"
+        </a>
+        <a
+          href="#demo1-player-performance"
           className="w3-bar-item w3-button w3-padding-large w3-hover-black"
         >
           <i className=" fa fa-chart-bar w3-xxlarge"></i>
           <p className="text-center">STATS</p>
-        </Link>
-        <Link
-          to="#demo1-player-media"
+        </a>
+        <a
+          href="#demo1-player-media"
           className="w3-bar-item w3-button w3-padding-large w3-hover-black"
         >
           <i className="fa fa-film w3-xxlarge"></i>
           <p>MEDIA</p>
-        </Link>
+        </a>
       </nav>
 </div>
-      {/* Navbar on small screens (Hidden on medium and large screens) */}
+   
+      <div className="w3-black w3-center"
+    style={{paddingTop:'3rem'}}>
+<div className="page-container" >
+      {/* Page Content */}
+      <main className="w3-padding-large main-content" id="main">    
+
+    
+  
+                   {/* Navbar on small screens (Hidden on medium and large screens) */}
       <div className=" w3-black w3-top w3-hide-large w3-hide-medium w3-padding-top-24 w3-center" id="myNavbar">
         <div className="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
           <Link
-            to="#"
+            href="#"
             className="w3-bar-item w3-button"
-            style={{ width: "25% !important" }}
+         
           >
             HOME
           </Link>
           <Link
-            to="#demo1-player-profile"
+            href="#demo1-player-profile"
             className="w3-bar-item w3-button"
-            style={{ width: "25% !important" }}
+         
           >
             PROFILE
           </Link>
           <Link
-            to="#demo1-player-performance"
+            href="#demo1-player-performance"
             className="w3-bar-item w3-button"
-            style={{ width: "25% !important" }}
+         
           >
           STATS
           </Link>
           <Link
-            to="demo1-player-#media"
+            href="demo1-player-#media"
             className="w3-bar-item w3-button"
-            style={{ width: "25% !important" }}
+         
           >
            MEDIA
           </Link>
@@ -95,21 +105,8 @@ const DemoPage = () => {
       </div>
 
 
+      
 
-      <div className="body w3-black"
-    style={{paddingTop:'3rem'}}>
-<div className="page-container" >
-      {/* Page Content */}
-      <main className="w3-padding-large main-content" id="main">    
-
-        {/* Header/Home */}    
-   <InView triggerOnce={true}>
-          {({ inView, ref }) => (
-            <header
-              ref={ref}
-              className={`w3-container w3-padding-32 w3-center w3-black 
-                ${inView ? "animate-fade-in" : ""}`}
-              id="demo-header">
               <h1 className="w3-jumbo w3-animate-left">
                 <span className="w3-hide-small">I'm</span> Joe Baseball.
               </h1>
@@ -129,15 +126,7 @@ const DemoPage = () => {
                 width="1500"
                 height="1108"
               />
-            </header>
-
-
-
-          )}
-        </InView>
-
-
-
+        
         {/* IntroSection */}
         <PlayerIntro/>
 

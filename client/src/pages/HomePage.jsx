@@ -13,22 +13,13 @@ const HomePage = () => {
   return (
     <div>
 
-
+<AboutMe />
   <Services/>
-
-
-      
-  <Odds/>
-
-        <AboutMe />
+  <Odds/> 
         <Intro/>
       <AboutUs /> 
-
-
       <Test/>
           <FAQS /> 
-
-
           <NCAADistro/>
  
     </div>
