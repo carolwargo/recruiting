@@ -1,10 +1,12 @@
 {
   "files": {
-    "main.css": "/recruiting/static/css/main.dc595f7a.css",
-    "main.js": "/recruiting/static/js/main.80d1669a.js",
+    "main.css": "/recruiting/static/css/main.2173bd55.css",
+    "main.js": "/recruiting/static/js/main.f9bc0059.js",
     "static/js/453.258b012d.chunk.js": "/recruiting/static/js/453.258b012d.chunk.js",
     "static/media/PinkBlackBG.png": "/recruiting/static/media/PinkBlackBG.0838c28a9a6eb9f9d617.png",
+    "static/media/PlayerResume.pdf": "/recruiting/static/media/PlayerResume.b1811025b19758f3c691.pdf",
     "static/media/Stats1.png": "/recruiting/static/media/Stats1.628ec2a296fc07cec7cc.png",
+    "static/media/NCAABWTrans.png": "/recruiting/static/media/NCAABWTrans.f145fc54c7ba0710329c.png",
     "static/media/Big26.png": "/recruiting/static/media/Big26.4ec0c55618c8ff9f5451.png",
     "static/media/SBC.png": "/recruiting/static/media/SBC.cb7fccd6844856c7b22f.png",
     "static/media/AllState.png": "/recruiting/static/media/AllState.cf591b366ebb2eb56947.png",
@@ -13,11 +15,11 @@
     "static/media/MVP.png": "/recruiting/static/media/MVP.185f2148a0651a9d9ebc.png",
     "static/media/Signing.png": "/recruiting/static/media/Signing.1afc13f0487657c4bebd.png",
     "static/media/ProfileGraphic.png": "/recruiting/static/media/ProfileGraphic.ffcbf91c4c06300e6d22.png",
+    "static/media/NCAATeal.png": "/recruiting/static/media/NCAATeal.f6fb602d094d56af043e.png",
     "static/media/Defense.png": "/recruiting/static/media/Defense.115d4b8af20b77639c30.png",
     "static/media/MLB.png": "/recruiting/static/media/MLB.59c08c24736f172eab05.png",
     "static/media/Offense.png": "/recruiting/static/media/Offense.97a111f56fd8a261de8e.png",
     "static/media/Teacher.png": "/recruiting/static/media/Teacher.8632aa5db72547183817.png",
-    "static/media/NCAABG.png": "/recruiting/static/media/NCAABG.bba393a048e1ab747658.png",
     "static/media/XO.png": "/recruiting/static/media/XO.b278520db1598f74d777.png",
     "static/media/Principal.png": "/recruiting/static/media/Principal.2e0d487e7d36db3cdd81.png",
     "static/media/WhiteNet.png": "/recruiting/static/media/WhiteNet.6e68db7d97a87144fe53.png",
@@ -32,7 +34,9 @@
     "static/media/LocationView.png": "/recruiting/static/media/LocationView.36a68abdb11a1a79a97d.png",
     "static/media/MeWhite.png": "/recruiting/static/media/MeWhite.4524c5451cc14595b196.png",
     "static/media/fa-brands-400.ttf": "/recruiting/static/media/fa-brands-400.0ff70dcbf135d859ebf3.ttf",
+    "static/media/bootstrap-icons.woff?": "/recruiting/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
     "static/media/fa-solid-900.woff2": "/recruiting/static/media/fa-solid-900.93f719f4d62bfa3e748c.woff2",
+    "static/media/bootstrap-icons.woff2?": "/recruiting/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
     "static/media/fa-brands-400.woff2": "/recruiting/static/media/fa-brands-400.bb8d5a145e22822103fb.woff2",
     "static/media/fa-regular-400.ttf": "/recruiting/static/media/fa-regular-400.17a6e1aebccdbaa39e78.ttf",
     "static/media/DefOnly.png": "/recruiting/static/media/DefOnly.397383a8789406163d3e.png",
@@ -40,12 +44,12 @@
     "static/media/fa-v4compatibility.ttf": "/recruiting/static/media/fa-v4compatibility.0f6cb412603527bda691.ttf",
     "static/media/fa-v4compatibility.woff2": "/recruiting/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
     "index.html": "/recruiting/index.html",
-    "main.dc595f7a.css.map": "/recruiting/static/css/main.dc595f7a.css.map",
-    "main.80d1669a.js.map": "/recruiting/static/js/main.80d1669a.js.map",
+    "main.2173bd55.css.map": "/recruiting/static/css/main.2173bd55.css.map",
+    "main.f9bc0059.js.map": "/recruiting/static/js/main.f9bc0059.js.map",
     "453.258b012d.chunk.js.map": "/recruiting/static/js/453.258b012d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc595f7a.css",
-    "static/js/main.80d1669a.js"
+    "static/css/main.2173bd55.css",
+    "static/js/main.f9bc0059.js"
   ]
 }
