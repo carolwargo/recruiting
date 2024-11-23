@@ -8,6 +8,7 @@ import { GrScorecard } from "react-icons/gr";
 import { FaPhoneVolume } from "react-icons/fa";
 import { MdOutlineEmail} from "react-icons/md";
 import  {NavLink}  from "react-router-dom";
+import PlayerResume from "../../assets/PlayerResume.pdf";
 
 
 
@@ -240,10 +241,16 @@ const PlayerProfile = () => {
                         </p>
 
                         <button className="w3-button w3-white w3-padding mt-2 mb-2">
-                 <a href="/client/src/assets/Download/PlayerResume.pdf" download="Player Resume">
+                 <a 
+                  id="download"
+                  download
+                
+                 href={PlayerResume} >
       Download Resume
     </a>
               </button>
+
+
                       <div >
            
                 </div>
