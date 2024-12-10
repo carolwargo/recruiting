@@ -5,7 +5,7 @@ import ClaySmall from "../../assets/images/ClaySmall.png";
 import { RiHome6Line } from "react-icons/ri";
 import { HiAcademicCap } from "react-icons/hi";
 import { GrScorecard } from "react-icons/gr";
-import { FaPhoneVolume } from "react-icons/fa";
+import { GiRotaryPhone } from "react-icons/gi";
 import { MdOutlineEmail} from "react-icons/md";
 import  {NavLink}  from "react-router-dom";
 import PlayerResume from "../../assets/PlayerResume.pdf";
@@ -68,7 +68,6 @@ const PlayerProfile = () => {
                   </div>
                   </div>
                 <div className="col-sm-12 col-md-8 col-lg-8">
-              <div className=" w3-padding-large">
                   <div className="row d-flex justify-content-center align-items-center g-2">
                   <div className="w3-text-white">
                   <h1 className="w3-text-light-grey">Player Profile</h1>
@@ -80,7 +79,7 @@ const PlayerProfile = () => {
 
                 
                    <div className="col-sm-12 col-md-6 col-lg-6">
-                   <div className="container">
+           <div className="py-2">
     
     <p
               className="my-0 py-0 text-white"
@@ -99,7 +98,7 @@ const PlayerProfile = () => {
               </span>
               <span
                 className="text-white"
-                style={{ fontSize: ".9rem" }}
+                style={{ fontSize: "1rem" }}
               >
                 {" "}
                 CATCHER
@@ -125,7 +124,7 @@ const PlayerProfile = () => {
               </span>{" "}
               <span
                 className="text-white"
-                style={{ fontSize: ".9rem" }}
+                style={{ fontSize: "1rem" }}
               >
                 {" "}
                 2024
@@ -151,7 +150,7 @@ const PlayerProfile = () => {
               </span>{" "}
               <span
                 className="text-white"
-                style={{ fontSize: ".9rem" }}
+                style={{ fontSize: "1rem" }}
               >
                 {" "}
                 SAT-9000 | GPA- 5.0
@@ -169,14 +168,14 @@ const PlayerProfile = () => {
               >
                 <b
                   className=" text-white-50"
-                  style={{ fontSize: "1.1rem" }}
+                  style={{ fontSize: "1.3rem" }}
                 >
-                  <FaPhoneVolume />
+                  <GiRotaryPhone />
                 </b>{" "}
               </span>{" "}
               <Link
                 className="text-white"
-                style={{ fontSize: ".85rem" }}
+                style={{ fontSize: "1rem" }}
               >
                 (123) 456-7890
               </Link>
@@ -193,25 +192,26 @@ const PlayerProfile = () => {
               >
                 <b
                   className=" text-white-50"
-                  style={{ fontSize: "1.2rem" }}
+                  style={{ fontSize: "1.3rem" }}
                 >
                   <MdOutlineEmail />{" "}
                 </b>
               </span>{" "}
               <Link
                 className="text-white"
-                style={{ fontSize: ".85rem" }}
+                style={{ fontSize: "1rem" }}
               >
                 EMAIL@MAIL.COM
               </Link>
               <br />
             </p>
             </div>
-                      </div>
+            </div>  
 
                       <div className="col-sm-12 col-md-6 col-lg-6">
+                        <div className="py-2">
                       <p className="mt-0 py-0 text-white"
-                style={{ marginBottom: "4px" }}> Bats: <span 
+                style={{ marginBottom: "4px", fontSize:'1.1rem' }}> Bats: <span 
                 className=" text-white-50"
                 style={{ marginRight: "4px" }}> R/L
                           </span>
@@ -223,7 +223,7 @@ const PlayerProfile = () => {
                         </p>
 
                         <p className="mt-0 py-0 text-white"
-                style={{ marginBottom: "4px" }}> Height: <span 
+                style={{ marginBottom: "4px", fontSize:'1.1rem' }}> Height: <span 
                 className=" text-white-50"
                 style={{ marginRight: "4px" }}> 6'0
                           </span> Weight: 
@@ -234,23 +234,22 @@ const PlayerProfile = () => {
                         </p>
                      
                         <p className="mt-0 py-0 text-white"
-                style={{ marginBottom: "4px" }}> Born: <span 
+                style={{ marginBottom: "4px", fontSize:'1.1rem' }}> Born: <span 
                 className=" text-white-50"
                 style={{ marginRight: "4px" }}> 11-01-2006, <i>ST.</i>
                           </span> 
                         </p>
 
-                        <button className="w3-button w3-white w3-padding mt-2 mb-2">
+                       
                  <a 
                   id="download"
                   download
                 
                  href={PlayerResume} >
-      Download Resume
+                   <button className="w3-button rounded text-decoration-none w3-white w3-padding mt-3">
+                   Download Metrics
+                   </button>
     </a>
-              </button>
-
-
                       <div >
            
                 </div>
@@ -259,9 +258,10 @@ const PlayerProfile = () => {
                      
                       </div>
                     </div>
+                    </div>  
                     </div>
                   </div>
-                </div>
+             
 
 
 
@@ -288,14 +288,14 @@ const PlayerProfile = () => {
             <p className="mt-0 py-0 text-white"
             style={{ marginBottom: "4px" }}>Hometown High <span 
             className=" text-white-50"
-            style={{ marginRight: "4px" }}> <i> Anytown, ST.</i>
+            style={{ marginRight: "4px" }}> <i className='text-white opacity-70 fw-light'> Anytown, ST.</i>
                       </span>
                     </p>
                     <p className="mt-0 py-0 text-white"
             style={{ marginBottom: "4px" }}>Head Coach <span 
             className=" text-white-50"
             style={{ marginRight: "4px" }}>
-              <i >Coach Joe Athlete</i>
+              <i className="text-white opacity-70 fw-light">Coach Joe Athlete</i>
                       </span>
                     </p>
                  
@@ -303,14 +303,14 @@ const PlayerProfile = () => {
             style={{ marginBottom: "4px" }}>Coach Cell <span 
             className=" text-white-50"
             style={{ marginRight: "4px" }}>
-              <NavLink href="#/link" className=' link-secondary link-offset-3-hover'> <i>(123)456-7890</i></NavLink>
+              <NavLink href="#/link" className=' link-light opacity-70 fw-light link-offset-3-hover'> <i>(123)456-7890</i></NavLink>
                       </span>
                     </p>
 
                     <p className="mt-0 py-0 text-white"
             style={{ marginBottom: "4px" }}>Coach Email<span 
             className=" text-white-50"
-            style={{ marginRight: "4px" }}>  <NavLink href="#/link" className=' link-secondary link-offset-3-hover'><i>coachemail@mail.com</i></NavLink>
+            style={{ marginRight: "4px" }}>  <NavLink href="#/link" className=' link-light opacity-70 fw-light link-offset-3-hover'><i>coachemail@mail.com</i></NavLink>
                        
                       </span>
                     </p>
@@ -324,16 +324,18 @@ const PlayerProfile = () => {
                 </div>
 
                 <p className="mt-0 py-0 text-white"
-                style={{ marginBottom: "4px" }}>Dirtbags Baseball<span 
-                className=" text-white-50"
-                style={{ marginRight: "4px" }}> <i> Anytown, ST.</i>
+                style={{ marginBottom: "4px" }}>
+                  Dirtbags Baseball<span 
+                style={{ marginRight: "4px" }}> 
+                <i className=" text-white opacity-70 fw-light"> Anytown, ST.</i>
                           </span>
                         </p>
                         <p className="mt-0 py-0 text-white"
                 style={{ marginBottom: "4px" }}>Head Coach <span 
                 className=" text-white-50"
                 
-                style={{ marginRight: "4px" }}> <i>Coach Joe Dirtbag</i>
+                style={{ marginRight: "4px" }}>  
+               <i className=" text-white opacity-70 fw-light">Coach Joe Dirtbag</i>
                           </span>
                         </p>
                      
@@ -341,7 +343,7 @@ const PlayerProfile = () => {
                 style={{ marginBottom: "4px" }}>Coach Cell <span 
                 className=" text-white-50"
                 style={{ marginRight: "4px" }}> 
-                  <NavLink href="#/link" className=' link-secondary link-offset-3-hover'> <i>(123)456-7890</i></NavLink>
+                  <NavLink href="#/link" className=' link-light opacity-70 fw-light link-offset-3-hover'> <i>(123)456-7890</i></NavLink>
                           </span>
                         </p>
 
@@ -349,7 +351,7 @@ const PlayerProfile = () => {
                 style={{ marginBottom: "4px" }}>Coach Email <span 
                 className=" text-white-50"
                 style={{ marginRight: "4px" }}> 
-                 <NavLink href="#/link" className=' link-secondary link-offset-3-hover'><i>coachemail@mail.com</i></NavLink>
+                 <NavLink href="#/link" className=' link-light opacity-70 fw-light link-offset-3-hover'><i>coachemail@mail.com</i></NavLink>
                           </span>
                          
                       
@@ -363,21 +365,21 @@ const PlayerProfile = () => {
             </div>
 
             <p className="mt-0 py-0 text-white"
-            style={{ marginBottom: "4px" }}><b className="text-danger">U</b><b>S</b><b style={{color:'#81cefa'}}>A</b>BASEBALL <span><i><Link className=" link-secondary"  style={{ marginRight: "6px" }}>18U National</Link></i>
+            style={{ marginBottom: "4px" }}><b className="text-danger">U</b><b>S</b><b style={{color:'#81cefa'}}>A</b>BASEBALL <span><i><Link className=' link-light opacity-70 fw-light link-offset-3-hover'  style={{ marginRight: "6px" }}>18U National</Link></i>
                       </span>
                     </p>
                     <p className="mt-0 py-0 text-white"
-            style={{ marginBottom: "4px" }}><b>THE</b><b className="text-danger">BIG26</b> <span> <i><Link className=" link-secondary"  style={{ marginRight: "6px"}}>Team Maryland</Link></i>
-                      </span>
-                    </p>
-
-                    <p className="mt-0 py-0 text-white"
-            style={{ marginBottom: "4px" }}><b>WWBA</b> <span> <i><Link className=" link-secondary"  style={{ marginRight: "6px"}}>Perfect Game</Link></i>
+            style={{ marginBottom: "4px" }}><b>THE</b><b className="text-danger">BIG26</b> <span> <i><Link className=' link-light opacity-70 fw-light link-offset-3-hover'  style={{ marginRight: "6px"}}>Team Maryland</Link></i>
                       </span>
                     </p>
 
                     <p className="mt-0 py-0 text-white"
-            style={{ marginBottom: "4px" }}><b>ALL-METROPOLITAN</b><b className="text-danger"></b> <span> <i><Link className=" link-secondary"  style={{ marginRight: "6px"}}>First Team</Link></i>
+            style={{ marginBottom: "4px" }}><b>WWBA</b> <span> <i><Link className=' link-light opacity-70 fw-light link-offset-3-hover'  style={{ marginRight: "6px"}}>Perfect Game</Link></i>
+                      </span>
+                    </p>
+
+                    <p className="mt-0 py-0 text-white"
+            style={{ marginBottom: "4px" }}><b>ALL-METROPOLITAN</b><b className="text-danger"></b> <span> <i><Link className=' link-light opacity-70 fw-light link-offset-3-hover'  style={{ marginRight: "6px"}}>First Team</Link></i>
                       </span>
                     </p>
                   </div>

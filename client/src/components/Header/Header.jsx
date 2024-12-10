@@ -22,7 +22,7 @@ export default function Header2() {
 </h2>
  <p className='px-4 w3-hide-small'>Click <span className='w3-text-pink'><i>LEARN MORE</i></span> to explore.</p>
               <button tag="a" className='btn mt-4' size="lg"
-               style={{backgroundImage: 'linear-gradient(to right, #f64b65, #fa52ce)'}}>
+               style={{backgroundImage: 'linear-gradient(to right, #f64b65, #fa52ce,)'}}>
                 Learn More
               </button>
             </div>

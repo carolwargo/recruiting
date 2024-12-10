@@ -135,7 +135,7 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
     cursor: pointer;
     color: white;
-    background-image: linear-gradient(to right, #fe03d4, #ad0580);
+    background-image: linear-gradient(to right, #f80ca8, #f60a74,#f13159, #ff0035);
     transition: all 0.4s ease-in-out;
     margin-bottom: 10px;
     border-radius: 5px;

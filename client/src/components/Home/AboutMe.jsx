@@ -41,7 +41,7 @@ export default function AboutMe() {
                     textShadow: "1px 1px 4px #blue",
                   }}
                 >
-                  <b className=""> WHO <span style={{color:'#67c3f8'}}>WE</span> ARE</b>
+                  <b className=""> WHO <span style={{color:'#f80287'}}>WE</span> ARE</b>
                
                 </i>
               </span>
@@ -53,7 +53,7 @@ export default function AboutMe() {
 
 <div className=" w3-padding-large">
 <h4  style={{ fontFamily: "Montserrat" }}>
- <span style={{ color: '#67c3f8', textShadow:  '1px 1px 2px #67c3f8, 2px 2px 2px #67c3f8, 1px 1px 1px 1px black' }}>PASSION, PURPOSE & EXPERTISE</span> UNITED, TO 
+ <span style={{ color: '#67c3f8', textShadow:  '1px 1px 2px #67c3f8, 2px 2px 2px #67c3f8, 1px 1px 1px 1px black' }}>PASSION & EXPERTISE</span> UNITED, TO 
  <span style={{ color: '#67c3f8', textShadow:  '1px 1px 2px #67c3f8, 2px 2px 2px #67c3f8, 1px 1px 1px 1px black' }}> CHAMPION & PROMOTE</span> THE MOST ESSENTIAL FORCE SHAPING OUR FUTURE- <br />
   <span style={{ color: '#67c3f8', textShadow:  '1px 1px 2px #67c3f8, 2px 2px 2px #67c3f8, 1px 1px 1px 1px black' }}>
    YOUNG PEOPLE

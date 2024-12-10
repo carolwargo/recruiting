@@ -36,7 +36,7 @@ export default function App() {
            
        <h6 className='mb-4'
             style={{fontSize:"1rem", fontFamily:'Montserrat', textShadow:'.5px .5px 1px black'}}>Con
-            <span className='w3-text-pink fw-bold' style={{ fontFamily:"Dancing Script", marginLeft:'-2px', textShadow:'.5px .5px 1px black', fontSize:'18px'}}>Scribe</span>
+            <span className='fw-bold' style={{ color:'#ff90d9', fontFamily:"Dancing Script", marginLeft:'-2px', textShadow:'.5px .5px 1px black', fontSize:'18px'}}>Scribe</span>
               
             </h6>
             <p className='fw-light' style={{fontSize:'14px'}}>
@@ -125,15 +125,17 @@ export default function App() {
               Call
 </a>
             </p>
-            <button className="mt-2 w3-button w3-text-light-grey w3-padding w3-round-xxlarge" 
-              style={{backgroundColor:'#FF385C', fontSize:'14px'}}>
-              <Link to="/contact#contact"
-                  className="text-white button"
+            <Link to="/contact#contact"
+                  className="text-decoration-none"
                   onClick={scrollToTop}
                 >
-                Contact
+            <button className="mt-2 w3-button rounded" 
+              style={{backgroundColor:'#fd52c3', color:'black'}}>
+                 Contact
+             </button>
+               
                 </Link>
-              </button>
+            
           </MDBCol>
         </MDBRow>
       </MDBContainer>
@@ -162,7 +164,7 @@ export default function App() {
     <section className='d-flex justify-content-center w3-padding-large border-bottom'>
       <div className='d-none d-lg-block ' >
       <p       style={{fontSize:"1rem", fontFamily:'Montserrat', textShadow:'.5px .5px 1px black'}}>Con
-            <span className='w3-text-pink fw-bold' style={{ fontFamily:"Dancing Script", marginLeft:'-2px', textShadow:'.5px .5px 1px black', fontSize:'18px'}}>Scribe</span>
+            <span className='fw-bold' style={{ color:'#ff90d9', fontFamily:"Dancing Script", marginLeft:'-2px', textShadow:'.5px .5px 1px black', fontSize:'18px'}}>Scribe</span>
           
         </p>
       </div>

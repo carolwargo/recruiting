@@ -8,7 +8,7 @@ const AboutUs = () => {
     <div className="about-us" id="about-us">
       <div      style={{
         backgroundImage:
-          "linear-gradient(to right, #eeeeee, #ffffff, #e6e6e6)",
+          "linear-gradient( #eeeeee, #ffffff, #f80287)",
       }}>
          <p><i>**AboutUs</i></p>
         <InView triggerOnce={true}>
@@ -46,7 +46,7 @@ const AboutUs = () => {
                         fontFamily: "Dancing Script",
                         marginLeft: "-10px",
                         textShadow: "1px 1px 4px black",
-                        color: "color:'#d32c9a'",
+                        color: "color:'#ff90d9'",
                       }}
                     >
                       Scribe
@@ -99,7 +99,7 @@ const AboutUs = () => {
                               fontFamily: "Dancing Script",
                               marginLeft: "-8px",
                               textShadow: "1px 1px 2.5px black",
-                              color: " #d32c9a",
+                              color: " #ff90d9",
                             }}
                           >
                             Scribe
@@ -122,6 +122,41 @@ const AboutUs = () => {
                   </div>
                 </div>
               </div>
+
+
+
+
+              <div className=" w3-padding-large">
+              {/*start Quick Stats */}
+              <div
+                className="w3-row w3-center w3-black"
+                style={{ backgroundColor: "#FF385C", fontFamily:'Montserrat'}}
+              >
+                <div className="w3-quarter w3-section">
+                  <span  className=' w3-xxlarge'>20+<span style={{ fontWeight: 'light', fontSize:'18px'}}>YRS</span></span>
+                  <br />
+                  <span className="w3-large" style={{fontFamily:'Roboto'}}> BUSINESS EXPERIENCE</span>
+                </div>
+
+                <div className="w3-quarter w3-section">
+                  <span  className=' w3-xxlarge'>100+</span>
+                  <br />
+                  <span className="w3-large" style={{fontFamily:'Roboto'}}> TRANSFER STUDENTS</span>
+                </div>
+
+                <div className="w3-quarter w3-section">
+                  <span  className=' w3-xxlarge'>100+</span>
+                  <br />
+                  <span className="w3-large" style={{fontFamily:'Roboto'}}> HIGH SCHOOL RECRUITS</span>
+                </div>
+
+                <div className="w3-quarter w3-section">
+                  <span  className=' w3-xxlarge'>100%</span>
+                  <br />
+                  <span className="w3-large" style={{fontFamily:'Roboto'}}>DEDICATED TO SUCCESS</span>
+                </div>
+              </div>
+              </ div>
             </div>
           )}
         </InView>

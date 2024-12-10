@@ -3,8 +3,9 @@ import { InView } from 'react-intersection-observer';
 import { Link } from "react-router-dom";
 import {BsTwitterX } from "react-icons/bs";
 import { FaSquareInstagram } from "react-icons/fa6";
-import { FaPhoneSquare, FaSnapchatSquare } from "react-icons/fa";
+import { FaFileDownload, FaHome, FaPhoneSquare, FaSnapchatSquare } from "react-icons/fa";
 import { PiPaperPlane } from "react-icons/pi";
+import PlayerResume from "../../assets/PlayerResume.pdf";
 
 const PlayerFooter = () => {
 
@@ -54,70 +55,111 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 
             <hr />
-          <h2 className="w3-text-light-grey text-center">CONNECT WITH ME:</h2>
-          <h5 className="text-center">Get in touch direct or send me a message on a social media platform.</h5>
+         
+        
+          <div className="w3-container w3-padding-48">
+            <div className="row">
+              <div className="col-sm-12 col-md-5 col-lg-5 justify-content-start align-content-end">
+              <h6 className="w3-text-light-grey">CONNECT WITH ME:</h6>
+              <p>Thank you for visiting. Feedback is welcome—feel free to reach out directly or connect with me on social media.</p> 
+              <p style={{}}>DOWNLOAD MY RESUME <span> <a 
+                  id="download"
+                  download
+                className=" link-light"
+                 href={PlayerResume} >
+                  <span className="text-decoration-none" style={{marginRight:'5px'}}> < FaFileDownload/></span><span className="text-decoration-none">Joe Baseball</span>
+              
+    </a></span></p>       
+             
+              </div>
+              <div className="col justify-content-center align-content-end">
+            <div className="w3-margin-left">
+              <h6 className="w3-text-light-grey w3-margin-left">CONTACT INFO</h6>
+              </div>
+                <ul>
+             
+              <li className="icon-hover-zoom text-decoration-none">
+                  <Link className=" mx-1 link-light icon-hover-zoom"
+                        style={{ fontSize: "1.1rem" }}>
+    <strong>
+      <PiPaperPlane /><span className="fw-light" style={{fontSize:'15px', marginLeft:'10px'}}>(123) 456-7890</span>
+    </strong>
+                            </Link>
+                            
+                            </li>
+<br />
+                            <li className="icon-hover-zoom mt-1">
+                            <Link
+                               className="mx-1 link-light"
+                              style={{ fontSize: "1rem" }}
+                            >
+                              
+    <strong>
+    <FaPhoneSquare /><span className="fw-light" style={{fontSize:'15px', marginLeft:'10px'}}>players-email@mail.com</span>
+    </strong>      
+                            </Link>
+                            </li>
+                            <br />
+                            <li className="icon-hover-zoom mt-1">
+                            <Link
+                               className="mx-1 link-light"
+                              style={{ fontSize: "1.1rem" }}
+                            >
+                              
+    <strong>
+    <FaHome /><span className="fw-light" style={{fontSize:'14px', marginLeft:'10px'}}>123 Any St. Town, ST. 54321</span>
+    </strong>      
+                            </Link>
+                            </li>
+                            </ul>
+              </div>
+              <div className="col justify-content-end  align-content-end">
+              <div className="w3-margin-left">
+              <h6 className="w3-text-light-grey w3-margin-left">SOCIALS</h6>
+              </div>
+                  <ul className="w3-margin-bottom">
 
-          <div className="w3-container w3-center text-center">
-                  <div className="w3-margin-bottom">
+                            <li className="icon-hover-zoom mt-1">
                   <Link
-                              className=" mx-2"
-                              style={{ fontSize: "2.1rem" }}
+                              className=" mx-1 link-light"
+                              style={{ fontSize: "1rem" }}
                             >
-                         <span className="icon-hover-zoom">
     <strong>
-      <PiPaperPlane />
+      <BsTwitterX /><span className="fw-light" style={{fontSize:'14px', marginLeft:'10px'}}>@playersXhandle</span>
     </strong>
-  </span>
-                            </Link>
+    </Link>
+  </li>
+                            
+<br />
+
+                            <li className="icon-hover-zoom mt-1">
                             <Link
-                               className="mx-1"
-                              style={{ fontSize: "2rem" }}
+                               className="mx-1 link-light"
+                              style={{ fontSize: "1.1rem" }}
                             >
-                               <span className="icon-hover-zoom">
     <strong>
-    <FaPhoneSquare />
+    <FaSquareInstagram /><span className="fw-light" style={{fontSize:'14px', marginLeft:'10px'}}>@playerIG</span>
     </strong>
-  </span>
-                           
-                            </Link>
-
-
-                  <Link
-                              className=" mx-2"
-                              style={{ fontSize: "1.9rem" }}
-                            >
-                         <span className="icon-hover-zoom">
-    <strong>
-      <BsTwitterX />
-    </strong>
-  </span>
-                            </Link>
-
-
+  </Link>
+  </li>
+  <br />
+                            <li className="icon-hover-zoom mt-1">
                             <Link
-                               className="mx-1"
-                              style={{ fontSize: "2.1rem" }}
+                           className="mx-1 link-light"
+                              style={{ fontSize: "1.1rem" }}
                             >
-                               <span className="icon-hover-zoom">
+                                      
     <strong>
-    <FaSquareInstagram />
-    </strong>
-  </span>
-                           
+    <FaSnapchatSquare /><span className="fw-light" style={{fontSize:'14px', marginLeft:'10px'}}>@playerSnap</span>
+    </strong>             
                             </Link>
-
-                            <Link
-                           className="mx-1"
-                              style={{ fontSize: "2.1rem" }}
-                            >
-                                       <span className="icon-hover-zoom">
-    <strong>
-    <FaSnapchatSquare />
-    </strong>
-  </span>               
-                            </Link>
-                  </div>
+                            </li>
+                  </ul>
                 </div>
+
+
+                </div>
+            </div>
                 
           {/* End Contact Section */}
         </div>

@@ -33,7 +33,7 @@ const MainHeader = () => {
         
         <h2 className="align-items-center w3-padding-large text-white fw-bold w3-hide-small w3-hide-medium" 
          style={{ textShadow: "2px 2px 4px black"}}>PROVIDING UNFILTERED GUIDANCE & DIGITAL RECRUITING SERVICES<span 
-         className="glowing-text fw-bold" style={{color:'#d32c9a'}}> FOR STUDENT-ATHLETES</span>, WITH A         <span className="glowing-text fw-bold" style={{color:'#d32c9a'}}>SEASONED PERSPECTIVE</span> AND A <span className="glowing-text fw-bold" style={{color:'#d32c9a'}}>UNIQUE APPROACH</span>. 
+         className="glowing-text fw-bold" style={{color:'#ff0035'}}> FOR STUDENT-ATHLETES</span>, WITH A         <span className="glowing-text fw-bold" style={{color:'#ff0035'}}>SEASONED PERSPECTIVE</span> AND A <span className="glowing-text fw-bold" style={{color:'#ff0035'}}>UNIQUE APPROACH</span>. 
         </h2>
         
         <h4 className="align-items-center mb-4 text-white  w3-hide-large" 

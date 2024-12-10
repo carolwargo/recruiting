@@ -21,21 +21,16 @@ const PlayerCarousel = () => {
 
      <div className="row" style={{ margin: "0 -16px" }}>
      <div className="container">
-    <h3 className="fw-bold text-white w3-hide-small w3-hide-medium">IN-SEASON PROGRESS TRACKER & OFF-SEASON UPDATES:</h3>
-      
-        <h3 className="fw-bold text-white w3-hide-large">PROGRESS & UPDATES</h3>
-      
-        <p className="w3-margin-top w3-text-grey">
-        <i className="w3-margin-right"> Slow start but, felt great. Good swings, good visions, good at-bats, great contact, and walked a lot. Stayed focused by working on approach, timing and patience.</i>   </p>
 
-        <h3 className="w3-margin-top w3-text-grey">
-          Watch a video, share a video, request additional footage, or
+        <h2 className="fw-bold text-white">PROGRESS & UPDATES</h2>
+      
+        <h6 className="w3-text-grey">In-Season Progress & Off-Season Updates: watch a video, share a video, request additional footage, or
           <span>
             {" "}
-            <Link className="link-light text-decoration-none" to="contact">contact me</Link>
+            <Link className="link-light " to="contact">contact me</Link>
           </span>{" "}
           with questions or feedback.
-        </h3>
+        </h6>
         <p></p>
       </div>
     <div className="col-12 col-md-12 col-lg-12 my-2">

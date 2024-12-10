@@ -8,13 +8,19 @@ import Odds from "../components/Home/Odds";
 import Test from "../components/Home/Test";
 import NCAADistro from "../components/Home/NCAADistro";
 import '../styles/pricing.css'
+import AboutCards from "../components/Home/AboutCards";
+import WebComponent from "../components/Home/WebComponent";
+import GraphicsComponent from "../components/Home/GraphicsComponent";
 
 const HomePage = () => {
   return (
     <div>
-
+ <Services/>
+ <AboutCards />
+ <WebComponent/>
+ <GraphicsComponent/>
 <AboutMe />
-  <Services/>
+
   <Odds/> 
         <Intro/>
       <AboutUs /> 

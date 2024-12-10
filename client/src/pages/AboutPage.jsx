@@ -71,6 +71,7 @@ const AboutPage = () => {
                   </div>
                 </div>
               </div>
+
               <div
                 className="w3-row w3-center w3-black w3-padding-32"
                 style={{ backgroundColor: "#FF385C" }}
@@ -99,6 +100,110 @@ const AboutPage = () => {
                 </div>
               </div>
 
+            <div className="container w3-padding-16 w3-padding-large shadow-lg ">
+              <div className="row d-flex justify-content-center align-items-center">
+
+                <div className="col-sm-12 col-md-5 col-lg-5 my-2">
+                  <div className=" ">
+                    <div className="w3-padding-large w3-padding-24">
+                    <h6>
+                    {" "}
+                    <span className="mb-0 pb-0">
+                     WHAT'S IN THE NAME?                   </span>{" "}
+                  </h6>
+                      <h1 className="mt-0 pt-0">
+                        <span
+                          style={{
+                            fontSize: "4rem",
+                          }}
+                          className="mb-3"
+                        >
+                          <span>
+                            <i
+                              style={{
+                                fontFamily: "Raleway",
+                                textShadow: "1px 1px 4px black",
+                              }}
+                            >
+                              Con
+                            </i>
+                          </span>
+                          <span
+                            className="fw-bold"
+                            style={{
+                              fontFamily: "Dancing Script",
+                              marginLeft: "-8px",
+                              textShadow: "2px 2px 2px 4px black",
+                              color: "gray",
+                            }}
+                          >
+                            Scribe
+                          </span>
+                        </span>{" "}
+                        <span> </span>
+                      </h1>
+
+                      <p>
+                        /ˈkən-ˈskrīb / <br />
+                        <i className=" fw-light text-white">
+                          conscribed; conscribing
+                        </i>
+                      </p>
+
+                      <h6>
+                        {" "}
+                        <i>
+                          ‘to <b className="bold-white-shadow">enlist</b>{" "}
+                          compulsorily; conscript:{" "}
+                          <b className="bold-white-shadow">required</b> by law
+                          or a rule;
+                          <b className="bold-white-shadow">obligatory</b>: 'to
+                          enlist;{" "}
+                          <b className="bold-white-shadow">
+                            voluntarily or by force
+                          </b>
+                          .'
+                        </i>
+                      </h6>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className=" col-sm-12 col-md-7 col-lg-7 d-flex align-items-start my-2">
+                  <div className=" w3-padding">
+               
+                    {/**
+                    <p className="w3-margin-top">
+  The focus may be on performance and academics, but student-athletes are 
+  <b className="bold-white-shadow">required</b> to actively 
+  <b className="bold-white-shadow">enlist</b> in the recruitment process. 
+  Though participation might seem 
+  <b className="bold-white-shadow">voluntary</b>, the 
+  <b className="bold-white-shadow">force</b> of intense competition for limited 
+  roster spots creates an undeniable 
+  <b className="bold-white-shadow">obligation</b> to stand out and be proactive. 
+  In this high-stakes environment, excelling in recruitment has become 
+  <b className="bold-white-shadow">compulsory</b>, as the pressure continues to mount.
+</p>
+<p className="w3-margin-top">
+  Student-athletes are <b className="bold-white-shadow"> required</b> to 
+  <b className="bold-white-shadow"> enlist</b> in the recruitment process. 
+  Excelling has become <b className="bold-white-shadow"> compulsory</b>, as they are 
+  <b className="bold-white-shadow">obligated</b> to stand out in a highly competitive field.
+</p>   
+ */}
+       
+<p className="w3-margin-top">  {" "}
+                TODAY'S FOCUS FOR STUDENT-ATHLETES  <b className="bold-white-shadow">
+   EXTENDS BEYOND PERFORMANCE AND ACADEMIC SUCCESS </b> IN THE CLASSROOM. Active participation in self-promotion has become a critical responsibility.
+</p>    
+<p className=" w3-margin-top">With <b className="bold-white-shadow"> FEWER THAN 7% </b> of high school athletes advancing to play a sport in college, intense competition demands proactive efforts. </p>  
+<p>Success now hinges on  <b className="bold-white-shadow">SELF-PROMOTION</b>,  <b className="bold-white-shadow">STRATEGIC BRANDING</b>, and  <b className="bold-white-shadow">EFFECTIVE MARKETING</b> to stand out and secure coveted roster spots.</p>      
+     </div>
+                </div>
+              </div>
+            </div>
               {/* Location */}
               <div className="w3-content w3-container w3-padding-32 ">
                 <div className="row justify-content-center align-items-center">

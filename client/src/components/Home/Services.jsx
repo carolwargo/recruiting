@@ -4,7 +4,6 @@ import '../../App.css'; // Import your CSS file
 import { useInView } from "framer-motion";
 import { Link } from "react-router-dom";
 import { FaLongArrowAltRight } from "react-icons/fa";
-import WhiteNet from "../../assets/images/CardBG/WhiteNet.png"; 
 
 
 const Services = () => {
@@ -102,121 +101,116 @@ const Services = () => {
 
    {/* Start 8 Column Icon Grid */}
    <div>
-   <div className="w3-black">
+   <div className="container w3-white">
    <p><i>**Services</i></p>
-  <div className="w3-container">
-    <div className="row d-flex w3-margin-top w3-margin-bottom w3-padding-large">
+    <div className="row d-flex d-flex justify-content-center align-items-center w3-padding-32">
   
       {/** MAIN COLUMN 1 */}
-      <div className="col-sm-12 col-md-4 col-lg-4 d-flex align-items-center w3-white  border-black-right-4"
-              style={{ 
-                backgroundImage: `url(${WhiteNet})`, 
-                backgroundSize: "cover", 
-                backgroundRepeat: "no-repeat",
-                zIndex: 1,
-              }}>
-             <div
-      className=""
-      style={{ backgroundColor: "rgba(0, 0, 0, .25)", zIndex: -1 }}
-    ></div>
-        <div className="container w3-padding-large w3-padding-24">
-
+      <div className="col-sm-12 col-md-5 col-lg-5"
+          >
+     <div className="container w3-padding-large">
         <h1
             ref={ref}
             style={{
               transform: isInView ? "none" : "translateX(-50px)",
               opacity: isInView ? 1 : 0,
               transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+            
             }}
           >
-            <span style={{ fontSize: "4rem" }} className="mb-3">
-              <i style={{ fontFamily: "Raleway", fontSize: "4rem", textShadow: "1px 1px 4px black" }}>
-                Our
-              </i>
-              <span
-                className="fw-bold text-dark-emphasis"
-                style={{
-                  fontFamily: "Dancing Script",
-                  marginLeft: "-10px",
-                  textShadow: "1px 1px 4px black",
-                }}
-              >
-                Services
-              </span>
-            </span>
+         OUR<span style={{textShadow: "1px 1px 4px black", color:'#ff0035'}}>SERVICES.</span>
           </h1>
       
             <h4 className="mb-4 text-dark-emphasis">
               <b>  Explore Our Key Offerings-</b> 
             
             </h4>
-            <p className="mb-4">
+            <hr />
+            <p className="mb-3">
            <b>  DISCOVER HOW WE CAN HELP CREATE OR ELEVATE YOUR EXPOSURE & STREAMLINE YOUR MARKETING STRATEGIES.
            </b> </p>
           <hr/>
-            <p className=' text-dark' style={{ fontSize: '14px', marginTop: '5px', marginBottom: '10px' }}>
-         <b>   Having trouble with the vision, let us explain- Have Questions, or don't know where to Start? Start by contacting us for answers-
+            <p className=' fw-lighter' style={{ marginTop: '10px', marginBottom: '10px' }}>
+         <b>   Having trouble with <b>OUR VISION</b>? Let us explain- <br />  Do you have Questions, or not sure where to Start? Contact us for the answers-
          </b>    </p>
-                <Link to='/web' className=' link-dark'><b>Contact Us</b>   <FaLongArrowAltRight /></Link>
-          </div>
+         <Link to='/graphics'> 
+                    <button className="w3-button w3-black shadow-lg rounded mt-2 mb-3">
+                 CONTACT US
+                  </button> </Link>  
+                  </div>
         </div>
+     
 
       {/** MAIN COLUMN 2 */}
-      <div className="col-sm-12 col-md-8 col-lg-8 d-flex align-items-start">
+      <div className="col-sm-12 col-md-7 col-lg-7 d-flex align-items-start">
         <div className="w3-container-fluid">
           <div className="row">
             
-          <div className="col-6 d-flex align-items-start w3-light-gray">
-          <div className='py-5 w3-margin-right m-2'>
-            <svg className="text-body-secondary flex-shrink-0 me-3" fill='black' width="2em" height="2em"><use xlinkHref="#web" /></svg>
+          <div className="col-sm-12 col-md-6 col-lg-6 border shadow d-flex align-items-center justify-content-center" 
+style={{
+  backgroundImage: "linear-gradient(to bottom, #f80ca8, #f40b9c, #f00a90, #ec097f, #e7086f, #e2075f, #dd064f, #d80540, #d30432)"
+}}>
+         {/** 
+          <div className='w3-margin-left mt-4'>
+            <svg className="text-body-secondary flex-shrink-0 me-3" fill='black' width="1.5em" height="1.5em"><use xlinkHref="#web" /></svg>
             </div>
-            <div className='py-5 w3-margin-right my-2'>
-            <h4 className="fw-bold fs-5 text-dark-emphasis">Custom Website Development</h4>
-                <p className='text-dark' style={{ fontSize: '14px', marginTop: '5px', marginBottom: '10px' }}>
-                  Create your own dedicated website to showcase your achievements- A platform you control with no limits on how you highlight your brand.
+            */}
+            <div className='w3-container w3-padding-large w3-padding-24'>
+            <h5 className="fw-bold text-light">Recruit Websites</h5>
+                <p className='text-light' style={{ fontSize: '14px', marginTop: '10px', marginBottom: '15px' }}>
+                  Dedicated websites to showcase your achievements- A platform you control with no limits on how you highlight your brand.
                 </p>
-                <Link to='/web' className=' link-dark'>Get started <FaLongArrowAltRight /></Link>
+                <Link to='/web' className=' link-light'>Get started <FaLongArrowAltRight /></Link>
               </div>
               </div>
            
          
-              <div className="col-6 d-flex align-items-start bg-secondary">
-              <div className='py-5 w3-margin-right m-2'>
-                <svg className="bi text-body-secondary flex-shrink-0 me-3" fill='white' width="2em" height="2em"><use xlinkHref="#graphics" /></svg>
+              <div className="col-sm-12 col-md-6 col-lg-6 shadow border d-flex align-items-center justify-content-center bg-secondary">
+             {/** 
+              <div className='py-4 w3-margin-right m-2'>
+                <svg className="bi text-body-secondary flex-shrink-0 me-3" fill='white' width="1.5em" height="1.5em"><use xlinkHref="#graphics" /></svg>
               </div>
-              <div className='py-5 w3-margin-right my-2'>
-                <h4 className="fw-bold fs-5 text-light">Graphic Design Elements</h4>
-                <p className=' text-light' style={{fontSize: '14px', marginTop: '5px', marginBottom: '10px' }}>
-                  Graphics that enhance your brand, promote a buzz on social media, relay statistics & accolades, and make a lasting impression.
+              */}
+
+<div className='w3-container w3-padding-large w3-padding-16'>
+                <h5 className="fw-bold text-light">Graphic Elements</h5>
+                <p className=' text-light' style={{fontSize: '14px', marginTop: '10px', marginBottom: '15px' }}>
+                Graphics that elevate your brand, create a buzz, and boldly showcase your talent, dedication, and drive to go the extra mile.
                 </p>
-                <Link to='/graphics' className='link-light'>Get started <FaLongArrowAltRight /></Link>
+            
+                <Link to='/graphics' className='link-light fw-light'>Get started <FaLongArrowAltRight /></Link>
               </div>
               </div>
-          
-            <div className="col-6 d-flex align-items-start bg-dark" >
-            <div className='py-5 w3-margin-right m-2'>
-                <svg className="bi text-body-secondary flex-shrink-0 me-3" fill='white' width="2em" height="2em"><use xlinkHref="#market" /></svg>
+
+            <div className="col-sm-12 col-md-6 col-lg-6 shadow border d-flex align-items-center justify-content-center bg-dark" >
+              {/** 
+            <div className='py-4 w3-margin-right m-2'>
+                <svg className="bi text-body-secondary flex-shrink-0 me-3" fill='white' width="1.5em" height="1.5em"><use xlinkHref="#market" /></svg>
                 </div>
-                <div className='py-5 w3-margin-right my-3'>
-                <h4 className="fw-bold mb-0 fs-5 text-light">Personal Branding Strategies</h4>
-                <p className='w3-text-light-gray' style={{ fontSize: '14px', marginTop: '5px', marginBottom: '10px' }}>
-                  Boost your profile with one-of-a-kind graphics that create a buzz, amplify your brand, and communicate accomplishments visually.
+                */}
+                          <div className='w3-container w3-padding-large w3-padding-24'>
+                <h4 className="fw-bold mb-0 fs-5 text-light">Branding Strategies</h4>
+                <p className='w3-text-light-gray' style={{ fontSize: '14px', marginTop: '10px', marginBottom: '15px' }}>
+                  Boost your profile, amplify your brand, increase your reach, and drive traffic to your platforms.
                 </p>
                 <Link to='/marketing' className='link-light'>Get started <FaLongArrowAltRight /></Link>
               </div>
               </div>
              
          
-            <div className="col-6 d-flex align-items-start bg-secondary-subtle">
-            <div className='py-5 w3-margin-right m-2'>
-              <svg className="bi shadow flex-shrink-0 me-3" fill='black' width="2em" height="2em"><use xlinkHref="#video" /></svg>
+            <div className="col-sm-12 col-md-6 col-lg-6 shadow border d-flex align-items-center justify-content-center"
+            style={{backgroundColor:'#ff0035'}}>
+           {/**
+            <div className='py-4 w3-margin-right m-2'>
+              <svg className="bi shadow flex-shrink-0 me-3" fill='black' width="1.5em" height="1.5em"><use xlinkHref="#video" /></svg>
               </div>
-              <div className='py-5 w3-margin-right my-2'>
-                <h4 className="fw-bold mb-0 fs-5 text-dark-emphasis fw-bold">Professional Video Production</h4>
-                <p className=' text-dark' style={{ fontSize: '14px', marginTop: '5px', marginBottom: '10px' }}>
-                  Showcase your skills with high-quality video content that highlights what coaches want to see, without unnecessary extras.
+               */}
+                        <div className='w3-container w3-padding-large w3-padding-24'>
+                <h4 className="fw-bold mb-0 fs-5 text-light fw-bold">Video Editing</h4>
+                <p className=' text-light' style={{ fontSize: '13px', marginTop: '10px', marginBottom: '15px' }}>
+                Showcase your skills with high-quality videos that gives coaches exactly what they need—clear, focused, & free of unnecessary extras.
                 </p>
-                <Link to='/video' className='link-dark'>Get started <FaLongArrowAltRight /></Link>
+                <Link to='/video' className='link-light'>Get started <FaLongArrowAltRight /></Link>
             </div>
           </div>
           </div>  
@@ -225,8 +219,6 @@ const Services = () => {
     </div>
   </div>
 </div>
-
-    </div>
     </div>
   );
 }
