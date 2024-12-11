@@ -69,10 +69,16 @@ function App() {
   );
 }
 
-// Create a component for handling not found routes
 function NotFound() {
-  console.error("Page not found!"); // Log error to console
-  return <h1>404 - Not Found</h1>;
+  return (
+    <div style={{ textAlign: "center", marginTop: "50px" }}>
+      <h1>404 - Page Not Found</h1>
+      <p>Oops! The page you are looking for does not exist.</p>
+      <a href="/" style={{ color: "#007BFF", textDecoration: "underline" }}>
+        Return to Home
+      </a>
+    </div>
+  );
 }
 
 export default App;
