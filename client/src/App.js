@@ -10,10 +10,12 @@ import AboutPage from "./pages/AboutPage.jsx";
 import Register from "./pages/Register.jsx";
 import WebDesign from "./pages/WebDesign.jsx";
 import GraphicsPage from "./pages/GraphicsPage.jsx";
+import VideoPage from "./pages/VideoPage.jsx";
 //import DemoPage from "./pages/DemoPage.jsx";  
 //import Demo2 from "./pages/Demo2.jsx";
 //import DemoSocial from "./pages/DemoSocial.jsx";
 import NCAAFaqsPage from './pages/NCAAFaqsPage.jsx'
+import IJockPage from './pages/IJockPage.jsx'
 
 import ScrollToTop from "./components/ScrolltoTop.jsx";
 //import Extras from "./pages/Extras.jsx";  
@@ -21,6 +23,7 @@ import FormsLayout from "./components/Layouts/FormsLayout.jsx";
 import MainLayout from "./components/Layouts/MainLayout.jsx";
 //import DemoLayout from "./components/Layouts/DemoLayout.jsx";
 import NCAALayout from "./components/Layouts/NCAALayout.jsx";
+import IJockLayout from "./components/Layouts/IJockLayout.jsx";
 
 import ErrorBoundary from "./ErrorBoundary.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -39,12 +42,20 @@ function App() {
             <Route path="/home-time" element={<HomeTimeline />} />
             <Route path="/web" element={<WebDesign />} />
             <Route path="/graphics" element={<GraphicsPage />} />
+            <Route path="/video" element={<VideoPage />} />
           </Route>
+
           
           <Route element={<NCAALayout />} >
             <Route path="/ncaa" element={<NCAAFaqsPage />} />
           </Route>
 
+
+          <Route element={<IJockLayout />} >
+            <Route path="/ijock" element={<IJockPage />} />
+          </Route>
+
+          
           <Route element={<FormsLayout />} >
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />

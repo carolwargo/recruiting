@@ -110,9 +110,17 @@ const AboutCards = () => {
                 <div>
                      
         <h4 className="mt-3">HOW OUR RECRUIT <span className="w3-text-red text-decoration-underline">ASSISTANCE</span> SERVICES ARE POSITIONED TO PROVIDE THE SUPERIOR OUTCOMES FOR RECRUITS.</h4>
+<div className="row w3-margin-top">
+  <div className="col">
+  <h5 className="fw-light" style={{fontFamily:'Roboto'}}><b>Q:</b> WHAT COACHES WANT? </h5>
+                <p className="fw-light" style={{fontFamily:'Roboto'}}><b>A:</b> Intervene as a Third-party</p>
+               
+  </div>
 
-        <h5 className="fw-light" style={{fontFamily:'Roboto'}}><b>Q:</b> What do Recruiters do? </h5>
-                <h5 className="fw-light" style={{fontFamily:'Roboto'}}><b>A:</b> Intervene as a Third-party</h5>
+    <div className="col">     <h5 className="fw-light" style={{fontFamily:'Roboto'}}><b>Q:</b> What do Recruiters do? </h5>
+                <p className="fw-light" style={{fontFamily:'Roboto'}}><b>A:</b> Intervene as a Third-party</p>
+               </div>
+               </div>
                 <div className="mt-2">
                 <button>See More</button>
                 </div>

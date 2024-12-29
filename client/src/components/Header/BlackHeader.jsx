@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import "./cover.css"
 
 
-const CoverComponent = () => {
+const BlackHeader = () => {
     const { ref, inView } = useInView({
         triggerOnce: false, // Animation triggers only once
         threshold: 0.1, // Percentage of the div that needs to be visible to trigger the animation
@@ -149,8 +149,6 @@ const CoverComponent = () => {
         </li>
         <li>
           <button type="button" className="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
-           
-           
             <svg className="bi me-2 opacity-50" width="1em" height="1em"><use href="#circle-half"></use></svg>
             Auto
             <svg className="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
@@ -185,4 +183,4 @@ const CoverComponent = () => {
 }   
 
 
-export default CoverComponent;
+export default BlackHeader;
