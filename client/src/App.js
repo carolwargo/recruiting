@@ -11,17 +11,13 @@ import Register from "./pages/Register.jsx";
 import WebDesign from "./pages/WebDesign.jsx";
 import GraphicsPage from "./pages/GraphicsPage.jsx";
 import VideoPage from "./pages/VideoPage.jsx";
-//import DemoPage from "./pages/DemoPage.jsx";  
-//import Demo2 from "./pages/Demo2.jsx";
-//import DemoSocial from "./pages/DemoSocial.jsx";
+
 import NCAAFaqsPage from './pages/NCAAFaqsPage.jsx'
 import IJockPage from './pages/IJockPage.jsx'
 
 import ScrollToTop from "./components/ScrolltoTop.jsx";
-//import Extras from "./pages/Extras.jsx";  
 import FormsLayout from "./components/Layouts/FormsLayout.jsx";
 import MainLayout from "./components/Layouts/MainLayout.jsx";
-//import DemoLayout from "./components/Layouts/DemoLayout.jsx";
 import NCAALayout from "./components/Layouts/NCAALayout.jsx";
 import IJockLayout from "./components/Layouts/IJockLayout.jsx";
 
@@ -62,14 +58,6 @@ function App() {
           <Route path="/signup" element={<SignupPage />} />
           <Route path="/about" element={<AboutPage />} />
         </Route>
-      {/** 
-        <Route element={<DemoLayout />} >
-
-          <Route path="/extras" element={<Extras />} />
-
-        </Route>
-        */}
-
 
           <Route path="*" element={<NotFound />} />
             </Routes>

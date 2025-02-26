@@ -6,7 +6,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FaQuestionCircle } from "react-icons/fa";
 import { AiTwotoneMail } from "react-icons/ai";
 import { TbScreenShare } from "react-icons/tb";
-import LogoBlack from '../../assets/images/Logo/LogoBlack.png';
+//import LogoBlack from '../../assets/images/Logo/LogoBlack.png';
 //import { MDBBtn } from 'mdb-react-ui-kit';
 
 const TopNavbar = () => {
@@ -40,7 +40,15 @@ const TopNavbar = () => {
           <Nav className="me-auto">
             <Link to="/" className="nav-link w3-text-black fw-bold" 
             onClick={handleNavLinkClick}> 
-            <img src={LogoBlack} alt="logo" style={{width:'3rem'}} className='mb-1' /></Link>
+           <p
+      style={{
+        textShadow:
+        '.5px .5px 1px black, -.5px -.5px 1px black, .5px -.5px 1px black, -.5px  .5px 1px black',
+      }}
+
+      className='text-center fw-light text-white mt-0 mb-0 pt-0'>
+     <b>con</b><span style={{color:'#e9008c', marginLeft:'-2px', letterSpacing:'-1px'}}>scribe.</span>
+   </p> </Link>
 
           <Link to="/about" className="nav-link" style={{ color: "black" }}  onClick={handleNavLinkClick}>About</Link>
            <Link to="/resources" className="nav-link" style={{ color: "black" }}  onClick={handleNavLinkClick}>Resources</Link>
@@ -72,8 +80,8 @@ const TopNavbar = () => {
             
           </Nav>
           <Nav className='ml-auto'>
-          <Link to="/demo" className="nav-link" onClick={handleNavLinkClick} style={{fontSize:'14px'}}>DEMO SITE<TbScreenShare className='mx-2' style={{fontSize:'16px'}}/></Link>
-       
+          <a href="https://carolwargo.github.io/demo1/"   
+          rel="noopener noreferrer" className="nav-link" style={{fontSize:'14px'}}>DEMO SITE<TbScreenShare className='mx-2' style={{fontSize:'16px'}}/></a>
             <Link to="/contact" className="nav-link" onClick={handleNavLinkClick}><AiTwotoneMail /></Link>
             <Link to="/help" className="nav-link" onClick={handleNavLinkClick}><FaQuestionCircle/></Link>
           </Nav>
